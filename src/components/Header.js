@@ -2,6 +2,13 @@ import React from "react";
 
 export default class Header extends React.Component {
   render() {
-    return <div> THIS IS MY HEADER {this.props.myFunProp}</div>;
+    return (
+        <div className="header-container">
+            <img
+                className = "header-image"
+                src = {this.props.photo}
+                alt = ""/>
+        </div>
+    )
   }
 }
