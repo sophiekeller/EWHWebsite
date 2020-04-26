@@ -19,11 +19,12 @@ export default class Navbar extends React.Component {
             className="logo"
             src= {images.logo}
             alt = ""/>
-        <div className="buttons">
-          <NavButton pagename={"About Us"} />
-          <NavButton pagename={"Our Page"}/>
-          <NavButton pagename={"Projects"}/>
-          <NavButton pagename={"Contact Us"}/>
+        <div className="nav-buttons">
+          <NavButton pagename={"About Us"} state={this.props.state} id={screenId.about} switchPage={this.props.switchPage}/>
+          <NavButton pagename={"Our Team"} state={this.props.state} id={screenId.team} switchPage={this.props.switchPage}/>
+          <NavButton pagename={"Projects"} state={this.props.state} id={screenId.projects} switchPage={this.props.switchPage}/>
+          <NavButton pagename={"Contact Us"} state={this.props.state} id={screenId.contact} switchPage={this.props.switchPage}/>
+
         </div>
       </div>
     );

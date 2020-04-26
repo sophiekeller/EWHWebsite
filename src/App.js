@@ -1,10 +1,15 @@
 import React from "react";
 
+//Design
+//https://www.figma.com/file/iHNf8ii0cEDhOkLSrFXU2e/EHW-Website?node-id=0%3A1
 //COMPONENTS
 import Navbar from "./components/Navbar.js";
 //SCREENS
-import Home from "./screens/Home.js";
 import About from "./screens/About.js";
+import Contact from "./screens/Contact.js";
+import Projects from "./screens/Projects.js";
+import Team from "./screens/Team.js";
+import Footer from "./components/Footer.js";
 //STYLES
 import "./assets/styles/styles.css";
 
@@ -17,7 +22,7 @@ export default class App extends React.Component {
 
     //initialize state
     this.state = {
-      screenId: screenId.home //default to home page
+      screenId: screenId.about //default to home page
     };
   }
 
@@ -31,11 +36,14 @@ export default class App extends React.Component {
   //based on this.state.screenId, figure out which page to render!
   getCurrentPage = () => {
     switch (this.state.screenId) {
-      case screenId.home:
-        return <Home />;
       case screenId.about:
-        return <About />;
-      //TODO: add more pages here!
+        return <About state={this.state}/>;
+      case screenId.contact:
+        return <Contact state={this.state}/>;
+      case screenId.team:
+        return <Team state={this.state}/>;
+      case screenId.projects:
+        return <Projects state={this.state}/>;
       default:
         return <div> 404 page not found {this.state.screenId}</div>; //shouldn't ever reach this
     }
@@ -45,8 +53,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div class="main-container">
-        <Navbar switchPage={this.switchPage} />
+        <Navbar switchPage={this.switchPage} state={this.state} />
         {this.getCurrentPage()}
+        <Footer/>
       </div>
     );
   }
