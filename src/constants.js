@@ -2,7 +2,7 @@
 export const screenId = {
   home: "home",
   about: "about",
-  contactUs: "contactUs",
-  ourTeam: "ourTeam",
+  contact: "contact",
+  team: "team",
   projects: "projects"
 };
