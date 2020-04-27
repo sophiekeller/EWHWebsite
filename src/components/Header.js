@@ -2,7 +2,7 @@ import React from "react";
 
 import { screenId } from "../constants.js";
 
-import images from "../assets/images/images.js"
+import images from "../assets/images/images.js";
 
 export default class Header extends React.Component {
   // render() {
@@ -17,8 +17,12 @@ export default class Header extends React.Component {
   //   )
   // }
   render() {
-    return(
-        <div className="header-container"></div>
-    )
+    return (
+      <div className="header-container">
+        <img alt="background" />
+        <img alt="logo" />
+        <div className="header-gradient" />
+      </div>
+    );
   }
 }
