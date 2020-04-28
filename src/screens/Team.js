@@ -10,11 +10,13 @@ export default class Team extends React.Component {
   render() {
     //notation passes along all props from the Home component to child components
     return (
-      <div className="home-container">
-        <Header photo={"about container!"} />
-        <Section hasPhoto={false} myOtherFunProp={"section 1"} />
-        <Section myOtherFunProp={"section 2"} />
-      </div>
+        <div className="home-container">
+          <Header photo={images.homepic} state={this.state}/>
+          <div className="sections-container">
+              <Section title={"First"} text={"123"} state={this.state}/>
+              <Section title={"Second"} text={"456"} state={this.state}/>
+          </div>
+        </div>
     );
   }
 }

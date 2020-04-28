@@ -19,10 +19,15 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="header-container">
-        <img alt="background" />
-        <img alt="logo" />
-        <div className="header-gradient" />
-      </div>
+        <img className="header-photo"
+            alt="background"
+            src= {images.homepic}/>
+        <div className="header-gradient"/>
+        <img className="name-logo"
+            alt="logo"
+            src={images.namelogo}
+            />
+        </div>
     );
   }
 }

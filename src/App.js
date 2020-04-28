@@ -37,13 +37,13 @@ export default class App extends React.Component {
   getCurrentPage = () => {
     switch (this.state.screenId) {
       case screenId.about:
-        return <About state={this.state} />;
+        return <About />;
       case screenId.contact:
-        return <Contact state={this.state} />;
+        return <Contact />;
       case screenId.team:
-        return <Team state={this.state} />;
+        return <Team />;
       case screenId.projects:
-        return <Projects state={this.state} />;
+        return <Projects />;
       default:
         return <div> 404 page not found {this.state.screenId}</div>; //shouldn't ever reach this
     }

@@ -53,19 +53,39 @@
   flex-direction: row;
 }
 
-.header-image {
-  width: 100%;
+.header-photo {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  /* repeat: no-repeat; */
+}
+
+.name-logo{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  /* size: auto;
+  repeat: no-repeat; */
+}
+
+.header-gradient{
+   position: absolute;
+   background-image: linear-gradient(1.65deg, #253263 1.13%, rgba(196, 196, 196, 0) 96.36%);
+   top: 50px;
+   left: 0;
 }
 .header-container {
-  width: 100vw;
-  height: 50vh;
-  background-image: url("../images/namelogo.png"),
+
+  /* width: 100vw;
+  height: 50vh; */
+  /* background-image: url("../images/namelogo.png"),
     linear-gradient(1.65deg, #253263 1.13%, rgba(196, 196, 196, 0) 96.36%),
     url("../images/homepic.png");
   background-position: 50% 70%, center, center;
   background-size: auto, cover, cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
+
 .section-title {
   font-family: "Lato", sans-serif;
   font-style: normal;
