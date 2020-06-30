@@ -12,8 +12,8 @@ export default class Section extends React.Component {
             className="section-photo"
             src={this.props.hasPhoto ? this.props.photo: ""}
             alt={""}/>
-
         </div>
+
 
            // <img
            //     className="section-image"

@@ -2,6 +2,12 @@
   font-family: "Proxima Nova";
   src: url("fonts/Proxima-Nova-Thin.otf");
 }
+.home-container{
+    font-family: "Lato", sans-serif;
+}
+.center{
+    text-align: center
+}
 
 .navbar-container {
   padding-left: 20px;
@@ -25,6 +31,7 @@
   display: flex;
   flex-direction: row;
   white-space: nowrap;
+  font-size: 18px;
 }
 
 .nav-button {
@@ -36,6 +43,7 @@
   display: flex;
   flex-direction: row;
   white-space: nowrap;
+  font-size: 18px;
 }
 
 .nav-button:hover {
@@ -54,28 +62,43 @@
 }
 
 .header-photo {
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: 0;
   left: 0;
-  /* repeat: no-repeat; */
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
 }
 
 .name-logo{
   position: absolute;
-  top: 50px;
-  left: 0;
-  /* size: auto;
-  repeat: no-repeat; */
+  top: 50%;
+  left: calc((100vw - 497px)/2);
+
+}
+.header-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 400px;
+    margin-left: -200px;
+    text-align: center;
+
 }
 
 .header-gradient{
    position: absolute;
    background-image: linear-gradient(1.65deg, #253263 1.13%, rgba(196, 196, 196, 0) 96.36%);
-   top: 50px;
+   top: 0px;
    left: 0;
+   right: 0;
+   bottom: 0;
 }
 .header-container {
-
+   position: relative;
   /* width: 100vw;
   height: 50vh; */
   /* background-image: url("../images/namelogo.png"),
@@ -107,12 +130,38 @@
   color: #000000;
 }
 .sections-container {
+ position: relative;
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 10vh;
   min-height: 50vh;
 }
+.section-photo {
+  width: 100vw;
+}
+.sub-buttons{
+  position: relative;
+  left:0;
+  right:0;
+  display: flex;
+}
+.sub-button{
+    align:center;
+}
 
+.sub-pic{
+ width: calc((100vw)/3);
+ height: 100%;
+}
+.sub-title{
+  position: absolute;
+  color: #ffffff;
+  font-size: 3vw;
+  left: calc((100vw/30));
+  right: calc((100vw/30));
+  top: 50%;
+  margin-top: 0;
+}
 .logo {
   margin-left: 5px;
   height: 35px;
@@ -180,4 +229,98 @@
 
 .home-container {
   min-height: calc(100vh - 165px);
+}
+
+/* team page stuff */
+.sections-container{
+  margin-left: 4vw;
+  width: 92vw;
+
+}
+.leads-container {
+   text-align: left;
+   margin-bottom: 6vh;
+}
+.team-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.lead-blocks-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.team-container{
+    text-align: left
+}
+.team-filters-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85vw;
+    justify-content: space-between;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+}
+.team-blocks-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* person block stuff */
+
+.person-block-boldtext{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.person-block-regtext{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+.person-fronttext{
+    margin-bottom: 10px;
+}
+.person-block-front{
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    overflow-x: wrap;
+    height: 240px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    line-height: 25px;
+    justify-content: space-between;
+}
+.person-block-back{
+    padding: 20px;
+    color: white;
+    width: 135px;
+    height: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: #253263;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+.person-photo{
+    display: inline-flex;
+    width: 175px;
+    height: 155px;
+    object-fit: cover;
+}
+.filter-underline{
+    height: 4px;
+    background-color: red;
+}
+.filter-button{
+    font-weight: bold;
 }

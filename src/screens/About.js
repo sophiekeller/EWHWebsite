@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header";
 import Section from "../components/Section";
 import Footer from "../components/Footer";
+import SubButtons from "../components/SubButtons"
 import images from "../assets/images/images.js"
 
 export default class About extends React.Component {
@@ -11,9 +12,10 @@ export default class About extends React.Component {
     //notation passes along all props from the Home component to child components
     return (
       <div className="home-container">
-        <Header photo={images.homepic} state={this.state}/>
+        <Header photo={images.homepic} title = "About"/>
         <div className="sections-container">
             <Section title={"Mission"} text={message1} state={this.state}/>
+            <SubButtons/>
             <Section title={"Who We Are"} text={message2} hasPhoto={true} photo={images.group} state={this.state}/>
         </div>
       </div>
