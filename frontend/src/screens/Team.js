@@ -1,5 +1,5 @@
 import React from "react";
-
+import axios from 'axios';
 import images from "../assets/images/images.js"
 
 //COMPONENTS
@@ -11,12 +11,17 @@ export default class Team extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        leads: [nadine, nadine, nadine, nadine, nadine],
+        leads: [],
         team: [nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine],
         filter: "All",
         all_filters: ["All", "Business", "Design", "Software", "Electrical", "Integrative Design", "Research"]
       };
     }
+
+  async componentDidMount(){
+    const results = (await axios.get('http://localhost:8081/leads')).data;
+    this.setState({leads: results})
+  }
   render() {
     //notation passes along all props from the Home component to child components
     console.log("filter", this.state.filter)
