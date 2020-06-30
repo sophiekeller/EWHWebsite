@@ -4,7 +4,6 @@ import images from "../assets/images/images.js"
 
 //COMPONENTS
 import Header from "../components/Header";
-import Section from "../components/Section";
 import PersonBlock from "../components/PersonBlock";
 import FilterButton from "../components/FilterButton";
 

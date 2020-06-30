@@ -4,19 +4,19 @@ import images from "../assets/images/images.js"
 
 //COMPONENTS
 import Header from "../components/Header";
-import Section from "../components/Section";
+import Project from "../components/Project";
 
 export default class Projects extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        leads: [nadine, nadine, nadine, nadine, nadine],
-        team: [nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine, nadine],
-        filter: "All",
-        all_filters: ["All", "Business", "Design", "Software", "Electrical", "Integrative Design", "Research"]
+        current_projects: [example, example, example, example],
+        past_projects: [example, example, example, example, example, example, example]
       };
     }
   render() {
+    let current = this.state.current_projects
+    let past = this.state.past_projects
     //notation passes along all props from the Home component to child components
     return (
         <div className="home-container">
@@ -25,11 +25,19 @@ export default class Projects extends React.Component {
               <div className = "current-projects-container">
                 <div className = "projects-title">Current Projects</div>
                 <div className = "projects-blocks-container">
+                    {current.map((project, index) => {
+                        if (project!= null){
+                            return (
+                                <Project data = {project} current = {true}/>)}})}
                 </div>
               </div>
               <div className = "past-projects-container">
                 <div className = "projects-title">Past Projects</div>
-                <div classNAme = "projects-blocks-container">
+                <div className = "projects-blocks-container">
+                    {current.map((project, index) => {
+                        if (project!= null){
+                            return (
+                                <Project data = {project} current = {false}/>)}})}
                 </div>
               </div>
           </div>
@@ -37,4 +45,4 @@ export default class Projects extends React.Component {
     );
   }
 }
-var example = {title: "Menstrual Health App", subteams: ["Research", "Design", "Software"], info: "An online tool to streamline the application process for researchers intending on beginning clinical trials."}
+var example = {title: "Menstrual Health App", subteams: ["Research", "Design", "Software"], info: "An online tool to streamline the application process for researchers intending on beginning clinical trials.",stats: [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]}

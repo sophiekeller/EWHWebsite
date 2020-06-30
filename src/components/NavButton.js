@@ -7,7 +7,7 @@ export default class NavButton extends React.Component {
   render() {
     return (
       <div
-        className={this.props.selected ? "nav-button-selected" : "nav-button"}
+        className={this.props.selected ? "nav-button-selected nav-button" : "nav-button-unselected nav-button"}
         onClick={() => this.props.switchPage()}
       >
         {this.props.pagename}

@@ -37,7 +37,7 @@ export default class App extends React.Component {
   getCurrentPage = () => {
     switch (this.state.screenId) {
       case screenId.about:
-        return <About />;
+        return <About switchPage={this.switchPage}/>;
       case screenId.contact:
         return <Contact />;
       case screenId.team:

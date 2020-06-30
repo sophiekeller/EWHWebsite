@@ -4,27 +4,26 @@ import images from "../assets/images/images.js"
 export default class SubButtons extends React.Component {
   render() {
     return (
-        <div
-            className = "sub-buttons">
-        <div className = "sub-button">
-        <h1 className = "sub-title">Electrical Sub Team</h1>
-        <img
-            className="sub-pic"
-            src={images.electrical}
-            alt={""}/>
-        </div>
-        <div className = "sub-button">
-        <img
-            className="sub-pic"
-            src={images.intdesign}
-            alt={""}/>
-        </div>
-        <div className = "sub-button">
-        <img
-            className="sub-pic"
-            src={images.software}
-            alt={""}/>
-        </div>
+        <div className = "sub-buttons">
+            <div className = "sub-button">
+            
+            <img
+                className="sub-pic"
+                src={images.electrical}
+                alt={""}/>
+            </div>
+            <div className = "sub-button">
+            <img
+                className="sub-pic"
+                src={images.intdesign}
+                alt={""}/>
+            </div>
+            <div className = "sub-button">
+            <img
+                className="sub-pic"
+                src={images.software}
+                alt={""}/>
+            </div>
         </div>
 
 
