@@ -1,16 +1,19 @@
 @font-face {
   font-family: "Proxima Nova";
-  src: url("fonts/Proxima-Nova-Thin.otf");
+  src: url("fonts/Proxima-Nova-Thin.otf") format("truetype");
+}
+body {
+    font-family: "Proxima Nova";
 }
 .main-container {
   min-height: 100vh;
 }
 .home-container{
-  font-family: "Lato", sans-serif;
+  font-family: "Proxima Nova";
   min-height: calc(100vh - 165px);
 }
 .sections-container {
-  font-family: "Lato", sans-serif;
+  font-family: "Proxima Nova";
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 10vh;
@@ -44,7 +47,7 @@
   color: #bdbdbd;
 }
 .nav-button {
-  font-family: "Lato", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: lighter;
   margin-right: 5%;
@@ -230,7 +233,7 @@
   background-color: #253263;
 }
 .left-footer {
-  font-family: "Lato", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 15px;
   text-align: left;
   color: #ffffff;

@@ -55,4 +55,4 @@ export default class Team extends React.Component {
     );
   }
 }
-var nadine = {name: 'Nadine Farhat', title: 'President', year: 'Sophomore', major: 'Computer Science', projects: 'Menstrual Game, INDAGO', image: images.nadine}
+let nadine = {name: 'Nadine Farhat', title: 'President', year: 'Sophomore', major: 'Computer Science', projects: 'Menstrual Game, INDAGO', image: images.nadine}
