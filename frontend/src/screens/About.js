@@ -1,4 +1,5 @@
 import React from "react";
+import {Carousel} from 'react-bootstrap';
 
 //COMPONENTS
 import Header from "../components/Header";
@@ -13,7 +14,43 @@ export default class About extends React.Component {
   render() {
     return (
       <div className="home-container">
-        <Header photo={images.homepic} title = "About"/>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=First slide&bg=373940"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Second slide&bg=282c34"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Third slide&bg=20232a"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        </Carousel>
         <div className = "home-sections-container">
             <div className="home-opener">{message1}</div>
             <SubButtons />
@@ -46,7 +83,7 @@ export default class About extends React.Component {
 
   }
 }
-
+// old header = <Header photo={images.homepic} title = "About"/>
 const message1 = "Together, we transform the world through innovative and meaningful health technology solutions that promote human welfare."
 
 const message2 = "Founded in 2012, the Cornell Engineering World Health (EWH) project team designs, constructs, and implements health solutions for underprivileged communities. Cornell EWH provides the ideal platform for students to develop both professionally and personally and deeply engage with the world around them. Although the members carry diverse academic interests and personal experiences, the multi-disciplinary team unites under the common goal of transforming the world through health technologies and welfare initiatives. Since its origin, Cornell EWH continues to delve into global challenges and turn ideas into reality."

@@ -1,19 +1,18 @@
+
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("fonts/Proxima-Nova-Thin.otf") format("truetype");
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
 }
 body {
-    font-family: "Proxima Nova";
+    font-family: "Lato";
 }
 .main-container {
   min-height: 100vh;
 }
 .home-container{
-  font-family: "Proxima Nova";
   min-height: calc(100vh - 165px);
 }
 .sections-container {
-  font-family: "Proxima Nova";
   text-align: center;
   margin-top: 5vh;
   margin-bottom: 10vh;
@@ -47,7 +46,6 @@ body {
   color: #bdbdbd;
 }
 .nav-button {
-  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: lighter;
   margin-right: 5%;
@@ -233,7 +231,6 @@ body {
   background-color: #253263;
 }
 .left-footer {
-  font-family: "Proxima Nova", sans-serif;
   font-size: 15px;
   text-align: left;
   color: #ffffff;
@@ -349,11 +346,16 @@ body {
   margin-top: 2vw;
   margin-bottom: 1vw;
 }
+.person-block-info{
+    height: 170px;
+    overflow-y: scroll;
+}
 .person-photo{
   display: inline-flex;
   width: 175px;
   height: 155px;
   object-fit: cover;
+  background-color: #DDDDDD;
 }
 .filter-underline{
   height: 4px;
