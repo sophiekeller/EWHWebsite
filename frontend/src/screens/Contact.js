@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
     //notation passes along all props from the Home component to child components
     return (
         <div className="home-container">
-          <Header photo={images.homepic} state={this.state}/>
+          <Header photo={images.header2} state={this.state} title = "Contact Us"/>
           <div className="sections-container">
           </div>
         </div>

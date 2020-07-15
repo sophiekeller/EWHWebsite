@@ -15,7 +15,11 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container">
-        <img className="logo" src={images.logo} alt="" />
+        <img
+          className="logo"
+          onClick = {() => this.props.switchPage(screenId.about)}  
+          src={images.logo}
+          alt="" />
         <div className="nav-buttons">
           <NavButton
             pagename={"About Us"}
