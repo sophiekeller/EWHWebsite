@@ -555,5 +555,32 @@
             "major": "Electrical & Computer Engineering",
             "projects": "Parasym"
         }
+    ],
+    "past_projects":
+    [
+        {   "title": "Menstrual Health App",
+            "subteams": ["Research", "Design", "Software"],
+            "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+        },
+        {   "title": "INDAGO",
+            "subteams": ["Research", "Design", "Software"],
+            "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+        },
+        {   "title": "Parasym",
+            "subteams": ["Research", "Design", "Software"],
+            "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+        },
+        {   "title": "Rex",
+            "subteams": ["Research", "Design", "Software"],
+            "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+        }
     ]
 }

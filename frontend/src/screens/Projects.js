@@ -1,12 +1,15 @@
 import React, {useState} from "react";
 
 import images from "../assets/images/images.js"
+import data from "../assets/data.json"
 
 //COMPONENTS
 import Header from "../components/Header";
 import Project from "../components/Project";
+import ProjectModal from "../components/ProjectModal";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+
 
 export default class Projects extends React.Component {
     constructor(props, context) {
@@ -18,7 +21,7 @@ export default class Projects extends React.Component {
       this.state = {
         show: false,
         current_projects: [example, example, example, example],
-        past_projects: [example, example, example, example, example, example, example]
+        past_projects: data.past_projects
       };
     }
 
@@ -60,7 +63,7 @@ export default class Projects extends React.Component {
               <div className = "past-projects-container">
                 <div className = "projects-title">Past Projects</div>
                 <div className = "projects-blocks-container">
-                    {current.map((project, index) => {
+                    {past.map((project, index) => {
                         if (project!= null){
                             return (
                                 <Project data = {project} current = {false}/>)}})}

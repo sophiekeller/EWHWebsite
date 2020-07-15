@@ -1,6 +1,8 @@
 import React from "react";
 import images from "../assets/images/images.js"
 import Project from "./Project.js"
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 export default class ProjectModal extends React.Component {
     constructor(props, context) {
@@ -15,11 +17,20 @@ export default class ProjectModal extends React.Component {
           };
         }
 
+        handleClose() {
+    		this.setState({ show: false });
+    	}
+
+    	handleShow() {
+    		this.setState({ show: true });
+    	}
+
       render() {
           let data = this.state.data;
         return (
             <div>
-            <Project onClick={this.handleShow} data = {project} current = {false}/>
+            <Button onClick={this.handleShow}/>
+                <Project data = {this.props.data} current = {false}/>
             <Modal show={this.state.show} onHide={this.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Modal heading</Modal.Title>
