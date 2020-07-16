@@ -2,6 +2,7 @@ import React from "react";
 import images from "../assets/images/images.js"
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import PersonBlock from "./PersonBlock.js"
 
 export default class Project extends React.Component {
         constructor(props) {
@@ -51,22 +52,33 @@ export default class Project extends React.Component {
                             <img className = "project-modal-pic" src = {images.header1}/>
                             <Modal.Header >
                                 <Modal.Title>
-                                    {data.title}
-                                    <div className = "project-teams">
-                                        {data.subteams.map((team, index) => {
-                                            if (team!= null){
-                                                return (
-                                                    <div className = "project-subteam-bubble">{team}</div>)}})}
+                                    <div className = "project-modal-title-container">
+                                    <div className = "projects-title">{data.title}</div>
+                                    <div className = "modal-project-teams-container">
+                                        <div className = "project-teams">
+                                            {data.subteams.map((team, index) => {
+                                                if (team!= null){
+                                                    return (
+                                                        <div className = "project-subteam-bubble">{team}</div>)}})}
+                                        </div>
+                                    </div>
                                     </div>
                                 </Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
                                     <div className = "project-text">
-                                    <div className = "project-description">{data.info_long}</div>
+                                        <div className = "project-description">{data.info_long}</div>
+                                    </div>
+                                    <div className = "modal-members">
+                                        <div className = "project-title">Team Members</div>
+                                        <div className = "modal-members-blocks">
+                                        {data.members.map((person, index) => {
+                                            if (person!= null){
+                                                return (<PersonBlock data = {person} /> )}})}
+                                        </div>
                                     </div>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                    {stats}
                                     <div variant="primary" onClick={this.handleClose} className = "project-modal-close-bar">Close</div>
                                 </Modal.Footer>
                         </Modal>

@@ -562,25 +562,97 @@
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
-            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "members":[{   "name": "Anna Nguyen",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jennifer Lin",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jessica Feng",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            }]
         },
         {   "title": "INDAGO",
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
-            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "members":[{   "name": "Anna Nguyen",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jennifer Lin",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jessica Feng",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            }]
         },
         {   "title": "Parasym",
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
-            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "members":[{   "name": "Anna Nguyen",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jennifer Lin",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jessica Feng",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            }]
         },
         {   "title": "Rex",
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
-            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]]
+            "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "members":[{   "name": "Anna Nguyen",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jennifer Lin",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {   "name": "Jessica Feng",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            }]
         }
     ]
 }

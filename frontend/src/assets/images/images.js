@@ -10,6 +10,7 @@ export default {
   homepic: require("./homepic.png"),
   insta: require("./insta.png"),
   intdesign: require("./intdesign.png"),
+  linkedin: require("./linkedin.png"),
   logo: require("./logo.png"),
   namelogo: require("./namelogo.png"),
   software: require("./software.png"),

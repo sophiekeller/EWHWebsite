@@ -14,10 +14,10 @@ div so they all
 export default class Navbar extends React.Component {
   render() {
     return (
-      <div className="navbar-container">
+      <div className="navbar-container sticky">
         <img
           className="logo"
-          onClick = {() => this.props.switchPage(screenId.about)}  
+          onClick = {() => this.props.switchPage(screenId.about)}
           src={images.logo}
           alt="" />
         <div className="nav-buttons">

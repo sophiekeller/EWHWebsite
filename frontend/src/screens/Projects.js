@@ -20,7 +20,7 @@ export default class Projects extends React.Component {
 
       this.state = {
         show: false,
-        current_projects: [example, example, example, example],
+        current_projects: data.past_projects,
         past_projects: data.past_projects
       };
     }
@@ -49,17 +49,6 @@ export default class Projects extends React.Component {
                                 <Project data = {project} current = {true}/>)}})}
                 </div>
               </div>
-              <Button variant="primary" onClick={this.handleShow}>Launch demo modal</Button>
-            <Modal show={this.state.show} onHide={this.handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleClose}>Close</Button>
-                        <Button variant="primary" onClick={this.handleClose}>Save Change</Button>
-                    </Modal.Footer>
-            </Modal>
               <div className = "past-projects-container">
                 <div className = "projects-title">Past Projects</div>
                 <div className = "projects-blocks-container">
