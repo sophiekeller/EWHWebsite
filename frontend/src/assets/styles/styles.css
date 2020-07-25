@@ -14,6 +14,7 @@ body {
 }
 .main-container {
   min-height: 100vh;
+  background-color: white;
 }
 .home-container{
   min-height: calc(100vh - 165px);
@@ -128,6 +129,9 @@ body {
   margin-top: 5vw;
   margin-bottom: 5vw;
 }
+.home-opener-m{
+  font-size: 20px;
+}
 .home-sections-container{
   display: flex;
   flex-direction: column;
@@ -159,6 +163,7 @@ body {
 .home-stat{
   text-align: center;
   width: 100px;
+  margin: 10px;
 }
 .home-stats-container{
   display: flex;
@@ -183,7 +188,7 @@ body {
   color: #FF603E
 }
 .home-stat-title{
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 .home-graph-label{
@@ -253,7 +258,8 @@ body {
 }
 .contact {
   margin-top: 10px;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 .email {
   font-weight: normal;
@@ -303,7 +309,8 @@ body {
 .lead-blocks-container{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  justify-content: left;
 }
 .team-container{
   text-align: left
@@ -321,6 +328,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: left;
 }
 
 /* person block styles */
@@ -400,6 +408,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 2vw;
+  justify-content: left;
 }
 .project-teams{
   display: flex;
@@ -540,3 +549,5 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* mobile stuff */

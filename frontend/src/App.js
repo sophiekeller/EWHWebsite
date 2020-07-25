@@ -23,9 +23,25 @@ export default class App extends React.Component {
 
     //initialize state
     this.state = {
-      screenId: screenId.about //default to home page
+      screenId: screenId.about, //default to home page
+      width: window.innerWidth //get width of page(for mobile)
     };
   }
+
+      //add listener for screen size change
+     componentWillMount() {
+         window.addEventListener('resize',this.handleWindowSizeChange);
+         document.title = "Sophie Keller";
+     }
+
+     //remove the listener when the component is not mounted anymore
+     componentWillUnmount() {
+         window.removeEventListener('resize', this.handleWindowSizeChange);
+     }
+      //function called on resize of screen to change screen width in state
+    handleWindowSizeChange = () => {
+        this.setState({width: window.innerWidth});
+    };
 
   /*
   Given a screen id, swap to that page
@@ -35,16 +51,16 @@ export default class App extends React.Component {
   };
 
   //based on this.state.screenId, figure out which page to render!
-  getCurrentPage = () => {
+  getCurrentPage = (mobile) => {
     switch (this.state.screenId) {
       case screenId.about:
-        return <About switchPage={this.switchPage}/>;
+        return <About switchPage={this.switchPage} mobile = {mobile}/>;
       case screenId.contact:
-        return <Contact />;
+        return <Contact mobile = {mobile}/>;
       case screenId.team:
-        return <Team />;
+        return <Team mobile = {mobile}/>;
       case screenId.projects:
-        return <Projects />;
+        return <Projects mobile = {mobile}/>;
       default:
         return <div> 404 page not found {this.state.screenId}</div>; //shouldn't ever reach this
     }
@@ -52,10 +68,17 @@ export default class App extends React.Component {
 
   //render the navbar and the current page being looked at
   render() {
+     const mobile = this.state.width <= 650;
+     let page = null;
+     if (mobile) {
+        page = this.getCurrentPage(true)//pass screen's mobile prop 'true'
+    }else{
+        page = this.getCurrentPage(false)//pass screen's mobile prop 'false'
+    }
     return (
       <div class="main-container">
-        <Navbar switchPage={this.switchPage} selectedId={this.state.screenId} />
-        {this.getCurrentPage()}
+        <Navbar mobile = {mobile} switchPage={this.switchPage} selectedId={this.state.screenId} />
+        {page}
         <Footer />
       </div>
     );

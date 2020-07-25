@@ -12,6 +12,10 @@ import { screenId } from "../constants.js";
 
 export default class About extends React.Component {
   render() {
+      let homeopener = "home-opener";
+      if (this.props.mobile){
+          homeopener += " home-opener-m"
+      }
     return (
       <div className="home-container">
       <Carousel>
@@ -47,7 +51,7 @@ export default class About extends React.Component {
         </Carousel.Item>
         </Carousel>
         <div className = "home-sections-container">
-            <div className="home-opener">{message1}</div>
+            <div className={homeopener}>{message1}</div>
             <SubButtons />
             <div className = "home-paragraph">{message2}</div>
             <div onClick={() => {this.props.switchPage(screenId.team);}} className = "home-link">Learn more about our team ></div>
