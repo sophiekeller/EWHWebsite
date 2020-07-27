@@ -5,9 +5,20 @@ import images from "../assets/images/images.js";
 
 export default class NavButton extends React.Component {
   render() {
+      let c = "nav-button"
+      if (this.props.selected){
+          c += "-selected"
+      }else{
+          c += "-unselected"
+      }
+      if (this.props.mobile){
+          c+= " nav-button-m"
+      }else{
+          c+= " nav-button"
+      }
     return (
       <div
-        className={this.props.selected ? "nav-button-selected nav-button" : "nav-button-unselected nav-button"}
+        className={c}
         onClick={() => this.props.switchPage()}
       >
         {this.props.pagename}

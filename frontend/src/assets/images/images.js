@@ -13,6 +13,7 @@ export default {
   linkedin: require("./linkedin.png"),
   logo: require("./logo.png"),
   namelogo: require("./namelogo.png"),
+  menu: require("./menu.png"),
   software: require("./software.png"),
   nadine: require("./nadine.png"),
   project: require("./project.jpg"),

@@ -3,7 +3,8 @@ import React from "react";
 //Design
 //https://www.figma.com/file/iHNf8ii0cEDhOkLSrFXU2e/EHW-Website?node-id=0%3A1
 //COMPONENTS
-import Navbar from "./components/Navbar.js";
+import NavBar from "./components/NavBar.js";
+import MobNav from "./components/MobNav.js"
 //SCREENS
 import About from "./screens/About.js";
 import Contact from "./screens/Contact.js";
@@ -69,17 +70,17 @@ export default class App extends React.Component {
   //render the navbar and the current page being looked at
   render() {
      const mobile = this.state.width <= 650;
-     let page = null;
+     let page = this.getCurrentPage(false);
+     let navbar = (<NavBar switchPage={this.switchPage} selectedId={this.state.screenId} />)
      if (mobile) {
         page = this.getCurrentPage(true)//pass screen's mobile prop 'true'
-    }else{
-        page = this.getCurrentPage(false)//pass screen's mobile prop 'false'
+        navbar = (<MobNav switchPage={this.switchPage} selectedId={this.state.screenId} />)
     }
     return (
       <div class="main-container">
-        <Navbar mobile = {mobile} switchPage={this.switchPage} selectedId={this.state.screenId} />
+        {navbar}
         {page}
-        <Footer />
+        <Footer mobile = {mobile} />
       </div>
     );
   }

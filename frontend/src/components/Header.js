@@ -14,9 +14,15 @@ export default class Header extends React.Component {
       else{
           overlay = (<div className = "header-text">{this.props.title}</div>)
       }
+      let header_photo = "header-photo"
+      let carousel_class = "carousel-class"
+      if (this.props.mobile){
+          carousel_class = "carousel-class-m"
+          header_photo = "header-photo-m"
+      }
     return (
       <div className="header-container">
-      <img className="header-photo"
+      <img className={header_photo}
        alt="background"
        src= {this.props.photo}/>
        <div className="header-gradient"/>

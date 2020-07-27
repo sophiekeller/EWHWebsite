@@ -11,7 +11,7 @@ think about how we can make this component better
 you also might want to group About Us, Our Team, and Projects together in a
 div so they all
 */
-export default class Navbar extends React.Component {
+export default class NavBar extends React.Component {
   render() {
     return (
       <div className="navbar-container sticky">

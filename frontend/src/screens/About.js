@@ -13,56 +13,70 @@ import { screenId } from "../constants.js";
 export default class About extends React.Component {
   render() {
       let homeopener = "home-opener";
+      let home_p = "home-paragraph"
+      let name_logo = "name-logo"
+      let header_photo = "header-photo"
+      let carousel_class = "carousel-class"
+      let graphics = "graphics-container"
+      let stats_class = "home-stats-container"
+      let piechart = "piechart-image"
       if (this.props.mobile){
+          carousel_class = "carousel-class-m"
           homeopener += " home-opener-m"
+          home_p = "home-paragraph-m"
+          name_logo = "name-logo-m"
+          header_photo = "header-photo-m"
+          graphics = "graphics-container-m"
+          stats_class = "home-stats-container-m"
+          piechart = "piechart-image-m"
       }
     return (
       <div className="home-container">
-      <Carousel>
+      <Carousel className = {carousel_class}>
         <Carousel.Item className = "carousel">
              <img
-              className="header-photo"
+              className={header_photo}
               alt="background"
               src= {images.carousel1}/>
              <div className="header-gradient"/>
-             <img className="name-logo"
+             <img className={name_logo}
               alt="background"
               src= {images.namelogo}/>
         </Carousel.Item>
         <Carousel.Item className = "carousel">
              <img
-              className="header-photo"
+              className={header_photo}
               alt="background"
               src= {images.carousel2}/>
              <div className="header-gradient"/>
-             <img className="name-logo"
+             <img className={name_logo}
               alt="background"
               src= {images.namelogo}/>
         </Carousel.Item>
         <Carousel.Item className = "carousel">
              <img
-              className="header-photo"
+              className={header_photo}
               alt="background"
               src= {images.carousel3}/>
              <div className="header-gradient"/>
-             <img className="name-logo"
+             <img className={name_logo}
               alt="background"
               src= {images.namelogo}/>
         </Carousel.Item>
         </Carousel>
         <div className = "home-sections-container">
             <div className={homeopener}>{message1}</div>
-            <SubButtons />
-            <div className = "home-paragraph">{message2}</div>
+            <SubButtons mobile = {this.props.mobile}/>
+            <div className = {home_p}>{message2}</div>
             <div onClick={() => {this.props.switchPage(screenId.team);}} className = "home-link">Learn more about our team ></div>
             <img className ="home-image" src = {images.group}/>
             <div className = "home-graphs-title">EWH in Numbers</div>
-            <div className = "graphics-container">
+            <div className = {graphics}>
                 <div className = "home-graph-container">
                     <div className = "home-graph-label">Major Description</div>
-                    <img className = "piechart-image" src = {images.graph}/>
+                    <img className = {piechart} src = {images.graph}/>
                     </div>
-                <div className = "home-stats-container">
+                <div className = {stats_class}>
                     {stats.map((stat, index) => {
                         if (stat!= null){
                             return (

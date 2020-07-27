@@ -12,9 +12,17 @@ div so they all
 */
 export default class Footer extends React.Component {
   render() {
+      let con_class = "footer-container"
+      let right = "right-footer"
+      let social = "social-pic"
+      if (this.props.mobile){
+          con_class = "footer-container-m"
+          right = "right-footer-m"
+          social = "social-pic-m"
+      }
     return (
 
-      <div className="footer-container">
+      <div className={con_class}>
 
       <div className="left-footer">
         <h3 className="contact">Contact Us</h3>
@@ -28,22 +36,22 @@ export default class Footer extends React.Component {
         </div>
       </div>
 
-      <div className="right-footer">
+      <div className={right}>
         <a href ={fblink} target = "_blank">
             <img
-            className="social-pic"
+            className={social}
             src={images.facebook}
             alt="" />
         </a>
         <a href ={instalink} target = "_blank">
             <img
-            className="social-pic"
+            className={social}
             src={images.insta}
             alt="" />
         </a>
         <a href ={linkedlink} target = "_blank">
             <img
-            className="social-pic"
+            className={social}
             src={images.linkedin}
             alt="" />
         </a>

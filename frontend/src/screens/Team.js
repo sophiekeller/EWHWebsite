@@ -40,33 +40,39 @@ export default class Team extends React.Component {
   }
  this.setState({filter: f});
 
-  console.log("switched to", f)
   }
   render() {
-    console.log("filter", this.state.filter)
+      let leads = "lead-blocks-container"
+      let filters = "team-filters-container"
+      let team = "team-blocks-container"
+      if (this.props.mobile){
+          leads = "lead-blocks-container-m"
+          filters = "team-filters-container-m"
+          team = "team-blocks-container-m"
+      }
     return (
         <div className="home-container">
-          <Header photo={images.group} title = "Our Team"/>
+          <Header mobile = {this.props.mobile} photo={images.group} title = "Our Team"/>
           <div className="sections-container">
               <div className = "leads-container">
                 <div className = "team-title">Leads</div>
-                <div className = "lead-blocks-container">
+                <div className = {leads}>
                     {this.state.leads.map((person, index) => {
                         if (person!= null){
-                            return (<PersonBlock data = {person} /> )}})}
+                            return (<PersonBlock mobile = {this.props.mobile} data = {person} /> )}})}
                 </div>
               </div>
               <div className = "team-container">
                 <div className = "team-title">Team</div>
-                <div className = "team-filters-container">
+                <div className = {filters}>
                     {this.state.all_filters.map((filter, index) => {
                         if (filter!= null){
                             return (<FilterButton title = {filter} selected = {this.state.filter === filter} updateFilter = {() => {this.updateFilter(filter);console.log("filter is ",filter)}}/> )}})}
                 </div>
-                <div className = "team-blocks-container">
+                <div className = {team}>
                     {this.state.selected.map((person, index) => {
                         if (person!= null){
-                            return (<PersonBlock data = {person} /> )}})}
+                            return (<PersonBlock mobile = {this.props.mobile} data = {person} /> )}})}
                 </div>
               </div>
           </div>
