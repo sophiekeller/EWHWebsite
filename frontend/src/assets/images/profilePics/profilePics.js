@@ -32,7 +32,6 @@ export default {
   shafibrahim: require("./no-name.png"),
   rebeccahasser: require("./rebeccahasser.jpg"),
   shamhamidian: require("./shamhamidian.jpg"),
-  sharonli: require("./sharonli.jpeg"),
   sheriguo: require("./sheriguo.jpg"),
   sophiekeller: require("./sophiekeller.jpg"),
   sungjaeahn: require("./sungjaeahn.jpg"),

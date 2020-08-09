@@ -1,5 +1,5 @@
 import React from "react";
-
+import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
 //Design
 //https://www.figma.com/file/iHNf8ii0cEDhOkLSrFXU2e/EHW-Website?node-id=0%3A1
 //COMPONENTS
@@ -19,69 +19,67 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { screenId } from "./constants.js";
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+      super(props);
 
-    //initialize state
-    this.state = {
-      screenId: screenId.about, //default to home page
-      width: window.innerWidth //get width of page(for mobile)
-    };
+      //initialize state
+      this.state = {
+        screenId: screenId.about, //default to home page
+        width: window.innerWidth //get width of page(for mobile)
+      };
   }
 
-      //add listener for screen size change
-     componentWillMount() {
-         window.addEventListener('resize',this.handleWindowSizeChange);
-         document.title = "Sophie Keller";
+    /* add listener for screen size change */
+    componentWillMount() {
+      window.addEventListener('resize',this.handleWindowSizeChange);
+      document.title = "Sophie Keller";
      }
 
-     //remove the listener when the component is not mounted anymore
-     componentWillUnmount() {
-         window.removeEventListener('resize', this.handleWindowSizeChange);
-     }
-      //function called on resize of screen to change screen width in state
+    /* remove the listener when the component is not mounted anymore */
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+
+    /* function called on resize of screen to change screen width in state */
     handleWindowSizeChange = () => {
         this.setState({width: window.innerWidth});
     };
 
-  /*
-  Given a screen id, swap to that page
-  */
-  switchPage = screenId => {
-    this.setState({ screenId: screenId });
-  };
+    /*
+    Given a screen id, swap to that page
+    */
+    switchPage = screenId => {
+      this.setState({ screenId: screenId });
+    };
 
-  //based on this.state.screenId, figure out which page to render!
-  getCurrentPage = (mobile) => {
-    switch (this.state.screenId) {
-      case screenId.about:
-        return <About switchPage={this.switchPage} mobile = {mobile}/>;
-      case screenId.contact:
-        return <Contact mobile = {mobile}/>;
-      case screenId.team:
-        return <Team mobile = {mobile}/>;
-      case screenId.projects:
-        return <Projects mobile = {mobile}/>;
-      default:
-        return <div> 404 page not found {this.state.screenId}</div>; //shouldn't ever reach this
-    }
-  };
-
-  //render the navbar and the current page being looked at
-  render() {
-     const mobile = this.state.width <= 650;
-     let page = this.getCurrentPage(false);
-     let navbar = (<NavBar switchPage={this.switchPage} selectedId={this.state.screenId} />)
-     if (mobile) {
-        page = this.getCurrentPage(true)//pass screen's mobile prop 'true'
+    /* render the navbar and the current page being looked at with router */
+    render() {
+       const mobile = this.state.width <= 650;
+       let navbar = (<NavBar switchPage={this.switchPage} selectedId={this.state.screenId} />)
+       if (mobile) {
         navbar = (<MobNav switchPage={this.switchPage} selectedId={this.state.screenId} />)
+      }
+      return (
+        <div class="main-container">
+        <Router>
+            {navbar}
+            <Switch>
+              <Route exact path="/">
+                <About mobile = {mobile}/>
+              </Route>
+              <Route exact path="/contact">
+                <Contact mobile = {mobile}/>
+              </Route>
+              <Route exact path="/team">
+                <Team mobile = {mobile}/>
+              </Route>
+              <Route exact path="/projects">
+                <Projects mobile = {mobile}/>
+              </Route>
+            </Switch>
+            <Footer mobile = {mobile} />
+        </Router>
+        </div>
+      );
     }
-    return (
-      <div class="main-container">
-        {navbar}
-        {page}
-        <Footer mobile = {mobile} />
-      </div>
-    );
-  }
-}
+    }

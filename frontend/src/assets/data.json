@@ -31,10 +31,10 @@
             "projects": "INDAGO, Business"
         },
         {   "name": "Audrey Teasley",
-            "title": "Parasym",
+            "title": "Electrical",
             "year": "",
             "major": "Physics",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Catherine Kwak",
             "title": "INDAGO",
@@ -79,10 +79,10 @@
             "projects": "INDAGO"
         },
         {   "name": "Hannah Daniel",
-            "title": "Parasym",
+            "title": "Electrical",
             "year": "",
             "major": "Computer Science",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Hannah Mahanti",
             "title": "Business",
@@ -121,10 +121,10 @@
             "projects": ""
         },
         {   "name": "Kerry Johnson",
-            "title": "Parasym",
+            "title": "Electrical",
             "year": "Junior",
             "major": "Electrical & Computer Engineering",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Lane Fitzsimmons",
             "title": "Integrative Design",
@@ -151,10 +151,10 @@
             "projects": ""
         },
         {   "name": "Michaela Bettez",
-            "title": "Parasym Lead",
+            "title": "Electrical Lead",
             "year": "Senior",
             "major": "Electrical & Computer Engineering",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Navin Ramsaroop",
             "title": "Software Lead",
@@ -175,16 +175,16 @@
             "projects": "Menstrual Health Game"
         },
         {   "name": "Rebecca Hasser",
-            "title": "Parasym",
+            "title": "Electrical",
             "year": "Junior",
             "major": "Computer Science",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Samantha Pitts",
-            "title": "Parasym",
+            "title": "Electrical",
             "year": "",
             "major": "Biomedical Engineering",
-            "projects": "Parasym"
+            "projects": "tVNS"
         },
         {   "name": "Shaf Ibrahim",
             "title": "Software",
@@ -483,37 +483,37 @@
                 "projects": "Waste Incinerator"
             }
         ],
-        "parasym":
+        "electrical":
         [
             {   "name": "Audrey Teasley",
-                "title": "Parasym",
+                "title": "Electrical",
                 "year": "",
                 "major": "Physics",
-                "projects": "Parasym"
+                "projects": "tVNS"
             },
             {   "name": "Hannah Daniel",
-                "title": "Parasym",
+                "title": "Electrical",
                 "year": "",
                 "major": "Computer Science",
-                "projects": "Parasym"
+                "projects": "tVNS"
             },
             {   "name": "Michaela Bettez",
-                "title": "Parasym Lead",
+                "title": "Electrical Lead",
                 "year": "Senior",
                 "major": "Electrical & Computer Engineering",
-                "projects": "Parasym"
+                "projects": "tVNS"
             },
             {   "name": "Rebecca Hasser",
-                "title": "Parasym",
+                "title": "Electrical",
                 "year": "Junior",
                 "major": "Computer Science",
-                "projects": "Parasym"
+                "projects": "tVNS"
             },
             {   "name": "Samantha Pitts",
-                "title": "Parasym",
+                "title": "Electrical",
                 "year": "",
                 "major": "Biomedical Engineering",
-                "projects": "Parasym"
+                "projects": "tVNS"
             }
         ]
     },
@@ -550,10 +550,10 @@
             "projects": "INDAGO, Business"
         },
         {   "name": "Michaela Bettez",
-            "title": "Parasym Lead",
+            "title": "Electrical Lead",
             "year": "Senior",
             "major": "Electrical & Computer Engineering",
-            "projects": "Parasym"
+            "projects": "tVNS"
         }
     ],
     "past_projects":
@@ -561,8 +561,9 @@
         {   "title": "Menstrual Health App",
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
-            "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
+            "info_long": "The Integrative Design Subteam completed 3D-printable designs to be used by Kijenzi, a nonprofit that 3-D prints medical devices in under resourced communities.The Assistive Sock Aid and Arm Supinator/Pronator designs were solutions in order to meet the needs of occupational therapy patients in Sub-Saharan Africa. Both designs are 3D-printable and minimize the need for additional material, thus creating cost-effective and efficient solutions. The Assistive Sock Aid device, which helps a patient who cannot bend their spine to place a sock on their foot, went through many iterations of design beginning with a prototype made out of a plastic water bottle. Testing was able to occur on the second iteration design which was 3D printed and the results surfaced the need for the device to be thinner, have a mechanism to hold the sock in a more secure manner and have lips that could be threaded. Ultimately, the most optimal design was composed of a tapered semi-cylindrical tube with a lip at the top that allowed for the threading of twine, a hook on the back of the device to hold the sock and holes for the final tying of twine. The Arm Supinator/Pronator device, which helps nurse and strengthen a patients injured shoulder through repeated motion of pronation and supination, began with an initial design of a wheel with a center handle that could be used to twist the wheel back and forward. Although testing of the second iteration was supposed to occur with a 3D-printed prototype due to COVID-19 that was not possible. As a result, finite element analysis (FEA) on Fusion 360 was used to determine structural weak points in the design. In the end, the most optimal design attempted to fix these weak points and was composed of a wheel that could attach to the wall through a mount, had a handle in the middle with holes for grip strength and had weights that could be added for increased resistance during use. Moving forward, since the printing and testing process was disrupted, the Integrative Design team would like to print out both of the most optimal designs and conduct in depth testing to confirm our theoretical ideas.",
             "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "collaborators": ["weillcornell"],
             "members":[{   "name": "Anna Nguyen",
                 "title": "Software",
                 "year": "",
@@ -587,6 +588,7 @@
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "collaborators": ["weillcornell"],
             "members":[{   "name": "Anna Nguyen",
                 "title": "Software",
                 "year": "",
@@ -606,11 +608,12 @@
                 "projects": "Menstrual Health Game"
             }]
         },
-        {   "title": "Parasym",
+        {   "title": "Electrical",
             "subteams": ["Research", "Design", "Software"],
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "collaborators": ["weillcornell"],
             "members":[{   "name": "Anna Nguyen",
                 "title": "Software",
                 "year": "",
@@ -635,6 +638,7 @@
             "info": "An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "info_long": "An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials. An online tool to streamline the application process for researchers intending on beginning clinical trials.",
             "stats": [[10,"Members"],[2,"Semesters"], [7,"Collaborators"]],
+            "collaborators": ["weillcornell"],
             "members":[{   "name": "Anna Nguyen",
                 "title": "Software",
                 "year": "",
