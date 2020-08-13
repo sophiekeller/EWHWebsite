@@ -1,0 +1,173 @@
+
+.sections-container{
+  margin-left: 4vw;
+  width: 92vw;
+}
+.leads-container {
+   text-align: left;
+   margin-bottom: 6vh;
+}
+.team-title{
+  font-size: 25px;
+  font-weight: bold;
+  color: #253263;
+}
+.lead-blocks-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 10px;
+}
+.lead-blocks-container-m{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.team-container{
+  text-align: left
+}
+.team-filters-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85vw;
+  justify-content: space-between;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+.team-filters-container-m{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 85vw;
+  justify-content: center;
+  margin-top: 15px;;
+  margin-bottom: 1vh;
+}
+.team-blocks-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.team-blocks-container-m{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* person block styles */
+
+.person-block-boldtext{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.person-block-regtext{
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 10px;
+
+}
+.person-fronttext{
+  margin-bottom: 10px;
+}
+.person-block-front{
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  overflow-x: wrap;
+  height: 240px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  line-height: 25px;
+  justify-content: space-between;
+}
+.person-block-front-m{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  overflow-x: wrap;
+  height: 240px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  line-height: 25px;
+  justify-content: space-between;
+}
+.person-block-back{
+  padding: 20px;
+  color: white;
+  width: 175px;
+  height: 240px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #253263;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+.person-block-back-m{
+  padding: 20px;
+  color: white;
+  width: 150px;
+  height: 240px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #253263;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+.person-block-info{
+  height: 150px;
+  overflow-y: scroll;
+}
+.person-block-info-m{
+  height: 150px;
+  overflow-y: scroll;
+}
+.person-photo{
+  display: inline-flex;
+  width: 175px;
+  height: 155px;
+  object-fit: cover;
+  background-color: #DDDDDD;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  object-position: 0 -30px;
+}
+.person-photo-m{
+  display: inline-flex;
+  width: 150px;
+  height: 155px;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #DDDDDD;
+}
+/* filter button styles */
+
+.filter-underline{
+  height: 4px;
+  background-color: red;
+}
+.filter-button{
+  font-weight: bold;
+}
+.filter-button-m{
+    font-weight: bold;
+    margin: 10px;
+}
+.filter-button:hover{
+  cursor: pointer;
+}

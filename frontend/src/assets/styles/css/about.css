@@ -1,0 +1,142 @@
+.home-opener{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  width: 76vw;
+  color: #253263;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.home-opener-m{
+  font-size: 20px;
+}
+.home-sections-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-paragraph{
+  font-size: 18px;
+  width: 76vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
+.home-paragraph-m{
+  margin: 10vw;
+  margin-bottom: 2vw;
+}
+.home-link{
+  width: 76vw;
+  text-align: left;
+  color: #7BC8FF;
+  margin-bottom: 5vw;
+}
+.home-link:hover{
+  cursor: pointer;
+}
+.piechart-image{
+  height: auto;
+  width: 50vw;
+}
+.piechart-image-m{
+  height: auto;
+  width: 95vw;
+}
+.home-image{
+  width: 100vw;
+  height: auto;
+}
+.home-stat{
+  text-align: center;
+  width: 100px;
+  margin: 10px;
+}
+.home-stats-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5vw;
+}
+.home-stats-container-m{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5vw;
+}
+.home-graphs-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  width: 76vw;
+  color: #253263;
+  margin-top: 4vw;
+}
+.home-stat-image{
+  height: 30px;
+  width: auto;
+}
+.home-stat-number{
+  font-size: 40px;
+  color: #FF603E
+}
+.home-stat-title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.home-graph-label{
+  font-size: 12px;
+  color: #253263;
+  font-weight: bold;
+  text-align: center;
+  width: 50vw;
+}
+.graphics-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 76vw;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+}
+.graphics-container-m{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 76vw;
+  margin-bottom: 4vw;
+  margin-top: 2vw;
+}
+/*sub buttons styles */
+.sub-buttons{
+  left:0;
+  right:0;
+  display: flex;
+  flex-direction: row;
+}
+.sub-button{
+  display: relative;
+}
+.sub-pic{
+  object-fit: cover;
+  width: calc((100vw)/3);
+  height: 300px;
+  top: 0%;
+}
+.sub-pic-m{
+  object-fit: cover;
+  width: calc((100vw)/3);
+  height: 150px;
+  top: 0%;
+}
+.sub-title{
+  position: relative;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  left: 50%;
+  margin-left: -40px;
+  width: 10vw;
+  top: 45%;
+  margin-top: -15px;
+}

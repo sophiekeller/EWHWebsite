@@ -1,39 +1,64 @@
 import React from "react";
+//ASSETS
 import images from "../assets/images/images.js"
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import PersonBlock from "./PersonBlock.js"
+//COMPONENTS
+import PersonBlock from "./PersonBlock.js";
+import ProjectModal from '../components/ProjectModal.js'
 
-export default class Project extends React.Component {
-        constructor(props) {
-          super(props);
-          this.handleShow = this.handleShow.bind(this);
-    	  this.handleClose = this.handleClose.bind(this);
-          this.state = {
-            show: false,
-            current : this.props.current,
-            data: this.props.data
+/* Project Component
+* PROPS:
+* mobile = true if the screen rendering the site has width less than 650 px, bool
+* data = project object to render data of
+* currentProject = if this project is a currentProject project
+*/
+export default class Project2 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false,
+            showOverlay: false,
+            currentProject: this.props.currentProject,
+            data: this.props.data,
+            map: {"Research": '#91F5AD', "Design": '#F896D8', "Software": '#A77DFF'}
           };
         }
 
-        handleClose() {
-    		this.setState({ show: false });
+    /* closes modal */
+    handleModalClose = () => {
+    	this.setState({ showModal: false });
     	}
 
-    	handleShow() {
-    		this.setState({ show: true });
+    /* opens modal */
+    handleModalShow = () => {
+    	this.setState({ showModal: true });
     	}
 
-      render() {
-          let data = this.state.data
-          let bar = (<div></div>)
-          let stats = (<div></div>)
-          let container_class = "project-container"
-        if (this.state.current){
-            bar = (<div className = "current-bar project-bar">IN PROGRESS</div>)
-            container_class = container_class + " current-project"
-        }else{
-            container_class = container_class + " past-project"
+    /* closes overlay */
+    handleOverlayClose = () => {
+    	this.setState({ showOverlay: false });
+    	}
+
+    /* opens overlay */
+    handleOverlayShow = () => {
+    	this.setState({ showOverlay: true });
+    	}
+
+    /* renders project component */
+    render() {
+        let data = this.state.data
+        let bar = (<div></div>)
+        let stats = (<div></div>)
+        let containerClass = "project-container"
+        let photoDescription = "photo-description-container"
+        let photo = "project-photo"
+        if (this.props.mobile){
+            photo = "project-photo-m"
+            containerClass = 'project-container-m'
+        }
+        if (this.state.currentProject){
+            containerClass = containerClass + " currentProject-project"
+        }else{ //add stats and read more bar if past project
+            containerClass = containerClass + " past-project"
             stats = (
                 <div className = "project-stats">
                     {data.stats.map((stat, index) => {
@@ -46,63 +71,36 @@ export default class Project extends React.Component {
                 </div>
             )
             bar = (<div>
-                        <div variant="primary" onClick={this.handleShow} className = "past-bar project-bar">Read More</div>
-                        <Modal size="lg" show={this.state.show} onHide={this.handleClose}>
-                            <div closeButton/>
-                            <img className = "project-modal-pic" src = {images.header1}/>
-                            <Modal.Header >
-                                <Modal.Title>
-                                    <div className = "project-modal-title-container">
-                                    <div className = "projects-title">{data.title}</div>
-                                    <div className = "modal-project-teams-container">
-                                        <div className = "project-teams">
-                                            {data.subteams.map((team, index) => {
-                                                if (team!= null){
-                                                    return (
-                                                        <div className = "project-subteam-bubble">{team}</div>)}})}
-                                        </div>
-                                    </div>
-                                    </div>
-                                </Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <div className = "project-text">
-                                        <div className = "project-description">{data.info_long}</div>
-                                    </div>
-                                    <div className = "modal-members">
-                                        <div className = "project-title">Team Members</div>
-                                        <div className = "modal-members-blocks">
-                                        {data.members.map((person, index) => {
-                                            if (person!= null){
-                                                return (<PersonBlock data = {person} /> )}})}
-                                        </div>
-                                    </div>
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <div variant="primary" onClick={this.handleClose} className = "project-modal-close-bar">Close</div>
-                                </Modal.Footer>
-                        </Modal>
+                        <ProjectModal data = {this.state.data}
+                            map = {this.state.map}/>
                     </div>
                     )
         }
         return (
-            <div className = {container_class}>
-                <img className = "project-photo" src = {images.project}/>
+            <div className = {containerClass}>
+                <div onMouseEnter={() => {this.handleOverlayShow()}}
+                    onMouseLeave= {() => {this.handleOverlayClose()}}
+                    className = {photoDescription}>
+                        <img className = {photo} src = {images.project}/>
+                        {this.state.showOverlay && (
+                            <div className = "project-description">
+                                {data.info}
+                            </div>)}
+                </div>
                 <div className = "project-text">
-                <div className = "project-title">{data.title}</div>
-                <div className = "project-teams">
-                    {data.subteams.map((team, index) => {
-                        if (team!= null){
-                            return (
-                                <div className = "project-subteam-bubble">{team}</div>)}})}
+                    <div className = "project-title">{data.title}</div>
+                    <div className = "project-teams">
+                        {data.subteams.map((team, index) => {
+                            if (team!= null){
+                                return (
+                                    <div className = "project-subteam-bubble"
+                                        style ={{background:this.state.map[team]}}>
+                                        {team}
+                                    </div>)}})}
+                    </div>
+                    {bar}
                 </div>
-                <div className = "project-description">{data.info}</div>
-                </div>
-                {stats}
-                {bar}
             </div>
         )
     }
-    }
-    //
-    // old button = <div onClick = {this.handleClose} className = "past-bar project-bar ">Read More</div>
+}

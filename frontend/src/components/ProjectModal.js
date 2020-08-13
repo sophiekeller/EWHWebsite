@@ -33,7 +33,7 @@ export default class ProjectModal extends React.Component {
         let data = this.props.data;
         return (
             <div className = "project-modal-container">
-                <div className = "past-bar2 project-bar2"
+                <div className = "project-bar"
                     variant="primary"
                     onClick={this.handleShow}>
                     Read More
@@ -43,15 +43,15 @@ export default class ProjectModal extends React.Component {
                         <img className = "project-modal-pic" src = {images.header1}/>
                         <Modal.Header closeButton>
                             <Modal.Title>
-                                <div className = "project-modal-title-container2">
-                                    <div className = "projects-title2">{data.title}</div>
-                                    <div className = "modal-project-teams-container2">
-                                        <div className = "project-teams2">
+                                <div className = "project-modal-title-container">
+                                    <div className = "projects-title">{data.title}</div>
+                                    <div className = "modal-project-teams-container">
+                                        <div className = "project-teams">
                                             {data.subteams.map((team, index) => {
                                                 if (team!= null){
                                                     return (
                                                         <div
-                                                            className = "project-subteam-bubble2"
+                                                            className = "project-subteam-bubble"
                                                             style ={{background:this.props.map[team]}}>
                                                             {team}
                                                         </div>)}})}
@@ -61,14 +61,14 @@ export default class ProjectModal extends React.Component {
                             </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <div className = "project-text2">
+                            <div className = "project-text">
                                 <div className = "project-modal-description">
                                     {data.info_long}
                                 </div>
                             </div>
-                            <div className = "modal-members2">
-                                <div className = "project-title2">Team Members</div>
-                                <div className = "modal-members-blocks2">
+                            <div className = "modal-members">
+                                <div className = "project-title">Team Members</div>
+                                <div className = "modal-members-blocks">
                                     {data.members.map((person, index) => {
                                         if (person!= null){
                                             return (
@@ -84,7 +84,7 @@ export default class ProjectModal extends React.Component {
                             })}
                         </Modal.Body>
                         <Modal.Footer>
-                            <div className = "project-modal-close-bar2"
+                            <div className = "project-modal-close-bar"
                                 variant="primary"
                                 onClick={this.handleClose} >
                                 Close

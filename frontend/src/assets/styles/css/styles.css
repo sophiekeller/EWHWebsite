@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "NotoSans";
+  background-color: #253263;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* this is optional and should be different for every project */
+}
+.main-container {
+  min-height: 100vh;
+  background-color: white;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+.home-container{
+  min-height: calc(100vh - 165px);
+}
+.sections-container {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  min-height: 50vh;
+}
+.center{
+  text-align: center
+}

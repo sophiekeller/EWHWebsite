@@ -12,7 +12,14 @@ import Projects from "./screens/Projects.js";
 import Team from "./screens/Team.js";
 import Footer from "./components/Footer.js";
 //STYLES
-import "./assets/styles/styles.css";
+import "./assets/styles/css/styles.css";
+import "./assets/styles/css/about.css";
+import "./assets/styles/css/contact.css";
+import "./assets/styles/css/footer.css";
+import "./assets/styles/css/header.css";
+import "./assets/styles/css/navbar.css";
+import "./assets/styles/css/projects.css";
+import "./assets/styles/css/team.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //CONSTANTS

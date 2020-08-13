@@ -6,7 +6,6 @@ import data from "../assets/data.json"
 //COMPONENTS
 import Header from "../components/Header";
 import Project from "../components/Project";
-import Project2 from "../components/Project2";
 import ProjectModal from "../components/ProjectModal";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
@@ -44,7 +43,7 @@ export default class Projects extends React.Component {
                             {current.map((project, index) => {
                                 if (project!= null){
                                     return (
-                                        <Project2 mobile = {this.props.mobile}
+                                        <Project mobile = {this.props.mobile}
                                             data = {project}
                                             current = {true}/>)}})}
                         </div>
@@ -55,7 +54,7 @@ export default class Projects extends React.Component {
                             {past.map((project, index) => {
                                 if (project!= null){
                                     return (
-                                        <Project2 mobile = {this.props.mobile}
+                                        <Project mobile = {this.props.mobile}
                                             data = {project}
                                             current = {false}/>)}})}
                         </div>
