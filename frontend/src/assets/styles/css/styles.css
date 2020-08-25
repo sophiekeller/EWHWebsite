@@ -26,6 +26,8 @@ body {
   margin-top: 5vh;
   margin-bottom: 10vh;
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
 }
 .center{
   text-align: center

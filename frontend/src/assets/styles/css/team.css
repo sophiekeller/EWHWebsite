@@ -129,11 +129,11 @@
   margin-bottom: 1vw;
 }
 .person-block-info{
-  height: 150px;
+  height: 140px;
   overflow-y: scroll;
 }
 .person-block-info-m{
-  height: 150px;
+  height: 140px;
   overflow-y: scroll;
 }
 .person-photo{
@@ -141,10 +141,18 @@
   width: 175px;
   height: 155px;
   object-fit: cover;
-  background-color: #DDDDDD;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   object-position: 0 -30px;
+}
+.logo-person-photo{
+  display: inline-flex;
+  width: 175px;
+  height: 155px;
+  object-fit: cover;
+  background-color: #253263;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .person-photo-m{
   display: inline-flex;

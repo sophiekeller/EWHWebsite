@@ -18,20 +18,28 @@ export default class PersonBlock extends React.Component {
     render() {
         let person = this.props.data
         let imageTitle = person.name.toLowerCase().replace(/\s/g,'')
+        let picture = profilePics.no_photo
+        let personPhoto = "logo-person-photo"
+        if (profilePics[imageTitle] !== undefined){
+            picture = profilePics[imageTitle]
+            personPhoto = "person-photo"
+        }
         let personBlockFront = "person-block-front"
         let personBlockBack = "person-block-back"
-        let personPhoto =  "person-photo"
         let info = "person-block-info"
         if (this.props.mobile){
             personBlockFront = "person-block-front-m"
-            personPhoto =  "person-photo-m"
+            personPhoto =  personPhoto + "-m"
             personBlockBack = "person-block-back-m"
             info = "person-block-info-m"
         }
+
         if (!this.state.flipped){ //return back if flipped
             return (
-              <div className= {personBlockFront} onClick={() => {this.setState({flipped: !this.state.flipped})}}>
-                <img className = {personPhoto} src = {profilePics[imageTitle]}/>
+              <div className= {personBlockFront}
+                    onMouseEnter={() => {this.setState({flipped: true})}}
+                    onMouseLeave= {() => {this.setState({flipped: false})}}>
+                <img className = {personPhoto} src = {picture}/>
                 <div className = "person-fronttext">
                     <div className = "person-block-boldtext center">{person.name}</div>
                     <div className = "person-block-regtext center">{person.title}</div>
@@ -40,7 +48,9 @@ export default class PersonBlock extends React.Component {
                     );
         }else{ //return front if not flipped
             return (
-                <div className= {personBlockBack} onClick={() => {this.setState({flipped: !this.state.flipped})}}>
+                <div className= {personBlockBack}
+                    onMouseEnter={() => {this.setState({flipped: true})}}
+                    onMouseLeave= {() => {this.setState({flipped: false})}}>
                     <div className = "person-block-boldtext center">{person.name}</div>
                     <div className = "person-block-regtext center">{person.title}</div>
                     <div className = {info}>
