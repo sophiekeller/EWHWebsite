@@ -77,8 +77,10 @@ export default class Contact extends React.Component {
                         value = {this.state.message}
                         onChange = {(e)=> {this.setState({message: e.target.value})}}
                         placeholder = "Leave a Message"/>
-                    <div onClick = {() => (this.sendData())}>Submit</div>
+                    <div className = "contact-submit-container">
+                    <div className = "contact-submit-button" onClick = {() => (this.sendData())}>Submit</div>
                     <div className = "contact-form-error">{this.state.error}</div>
+                    </div>
                 </div>
             </div>
         );
