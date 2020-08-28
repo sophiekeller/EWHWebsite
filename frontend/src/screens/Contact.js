@@ -3,6 +3,10 @@ import images from "../assets/images/images.js"
 
 //COMPONENTS
 import Header from "../components/Header";
+import Modal from 'react-bootstrap/Modal';
+import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
+import samplePDF from './info_packet.pdf';
+
 const gapi = require('gapi-client');
 const fetch = require("node-fetch")
 const emailjs = require('emailjs-com')
@@ -19,7 +23,9 @@ export default class Contact extends React.Component {
         name: "",
         email: "",
         message: "",
-        error: ""
+        error: "",
+        showModal: false,
+        numPages: null
       };
     }
     clear(){
@@ -44,7 +50,9 @@ export default class Contact extends React.Component {
         }
         }
 
-
+    onDocumentLoadSuccess = ({numPages}) =>{
+        this.setState({numPages: numPages})
+     }
     /* renders contact page */
     render() {
         return (
@@ -57,7 +65,19 @@ export default class Contact extends React.Component {
                     <div className = "contact-title">Support Our Mission</div>
                     <div className = "contact-paragraph">{mission_statement}</div>
                     <div className = "contact-buttons-container">
-                        <div className = "contact-button">Sponsorship Packet</div>
+                        <div className = "contact-button" onClick = {() => {this.setState({showModal: true})}}>Sponsorship Packet</div>
+                        <Modal size="lg" show={this.state.showModal} onHide={() => {this.setState({showModal: false})}}>
+                            <div closeButton/>
+                            <div
+                            <Document
+                                file={samplePDF}
+                                onLoadSuccess={this.onDocumentLoadSuccess}
+                              >
+                              {Array.from(new Array(this.state.numPages), (el, index) => (
+                                  <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+                              ))}
+                              </Document>
+                        </Modal>
                         <div className = "contact-button">Make a Donation</div>
                     </div>
                     <div className = "contact-title">Send us a Message</div>
