@@ -25,5 +25,5 @@ export default {
   theodoreklausner: require("./theodoreklausner.jpg"),
   victoriatan: require("./victoriatan.jpg"),
   yuweiye: require("./yuweiye.jpg"),
-  no_photo: require("./no-name.png")
+  noPhoto: require("./no-name.png")
 };

@@ -87,6 +87,13 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.project-modal-description{
+  text-align: left;
+
+  padding: 12px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 .photo-description-container{
     height: 250px;
     overflow-y: hidden;

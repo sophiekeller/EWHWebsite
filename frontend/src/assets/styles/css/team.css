@@ -154,6 +154,15 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+.logo-person-photo-m{
+  display: inline-flex;
+  width: 150px;
+  height: 155px;
+  object-fit: cover;
+  background-color: #253263;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 .person-photo-m{
   display: inline-flex;
   width: 150px;

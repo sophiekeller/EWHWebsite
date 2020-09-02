@@ -1,9 +1,5 @@
 export default {
   electrical: require("./electrical.png"),
-  carousel1: require("./carousel1.jpg"),
-  carousel2: require("./carousel2.jpeg"),
-  carousel3: require("./carousel3.jpeg"),
-  carousel4: require("./carousel4.jpeg"),
   facebook: require("./facebook.png"),
   gradient: require("./gradient.png"),
   group: require("./group.png"),
@@ -21,7 +17,5 @@ export default {
   briefcase: require("./briefcase.png"),
   capitol: require("./capitol.png"),
   people: require("./people.png"),
-  homebottom: require("./homebottom.png"),
-  header1: require("./header1.jpeg"),
-  header2: require("./header2.jpeg")
+  homebottom: require("./homebottom.png")
 };

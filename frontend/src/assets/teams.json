@@ -1,0 +1,310 @@
+{
+    "teams": {
+        "business": [{
+                "name": "Alison Landry",
+                "title": "INDAGO & Business",
+                "year": "Junior",
+                "major": "Operations Research",
+                "projects": "INDAGO, Business, Social Media"
+            },
+            {
+                "name": "Hannah Mahanti",
+                "title": "Business",
+                "year": "Senior",
+                "major": "Information Science",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Manan Modi",
+                "title": "Business",
+                "year": "Senior",
+                "major": "ILR",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Sharon Li",
+                "title": "INDAGO & Business",
+                "year": "Junior",
+                "major": "Information Science",
+                "projects": "INDAGO, Team Site"
+            },
+            {
+                "name": "Sophie Keller",
+                "title": "Business Lead",
+                "year": "Junior",
+                "major": "Computer Science",
+                "projects": "INDAGO, Team Site, Business"
+            },
+            {
+                "name": "Sungjae Ahn",
+                "title": "Business",
+                "year": "Senior",
+                "major": "AEM",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Tori DiStefano",
+                "title": "Business",
+                "year": "Junior",
+                "major": "Biology and Society",
+                "projects": "INDAGO, Business, Finances"
+            }
+        ],
+        "indago": [{
+                "name": "Alison Landry",
+                "title": "INDAGO & Business",
+                "year": "Junior",
+                "major": "Operations Research",
+                "projects": "INDAGO, Business, Social Media"
+            },
+            {
+                "name": "Arun Chaudhuri",
+                "title": "INDAGO",
+                "year": "Junior",
+                "major": "Computer Science",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Catherine Kwak",
+                "title": "INDAGO",
+                "year": "Senior",
+                "major": "Information Science",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Chloe Hasund",
+                "title": "INDAGO",
+                "year": "Sophomore",
+                "major": "Global and Public Health Sciences",
+                "projects": "INDAGO"
+            },
+            {
+                "name": "Elena Li",
+                "title": "INDAGO Lead",
+                "year": "Junior",
+                "major": "",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Erika Hauschild",
+                "title": "INDAGO",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "INDAGO"
+            },
+            {
+                "name": "Evan Cheng",
+                "title": "Integrative Design & INDAGO",
+                "year": "Senior",
+                "major": "Bioenginereing",
+                "projects": "INDAGO"
+            },
+            {
+                "name": "Julia Hans",
+                "title": "INDAGO",
+                "year": "Junior",
+                "major": "Health Care Policy",
+                "projects": "INDAGO"
+            },
+            {
+                "name": "Orko Sinha",
+                "title": "INDAGO",
+                "year": "Junior",
+                "major": "Biometry & Statistics, Information Science",
+                "projects": "INDAGO, Business"
+            },
+            {
+                "name": "Sharon Li",
+                "title": "INDAGO & Business",
+                "year": "Junior",
+                "major": "Information Science",
+                "projects": "INDAGO, Team Site"
+            }
+        ],
+        "software": [{
+                "name": "Anna Nguyen",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Jennifer Lin",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Jessica Feng",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Michael Zhang",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Navin Ramsaroop",
+                "title": "Software Lead",
+                "year": "Senior",
+                "major": "Computer Science",
+                "projects": "Rex, Menstrual Health Game"
+            },
+            {
+                "name": "Priya Malla",
+                "title": "Software",
+                "year": "Senior",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Shaf Ibrahim",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Sheri Guo",
+                "title": "Software",
+                "year": "Junior",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Teddy Klausner",
+                "title": "Software",
+                "year": "Sophomore",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            },
+            {
+                "name": "Vivi Ye",
+                "title": "Software",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "Menstrual Health Game"
+            }
+        ],
+        "integrative_design": [{
+                "name": "Alan Li",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Biology",
+                "projects": ""
+            },
+            {
+                "name": "Ana Elhom",
+                "title": "Integrative Design Lead",
+                "year": "Senior",
+                "major": "Biomedical Engineering",
+                "projects": "Waste Incinerator"
+            },
+            {
+                "name": "Connie Hou",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Computer Science",
+                "projects": ""
+            },
+            {
+                "name": "Daniel Vitenson",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Bioengineering",
+                "projects": ""
+            },
+            {
+                "name": "Evan Cheng",
+                "title": "Integrative Design & INDAGO",
+                "year": "Senior",
+                "major": "Bioenginereing",
+                "projects": "INDAGO"
+            },
+            {
+                "name": "Jake Beckman",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Mechanical Engineering",
+                "projects": ""
+            },
+            {
+                "name": "Julia Halligan",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Mechanical Engineering",
+                "projects": ""
+            },
+            {
+                "name": "Lane Fitzsimmons",
+                "title": "Integrative Design",
+                "year": "Junior",
+                "major": "Information Science & Biological Sciences",
+                "projects": ""
+            },
+            {
+                "name": "Michael Zhang",
+                "title": "Integrative Design",
+                "year": "",
+                "major": "Bioengineering",
+                "projects": ""
+            },
+            {
+                "name": "Sham Hamidian",
+                "title": "Integrative Design",
+                "year": "Senior",
+                "major": "Biomedical Engineering",
+                "projects": "Waste Incinerator"
+            }
+        ],
+        "electrical": [{
+                "name": "Audrey Teasley",
+                "title": "Electrical",
+                "year": "",
+                "major": "Physics",
+                "projects": "tVNS"
+            },
+            {
+                "name": "Hannah Daniel",
+                "title": "Electrical",
+                "year": "",
+                "major": "Computer Science",
+                "projects": "tVNS"
+            },
+            {
+                "name": "Michaela Bettez",
+                "title": "Electrical Lead",
+                "year": "Senior",
+                "major": "Electrical & Computer Engineering",
+                "projects": "tVNS"
+            },
+            {
+                "name": "Rebecca Hasser",
+                "title": "Electrical",
+                "year": "Junior",
+                "major": "Computer Science",
+                "projects": "tVNS"
+            },
+            {
+                "name": "Kerry Johnson",
+                "title": "Electrical",
+                "year": "Junior",
+                "major": "Electrical & Computer Engineering",
+                "projects": "tVNS"
+            },
+            {
+                "name": "Samantha Pitts",
+                "title": "Electrical",
+                "year": "",
+                "major": "Biomedical Engineering",
+                "projects": "tVNS"
+            }
+        ]
+    }
+}
