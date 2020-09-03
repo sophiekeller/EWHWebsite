@@ -1,5 +1,6 @@
 import React from "react";
-import images from "../assets/images/images.js";
+import images from "../assets/images/socialLogos/socialLogos.js";
+import links from "../assets/pageData/footerLinks.js";
 
 /* Footer Component
  * PROPS:
@@ -43,21 +44,19 @@ export default class Footer extends React.Component {
           </div>
         </div>
         <div className={right}>
-          <a href={fblink} target="_blank">
-            <img className={social} src={images.facebook} alt="" />
-          </a>
-          <a href={instalink} target="_blank">
-            <img className={social} src={images.insta} alt="" />
-          </a>
-          <a href={linkedlink} target="_blank">
-            <img className={social} src={images.linkedin} alt="" />
-          </a>
+          {Object.keys(links).map((site) => {
+            return (
+              <a href={links[site]} target="_blank">
+                <img
+                  className={social}
+                  src={images[site]}
+                  alt="social media logo"
+                />
+              </a>
+            );
+          })}
         </div>
       </div>
     );
   }
 }
-
-const fblink = "https://www.facebook.com/Cornellewh/";
-const instalink = "https://www.instagram.com/cornell_ewh/";
-const linkedlink = "https://www.linkedin.com/company/42146031/";

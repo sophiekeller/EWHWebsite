@@ -1,7 +1,6 @@
 import React from "react";
 
-import images from "../assets/images/images.js";
-import headerPhotos from "../assets/images/headerPhotos/header.js";
+import headerPhotos from "../assets/images/headerImages/headerImages.js";
 import projects from "../assets/projects.json";
 
 //COMPONENTS

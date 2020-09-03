@@ -1,7 +1,7 @@
 import React from "react";
 //ASSETS
 import { screenId } from "../constants.js";
-import images from "../assets/images/images.js";
+import images from "../assets/images/headerImages/headerImages.js";
 
 /* Header Component
  * PROPS:

@@ -1,6 +1,6 @@
 import React from "react";
 //ASSETS
-import images from "../assets/images/images.js";
+import images from "../assets/images/projectImages/projectImages.js";
 //COMPONENTS
 import PersonBlock from "./PersonBlock.js";
 import ProjectModal from "../components/ProjectModal.js";
@@ -52,7 +52,6 @@ export default class Project2 extends React.Component {
   render() {
     let data = this.state.data;
     let bar = <div></div>;
-    let stats = <div></div>;
     let containerClass = "project-container";
     let photoDescription = "photo-description-container";
     let photo = "project-photo";
@@ -65,18 +64,6 @@ export default class Project2 extends React.Component {
     } else {
       //add stats and read more bar if past project
       containerClass = containerClass + " past-project";
-      stats = (
-        <div className="project-stats">
-          {/**data.stats.map((stat, index) => {
-                        if (stat!= null){
-                            return (
-                                <div className = "project-stat">
-                                    <div className = "project-stat-number">{stat[0]}</div>
-                                    <div className = "project-stat-category">{stat[1]}</div>
-                                </div>)**/}
-          })}
-        </div>
-      );
       bar = (
         <div>
           <ProjectModal data={this.state.data} map={this.state.map} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { screenId } from "../constants.js";
-import images from "../assets/images/images.js";
+import images from "../assets/images/navbarImages/navbarImages.js";
 //COMPONENTS
 import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton.js";
@@ -13,6 +13,28 @@ import NavButton from "../components/NavButton.js";
 export default class NavBar extends React.Component {
   /* renders navbar component */
   render() {
+    let pageData = [
+      {
+        title: "About Us",
+        image: "about",
+      },
+      {
+        title: "Our Team",
+        image: "team",
+      },
+      {
+        title: "Projects",
+        image: "projects",
+      },
+      {
+        title: "Contact Us",
+        image: "contact",
+      },
+      {
+        title: "Recruitment",
+        image: "recruitment",
+      },
+    ];
     return (
       <div className="navbar-container sticky">
         <Link to="/">
@@ -24,46 +46,20 @@ export default class NavBar extends React.Component {
           />
         </Link>
         <div className="nav-buttons">
-          <Link to="/">
-            <NavButton
-              mobile={false}
-              pagename={"About Us"}
-              switchPage={() => {
-                this.props.switchPage(screenId.about);
-              }}
-              selected={screenId.about === this.props.selectedId}
-            />
-          </Link>
-          <Link to="/team">
-            <NavButton
-              mobile={false}
-              pagename={"Our Team"}
-              switchPage={() => {
-                this.props.switchPage(screenId.team);
-              }}
-              selected={screenId.team === this.props.selectedId}
-            />
-          </Link>
-          <Link to="/projects">
-            <NavButton
-              mobile={false}
-              pagename={"Projects"}
-              switchPage={() => {
-                this.props.switchPage(screenId.projects);
-              }}
-              selected={screenId.projects === this.props.selectedId}
-            />
-          </Link>
-          <Link to="/contact">
-            <NavButton
-              mobile={false}
-              pagename={"Contact Us"}
-              switchPage={() => {
-                this.props.switchPage(screenId.contact);
-              }}
-              selected={screenId.contact === this.props.selectedId}
-            />
-          </Link>
+          {pageData.map((data) => {
+            return (
+              <Link to={"/" + data.image}>
+                <NavButton
+                  mobile={false}
+                  pagename={data.title}
+                  switchPage={() => {
+                    this.props.switchPage(screenId[data.image]);
+                  }}
+                  selected={screenId[data.image] === this.props.selectedId}
+                />
+              </Link>
+            );
+          })}
         </div>
       </div>
     );

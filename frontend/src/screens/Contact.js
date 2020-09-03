@@ -1,7 +1,6 @@
 import React from "react";
-import images from "../assets/images/images.js";
-import headerPhotos from "../assets/images/headerPhotos/header.js";
-
+import headerPhotos from "../assets/images/headerImages/headerImages.js";
+import pageData from "../assets/pageData/contact.js";
 //COMPONENTS
 import Header from "../components/Header";
 import Modal from "react-bootstrap/Modal";
@@ -81,7 +80,7 @@ export default class Contact extends React.Component {
         />
         <div className="contacts-container">
           <div className="contact-title">Support Our Mission</div>
-          <div className="contact-paragraph">{mission_statement}</div>
+          <div className="contact-paragraph">{pageData.paragraph}</div>
           <div className="contact-buttons-container">
             <div
               className="contact-button"
@@ -158,5 +157,3 @@ export default class Contact extends React.Component {
     );
   }
 }
-let mission_statement =
-  "Our team depends on the generous support of our sponsors. Learn about what we do and how you can help.";

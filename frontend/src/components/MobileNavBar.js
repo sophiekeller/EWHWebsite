@@ -1,7 +1,7 @@
 import React from "react";
 //ASSETS
 import { screenId } from "../constants.js";
-import images from "../assets/images/images.js";
+import images from "../assets/images/navbarImages/navbarImages.js";
 //COMPONENTS
 import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton.js";
@@ -36,6 +36,10 @@ export default class MobileNavBar extends React.Component {
       {
         title: "Contact Us",
         image: "contact",
+      },
+      {
+        title: "Recruitment",
+        image: "recruitment",
       },
     ];
     return (

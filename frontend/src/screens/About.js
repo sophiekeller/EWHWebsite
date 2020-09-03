@@ -3,8 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 //COMPONENTS
 import SubButtons from "../components/SubButtons";
-import images from "../assets/images/images.js";
-import aboutText from "../assets/pagesText/about.js";
+import images from "../assets/images/aboutImages/aboutImages.js";
+import aboutText from "../assets/pageData/about.js";
 import carousel from "../assets/images/carousel/carousel.js";
 //CONSTANTS
 import { screenId } from "../constants.js";

@@ -1,9 +1,8 @@
 import React from "react";
-import images from "../assets/images/images.js";
 //COMPONENTS
 import Modal from "react-bootstrap/Modal";
 import PersonBlock from "./PersonBlock.js";
-import headerPhotos from "../assets/images/headerPhotos/header.js";
+import headerPhotos from "../assets/images/headerImages/headerImages.js";
 import collaborators from "../assets/images/institutions/institutions.js";
 
 /* Project Modal Component for Project Component

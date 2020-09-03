@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar.js";
 import MobileNavBar from "./components/MobileNavBar.js";
 //SCREENS
 import About from "./screens/About.js";
+import Recruitment from "./screens/Recruitment.js";
 import Contact from "./screens/Contact.js";
 import Projects from "./screens/Projects.js";
 import Team from "./screens/Team.js";
@@ -20,6 +21,7 @@ import "./assets/styles/css/header.css";
 import "./assets/styles/css/navbar.css";
 import "./assets/styles/css/projects.css";
 import "./assets/styles/css/team.css";
+import "./assets/styles/css/recruitment.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //CONSTANTS
@@ -85,6 +87,9 @@ export default class App extends React.Component {
             </Route>
             <Route exact path="/contact">
               <Contact mobile={mobile} />
+            </Route>
+            <Route exact path="/recruitment">
+              <Recruitment mobile={mobile} />
             </Route>
             <Route exact path="/team">
               <Team mobile={mobile} />

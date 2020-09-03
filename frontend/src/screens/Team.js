@@ -1,5 +1,5 @@
 import React from "react";
-import images from "../assets/images/images.js";
+import images from "../assets/images/aboutImages/aboutImages.js";
 import members from "../assets/members.json";
 
 //COMPONENTS

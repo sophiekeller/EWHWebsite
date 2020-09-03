@@ -1,4 +1,4 @@
-import images from "../images/images.js";
+import images from "../images/aboutImages/aboutImages.js";
 export default {
   mission:
     "Together, we strive to create meaningful impact through innovative technology solutions that target the world’s most pressing health issues.",

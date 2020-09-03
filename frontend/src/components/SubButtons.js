@@ -1,6 +1,6 @@
 import React from "react";
 
-import images from "../assets/images/images.js";
+import images from "../assets/images/aboutImages/aboutImages.js";
 
 /* Image Buttons in About Page Component
  * PROPS:
@@ -13,17 +13,16 @@ export default class SubteamButtons extends React.Component {
     if (this.props.mobile) {
       subPic = "sub-pic-m";
     }
+    let pics = [images.electrical, images.intdesign, images.software];
     return (
       <div className="sub-buttons">
-        <div className="sub-button">
-          <img className={subPic} src={images.electrical} alt={""} />
-        </div>
-        <div className="sub-button">
-          <img className={subPic} src={images.intdesign} alt={""} />
-        </div>
-        <div className="sub-button">
-          <img className={subPic} src={images.software} alt={""} />
-        </div>
+        {pics.map((pic) => {
+          return (
+            <div className="sub-button">
+              <img className={subPic} src={pic} alt={""} />
+            </div>
+          );
+        })}
       </div>
     );
   }
