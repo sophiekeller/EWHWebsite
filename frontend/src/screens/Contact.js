@@ -98,7 +98,6 @@ export default class Contact extends React.Component {
                 this.setState({ showModal: false });
               }}
             >
-              <div onClick={() => this.closeModal()}> x </div>
               <div className="document-container">
                 <Document
                   file={samplePDF}

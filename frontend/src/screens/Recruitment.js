@@ -1,6 +1,7 @@
 import React from "react";
 import images from "../assets/images/recruitmentImages/recruitmentImages.js";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
+import text from "../assets/pageData/recruitment.js";
 import { Link } from "react-router-dom";
 
 //COMPONENTS
@@ -29,10 +30,7 @@ export default class Recruitment extends React.Component {
         />
         <div className="recruitment-container">
           <div className="contact-title">Fall 2020 Recruitment</div>
-          <div className="recruitment-paragraph">
-            We are excited to be recruiting sophomores, juniors, and seniors
-            this fall.
-          </div>
+          <div className="recruitment-paragraph">{text.message}</div>
           <div className="recruitment-buttons-container">
             <Link to="/contact">
               <div className="contact-button">Questions?</div>
@@ -54,5 +52,3 @@ export default class Recruitment extends React.Component {
     );
   }
 }
-let mission_statement =
-  "Our team depends on the generous support of our sponsors. Learn about what we do and how you can help.";
