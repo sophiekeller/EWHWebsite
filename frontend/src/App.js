@@ -52,27 +52,12 @@ export default class App extends React.Component {
   handleWindowSizeChange = () => {
     this.setState({ width: window.innerWidth });
   };
-
-  /*
-    Given a screen id, swap to that page
-    */
-  switchPage = (screenId) => {
-    this.setState({ screenId: screenId });
-  };
-
   /* render the navbar and the current page being looked at with router */
   render() {
     const mobile = this.state.width <= 650;
-    let navbar = (
-      <NavBar switchPage={this.switchPage} selectedId={this.state.screenId} />
-    );
+    let navbar = <NavBar />;
     if (mobile) {
-      navbar = (
-        <MobileNavBar
-          switchPage={this.switchPage}
-          selectedId={this.state.screenId}
-        />
-      );
+      navbar = <MobileNavBar />;
     }
     return (
       <div class="main-container">

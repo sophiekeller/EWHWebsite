@@ -59,21 +59,19 @@ export default class About extends React.Component {
           <div className={homeOpener}>{aboutText.mission}</div>
           <SubButtons mobile={this.props.mobile} />
           <div className={homeParagraph}>{aboutText.biography}</div>
-          <Link to="/team">
-            <div
-              className="home-link"
-              onClick={() => {
-                this.props.switchPage(screenId.team);
-              }}
-            >
-              Learn more about our team>
-            </div>
-          </Link>
+          <div className="about-nav-buttons">
+            <Link to="/team">
+              <div className="home-link">Learn more about our team></div>
+            </Link>
+            <Link to="/recruitment">
+              <div className="home-button">Apply</div>
+            </Link>
+          </div>
           <img className="home-image" src={images.group} />
           <div className="home-graphs-title">EWH in Numbers</div>
           <div className={graphics}>
             <div className="home-graph-container">
-              <div className="home-graph-label">Major Description</div>
+              <div className="home-graph-label">Our Majors</div>
               <img className={pieChart} src={images.graph} />
             </div>
             <div className={statisticsClass}>

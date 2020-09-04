@@ -27,13 +27,13 @@ export default class Recruitment extends React.Component {
           state={this.state}
           title="Join Us"
         />
-        <div className="contacts-container">
+        <div className="recruitment-container">
           <div className="contact-title">Fall 2020 Recruitment</div>
           <div className="recruitment-paragraph">
             We are excited to be recruiting sophomores, juniors, and seniors
             this fall.
           </div>
-          <div className="contact-buttons-container">
+          <div className="recruitment-buttons-container">
             <Link to="/contact">
               <div className="contact-button">Questions?</div>
             </Link>
@@ -43,12 +43,12 @@ export default class Recruitment extends React.Component {
             >
               Application
             </a>
-            <img
-              className="timeline-photo"
-              alt="timeline"
-              src={images.timeline}
-            />
           </div>
+          <img
+            className="timeline-photo"
+            alt="timeline"
+            src={images.timeline}
+          />
         </div>
       </div>
     );

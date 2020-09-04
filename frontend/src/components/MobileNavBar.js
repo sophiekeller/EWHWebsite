@@ -2,6 +2,7 @@ import React from "react";
 //ASSETS
 import { screenId } from "../constants.js";
 import images from "../assets/images/navbarImages/navbarImages.js";
+import pageData from "../assets/pageData/navbar.js";
 //COMPONENTS
 import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton.js";
@@ -16,32 +17,21 @@ export default class MobileNavBar extends React.Component {
     super(props);
     this.state = {
       open: false, //if menu is open
+      pages: pageData.pages,
     };
   }
   /* renders mobile nav bar */
   render() {
-    let pageData = [
-      {
-        title: "About Us",
-        image: "about",
-      },
-      {
-        title: "Our Team",
-        image: "team",
-      },
-      {
-        title: "Projects",
-        image: "projects",
-      },
-      {
-        title: "Contact Us",
-        image: "contact",
-      },
-      {
-        title: "Recruitment",
-        image: "recruitment",
-      },
-    ];
+    let link = window.location.href;
+    let selected = null;
+    this.state.pages.forEach((page) => {
+      if (link.includes(page.url)) {
+        selected = page.url;
+      }
+    });
+    if (!selected) {
+      selected = "about";
+    }
     return (
       <div className="mobnav-container">
         <div className="mobnav-top-row">
@@ -50,7 +40,7 @@ export default class MobileNavBar extends React.Component {
               className="mobnav-logo"
               src={images.logo}
               onClick={() => {
-                this.props.switchPage(screenId.about);
+                this.forceUpdate();
               }}
               alt=""
             />
@@ -69,16 +59,16 @@ export default class MobileNavBar extends React.Component {
         {this.state.open && ( //renders buttons only if open
           <div className="mobnav-buttons-container">
             <div className="collapse-container">
-              {pageData.map((data) => {
+              {this.state.pages.map((data) => {
                 return (
-                  <Link to={"/" + data.image}>
+                  <Link to={"/" + data.url}>
                     <NavButton
                       mobile={true}
                       pagename={data.title}
                       switchPage={() => {
-                        this.props.switchPage(screenId[data.image]);
+                        this.forceUpdate();
                       }}
-                      selected={screenId[data.image] === this.props.selectedId}
+                      selected={selected == data.url}
                     />
                   </Link>
                 );

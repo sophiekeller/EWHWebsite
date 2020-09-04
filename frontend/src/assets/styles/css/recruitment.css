@@ -5,3 +5,16 @@
 .recruitment-paragraph {
   padding: 10px;
 }
+.recruitment-buttons-container {
+  flex-direction: start;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.recruitment-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}

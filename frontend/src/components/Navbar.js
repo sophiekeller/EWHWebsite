@@ -1,6 +1,7 @@
 import React from "react";
 import { screenId } from "../constants.js";
 import images from "../assets/images/navbarImages/navbarImages.js";
+import pageData from "../assets/pageData/navbar.js";
 //COMPONENTS
 import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton.js";
@@ -12,50 +13,45 @@ import NavButton from "../components/NavButton.js";
  */
 export default class NavBar extends React.Component {
   /* renders navbar component */
+  constructor(props) {
+    super(props);
+    this.state = {
+      pages: pageData.pages,
+    };
+  }
   render() {
-    let pageData = [
-      {
-        title: "About Us",
-        image: "about",
-      },
-      {
-        title: "Our Team",
-        image: "team",
-      },
-      {
-        title: "Projects",
-        image: "projects",
-      },
-      {
-        title: "Contact Us",
-        image: "contact",
-      },
-      {
-        title: "Recruitment",
-        image: "recruitment",
-      },
-    ];
+    let link = window.location.href;
+    let selected = null;
+    this.state.pages.forEach((page) => {
+      if (link.includes(page.url)) {
+        selected = page.url;
+      }
+    });
+    if (!selected) {
+      selected = "about";
+    }
+    console.log("selected", selected);
     return (
       <div className="navbar-container sticky">
-        <Link to="/">
+        <Link to="/about">
           <img
             className="logo"
-            onClick={() => this.props.switchPage(screenId.about)}
+            onClick={() => this.forceUpdate()}
             src={images.logo}
             alt=""
           />
         </Link>
         <div className="nav-buttons">
-          {pageData.map((data) => {
+          {this.state.pages.map((pageData) => {
             return (
-              <Link to={"/" + data.image}>
+              <Link to={"/" + pageData.url}>
                 <NavButton
                   mobile={false}
-                  pagename={data.title}
+                  pagename={pageData.title}
                   switchPage={() => {
-                    this.props.switchPage(screenId[data.image]);
+                    this.forceUpdate();
                   }}
-                  selected={screenId[data.image] === this.props.selectedId}
+                  selected={selected == pageData.url}
                 />
               </Link>
             );
