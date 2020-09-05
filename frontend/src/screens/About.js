@@ -48,7 +48,7 @@ export default class About extends React.Component {
 
     return (
       <div className="home-container">
-        <NavBar />
+        {navbar}
         <div className="carousel-container">
           <Carousel className={carouselClass}>
             {this.state.carouselImages.map((image) => {
