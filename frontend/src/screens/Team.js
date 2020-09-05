@@ -1,9 +1,12 @@
 import React from "react";
 import images from "../assets/images/aboutImages/aboutImages.js";
 import members from "../assets/members.json";
+import teams from "../assets/teams.json";
 
 //COMPONENTS
 import Header from "../components/Header";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 import PersonBlock from "../components/PersonBlock";
 import FilterButton from "../components/FilterButton";
 
@@ -37,15 +40,15 @@ export default class Team extends React.Component {
       case "All":
         return members.members;
       case "Business":
-        return members.teams.business;
+        return teams.teams.business;
       case "Software":
-        return members.teams.software;
+        return teams.teams.software;
       case "Integrative Design":
-        return members.teams.integrative_design;
+        return teams.teams.integrative_design;
       case "Electrical":
-        return members.teams.electrical;
+        return teams.teams.electrical;
       case "INDAGO":
-        return members.teams.indago;
+        return teams.teams.indago;
       default:
         return members.members;
     }
@@ -60,13 +63,16 @@ export default class Team extends React.Component {
     let leads = "lead-blocks-container";
     let filters = "team-filters-container";
     let team = "team-blocks-container";
+    let navbar = <NavBar />;
     if (this.props.mobile) {
       leads = "lead-blocks-container-m";
       filters = "team-filters-container-m";
       team = "team-blocks-container-m";
+      navbar = <MobileNavBar />;
     }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={images.group}

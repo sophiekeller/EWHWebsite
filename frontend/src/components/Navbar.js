@@ -2,6 +2,7 @@ import React from "react";
 import { screenId } from "../constants.js";
 import images from "../assets/images/navbarImages/navbarImages.js";
 import pageData from "../assets/pageData/navbar.js";
+
 //COMPONENTS
 import { Link } from "react-router-dom";
 import NavButton from "../components/NavButton.js";
@@ -17,20 +18,39 @@ export default class NavBar extends React.Component {
     super(props);
     this.state = {
       pages: pageData.pages,
+      selected: this.getSelected(),
     };
   }
-  render() {
+  componentDidMount() {
+    let selected = this.getSelected();
+    this.setState({ selected: selected });
+  }
+
+  getSelected() {
     let link = window.location.href;
-    let selected = null;
-    this.state.pages.forEach((page) => {
+    let current = null;
+    pageData.pages.forEach((page) => {
       if (link.includes(page.url)) {
-        selected = page.url;
+        current = page.url;
       }
     });
-    if (!selected) {
-      selected = "about";
+    if (!current) {
+      current = "about";
     }
-    console.log("selected", selected);
+    return current;
+  }
+
+  render() {
+    // let link = window.location.href;
+    // let selected = null;
+    // this.state.pages.forEach((page) => {
+    //   if (link.includes(page.url)) {
+    //     selected = page.url;
+    //   }
+    // });
+    // if (!selected) {
+    //   selected = "about";
+    // }
     return (
       <div className="navbar-container sticky">
         <Link to="/about">
@@ -42,16 +62,16 @@ export default class NavBar extends React.Component {
           />
         </Link>
         <div className="nav-buttons">
-          {this.state.pages.map((pageData) => {
+          {this.state.pages.map((page) => {
             return (
-              <Link to={"/" + pageData.url}>
+              <Link to={"/" + page.url}>
                 <NavButton
                   mobile={false}
-                  pagename={pageData.title}
+                  pagename={page.title}
                   switchPage={() => {
                     this.forceUpdate();
                   }}
-                  selected={selected == pageData.url}
+                  selected={this.state.selected == page.url}
                 />
               </Link>
             );

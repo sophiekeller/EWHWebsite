@@ -4,6 +4,8 @@ import pageData from "../assets/pageData/contact.js";
 //COMPONENTS
 import Header from "../components/Header";
 import Modal from "react-bootstrap/Modal";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 import { Document, Page } from "react-pdf/dist/umd/entry.webpack";
 import samplePDF from "./info_packet.pdf";
 
@@ -70,8 +72,13 @@ export default class Contact extends React.Component {
   }
   /* renders contact page */
   render() {
+    let navbar = <NavBar />;
+    if (this.props.mobile) {
+      let navbar = <MobileNavBar />;
+    }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={headerPhotos.secondHeader}
@@ -82,14 +89,6 @@ export default class Contact extends React.Component {
           <div className="contact-title">Support Our Mission</div>
           <div className="contact-paragraph">{pageData.paragraph}</div>
           <div className="contact-buttons-container">
-            <div
-              className="contact-button"
-              onClick={() => {
-                this.setState({ showModal: true });
-              }}
-            >
-              Sponsorship Packet
-            </div>
             <Modal
               classname="contact-modal"
               size="lg"

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //Design
 //https://www.figma.com/file/iHNf8ii0cEDhOkLSrFXU2e/EHW-Website?node-id=0%3A1
 //COMPONENTS
-import NavBar from "./components/NavBar.js";
+import NavBar from "./components/Navbar.js";
 import MobileNavBar from "./components/MobileNavBar.js";
 //SCREENS
 import About from "./screens/About.js";
@@ -55,14 +55,13 @@ export default class App extends React.Component {
   /* render the navbar and the current page being looked at with router */
   render() {
     const mobile = this.state.width <= 650;
-    let navbar = <NavBar />;
-    if (mobile) {
-      navbar = <MobileNavBar />;
-    }
+    // let navbar = <NavBar />;
+    // if (mobile) {
+    //   navbar = <MobileNavBar />;
+    // }
     return (
       <div class="main-container">
         <Router>
-          {navbar}
           <Switch>
             <Route exact path="/">
               <About mobile={mobile} />

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 //COMPONENTS
 import Header from "../components/Header";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 
 // const {google} = require('googleapis');
 
@@ -20,8 +22,13 @@ export default class Recruitment extends React.Component {
 
   /* renders contact page */
   render() {
+    let navbar = <NavBar />;
+    if (this.props.mobile) {
+      navbar = <MobileNavBar />;
+    }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={headerPhotos.secondHeader}
@@ -35,12 +42,7 @@ export default class Recruitment extends React.Component {
             <Link to="/contact">
               <div className="contact-button">Questions?</div>
             </Link>
-            <a
-              href="https://hello.com/en/index.html"
-              className="contact-button"
-            >
-              Application
-            </a>
+            <a className="contact-button">Application coming soon</a>
           </div>
           <img
             className="timeline-photo"

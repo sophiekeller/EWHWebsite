@@ -1,14 +1,15 @@
 .home-opener {
   font-size: 30px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   width: 76vw;
   color: #253263;
   margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
 }
 .home-opener-m {
   font-size: 20px;
+  text-align: center;
 }
 .home-sections-container {
   display: flex;
@@ -142,6 +143,15 @@
   flex-direction: row;
   justify-content: space-between;
   width: 30vw;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.about-nav-buttons-m {
+  display: flex;
+  flex-direction: row;
+  font-size: 10;
+  justify-content: space-between;
+  width: 80vw;
   margin-bottom: 20px;
   align-items: center;
 }

@@ -9,6 +9,8 @@ import Project from "../components/Project";
 import ProjectModal from "../components/ProjectModal";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 
 /* Projects Page Component
  * PROPS:
@@ -28,11 +30,14 @@ export default class Projects extends React.Component {
     let current = this.state.current_projects;
     let past = this.state.past_projects;
     let cont = "projects-blocks-container";
+    let navbar = <NavBar />;
     if (this.props.mobile) {
+      navbar = <MobileNavBar />;
       cont = "projects-blocks-container-m";
     }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={headerPhotos.projectHeader}

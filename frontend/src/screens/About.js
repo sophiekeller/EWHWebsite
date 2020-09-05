@@ -1,6 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 //COMPONENTS
 import SubButtons from "../components/SubButtons";
 import images from "../assets/images/aboutImages/aboutImages.js";
@@ -29,44 +31,60 @@ export default class About extends React.Component {
     let graphics = "graphics-container";
     let statisticsClass = "home-stats-container";
     let pieChart = "piechart-image";
+    let aboutNavButtons = "about-nav-buttons";
+    let navbar = <NavBar />;
     if (this.props.mobile) {
-      carouselClass = "carousel-class-m";
+      carouselClass += "-m";
       homeOpener += " home-opener-m";
-      homeParagraph = "home-paragraph-m";
-      nameLogo = "name-logo-m";
-      headerPhoto = "header-photo-m";
-      graphics = "graphics-container-m";
-      statisticsClass = "home-stats-container-m";
-      pieChart = "piechart-image-m";
+      homeParagraph += "-m";
+      nameLogo += "-m";
+      headerPhoto += "-m";
+      graphics += "-m";
+      statisticsClass += "-m";
+      pieChart += "-m";
+      aboutNavButtons += "-m";
+      navbar = <MobileNavBar />;
     }
 
     return (
       <div className="home-container">
-        <Carousel className={carouselClass}>
-          {this.state.carouselImages.map((image) => {
-            return (
-              <Carousel.Item className="carousel">
-                <CarouselItem
-                  headerPhoto={headerPhoto}
-                  mainPhoto={carousel[image]}
-                  nameLogo={nameLogo}
-                />
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
+        <NavBar />
+        <div className="carousel-container">
+          <Carousel className={carouselClass}>
+            {this.state.carouselImages.map((image) => {
+              return (
+                <Carousel.Item className="carousel">
+                  <CarouselItem
+                    headerPhoto={headerPhoto}
+                    mainPhoto={carousel[image]}
+                    nameLogo={nameLogo}
+                  />
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+          <img className={nameLogo} alt="background" src={images.namelogo} />
+        </div>
         <div className="home-sections-container">
           <div className={homeOpener}>{aboutText.mission}</div>
-          <SubButtons mobile={this.props.mobile} />
-          <div className={homeParagraph}>{aboutText.biography}</div>
-          <div className="about-nav-buttons">
+          <div className={aboutNavButtons}>
             <Link to="/team">
-              <div className="home-link">Learn more about our team></div>
+              <div
+                onClick={() => {
+                  this.forceUpdate();
+                }}
+                className="home-button"
+              >
+                Learn more about our team>
+              </div>
             </Link>
             <Link to="/recruitment">
               <div className="home-button">Apply</div>
             </Link>
           </div>
+          <SubButtons mobile={this.props.mobile} />
+          <div className={homeParagraph}>{aboutText.biography}</div>
+
           <img className="home-image" src={images.group} />
           <div className="home-graphs-title">EWH in Numbers</div>
           <div className={graphics}>
@@ -103,11 +121,6 @@ class CarouselItem extends React.Component {
           src={this.props.mainPhoto}
         />
         <div className="header-gradient" />
-        <img
-          className={this.props.nameLogo}
-          alt="background"
-          src={images.namelogo}
-        />
       </div>
     );
   }

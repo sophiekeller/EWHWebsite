@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
 }
 .header-photo-m {
@@ -13,28 +13,28 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 
-.name-logo{
+.name-logo {
   position: absolute;
-  top: 50%;
-  left: calc((100vw - 497px)/2);
+  top: 40%;
+  left: calc((100vw - 497px) / 2);
 }
-.name-logo-m{
+.name-logo-m {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 300px;
-  left: calc((100vw - 300px)/2);
+  left: calc((100vw - 300px) / 2);
 }
-.carousel-class{
-  height: 300px;
+.carousel-class {
+  height: 400px;
 }
-.carousel-class-m{
-    height: 200px;
+.carousel-class-m {
+  height: 250px;
 }
-.header-text{
+.header-text {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -45,14 +45,21 @@
   margin-left: -200px;
   text-align: center;
 }
-.header-gradient{
+.header-gradient {
   position: absolute;
-  background-image: linear-gradient(1.65deg, #253263 1.13%, rgba(196, 196, 196, 0) 96.36%);
+  background-image: linear-gradient(
+    1.65deg,
+    #253263 1.13%,
+    rgba(196, 196, 196, 0) 96.36%
+  );
   top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
 }
 .header-container {
-   position: relative;
+  position: relative;
+}
+.carousel-container {
+  display: flex;
 }
