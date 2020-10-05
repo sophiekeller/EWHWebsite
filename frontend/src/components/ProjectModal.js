@@ -14,7 +14,7 @@ export default class ProjectModal extends React.Component {
     super(props, context);
     this.state = {
       showModal: false,
-      data: this.props.data,
+      data: this.props.data
     };
   }
 
@@ -42,7 +42,11 @@ export default class ProjectModal extends React.Component {
         </div>
         <Modal size="lg" show={this.state.showModal} onHide={this.handleClose}>
           <div closeButton />
-          <img className="project-modal-pic" src={headerPhotos.projectHeader} />
+          <img
+            className="project-modal-pic"
+            src={headerPhotos.projectHeader}
+            alt=""
+          />
           <Modal.Header closeButton>
             <Modal.Title>
               <div className="project-modal-title-container">
@@ -66,7 +70,7 @@ export default class ProjectModal extends React.Component {
           </Modal.Header>
           <Modal.Body>
             <div className="project-text">
-              {data.info_long.split("\n").map((text) => {
+              {data.info_long.split("\n").map(text => {
                 return <div className="project-modal-description">{text}</div>;
               })}
             </div>
@@ -88,6 +92,7 @@ export default class ProjectModal extends React.Component {
                     <img
                       className="collaborator-image"
                       src={collaborators[collaborator]}
+                      alt=""
                     />
                   );
                 })}

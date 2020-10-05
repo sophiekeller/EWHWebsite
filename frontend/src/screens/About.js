@@ -8,8 +8,6 @@ import SubButtons from "../components/SubButtons";
 import images from "../assets/images/aboutImages/aboutImages.js";
 import aboutText from "../assets/pageData/about.js";
 import carousel from "../assets/images/carousel/carousel.js";
-//CONSTANTS
-import { screenId } from "../constants.js";
 
 /* About Page Component
  * PROPS:
@@ -19,7 +17,7 @@ export default class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      carouselImages: Object.keys(carousel),
+      carouselImages: Object.keys(carousel)
     };
   }
   render() {
@@ -51,7 +49,7 @@ export default class About extends React.Component {
         {navbar}
         <div className="carousel-container">
           <Carousel className={carouselClass}>
-            {this.state.carouselImages.map((image) => {
+            {this.state.carouselImages.map(image => {
               return (
                 <Carousel.Item className="carousel">
                   <CarouselItem
@@ -75,18 +73,18 @@ export default class About extends React.Component {
           <SubButtons mobile={this.props.mobile} />
           <div className={homeParagraph}>{aboutText.biography}</div>
 
-          <img className="home-image" src={images.group} />
+          <img className="home-image" src={images.group} alt="" />
           <div className="home-graphs-title">EWH in Numbers</div>
           <div className={graphics}>
             <div className="home-graph-container">
               <div className="home-graph-label">Our Majors</div>
-              <img className={pieChart} src={images.graph} />
+              <img className={pieChart} src={images.graph} alt="" />
             </div>
             <div className={statisticsClass}>
               {aboutText.stats.map((stat, index) => {
                 return (
                   <div className="home-stat">
-                    <img className="home-stat-image" src={stat.image} />
+                    <img className="home-stat-image" src={stat.image} alt="" />
                     <div className="home-stat-number">{stat.number}</div>
                     <div className="home-stat-title">{stat.title}</div>
                   </div>
@@ -94,7 +92,7 @@ export default class About extends React.Component {
               })}
             </div>
           </div>
-          <img className="home-image" src={images.homebottom} />
+          <img className="home-image" src={images.homebottom} alt="" />
         </div>
       </div>
     );

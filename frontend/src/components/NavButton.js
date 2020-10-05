@@ -1,6 +1,5 @@
 import React from "react";
 //ASSETS
-import { screenId } from "../constants.js";
 
 /* NavButton Component
  * PROPS:

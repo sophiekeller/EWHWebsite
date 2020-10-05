@@ -6,9 +6,6 @@ import projects from "../assets/projects.json";
 //COMPONENTS
 import Header from "../components/Header";
 import Project from "../components/Project";
-import ProjectModal from "../components/ProjectModal";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
 import NavBar from "../components/Navbar.js";
 import MobileNavBar from "../components/MobileNavBar.js";
 
@@ -21,7 +18,7 @@ export default class Projects extends React.Component {
     super(props, context);
     this.state = {
       current_projects: projects.current_projects,
-      past_projects: projects.past_projects,
+      past_projects: projects.past_projects
     };
   }
 

@@ -9,8 +9,6 @@ import MobileNavBar from "../components/MobileNavBar.js";
 import { Document, Page } from "react-pdf/dist/umd/entry.webpack";
 import samplePDF from "./info_packet.pdf";
 
-const gapi = require("gapi-client");
-const fetch = require("node-fetch");
 const emailjs = require("emailjs-com");
 // const {google} = require('googleapis');
 
@@ -27,7 +25,7 @@ export default class Contact extends React.Component {
       message: "",
       error: "",
       showModal: false,
-      numPages: null,
+      numPages: null
     };
   }
   clear() {
@@ -38,7 +36,7 @@ export default class Contact extends React.Component {
     let template_params = {
       from_name: this.state.name,
       from_email: this.state.email,
-      message: this.state.message,
+      message: this.state.message
     };
     let service_id = "gmail";
     let template_id = "site_form";
@@ -49,13 +47,13 @@ export default class Contact extends React.Component {
       template_params,
       user_id
     );
-    if (result.status == 200) {
+    if (result.status === 200) {
       this.clear();
       this.setState({ error: "your message was sent" });
     } else {
       this.setState({
         error:
-          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message.",
+          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message."
       });
     }
   }
@@ -118,7 +116,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.name}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ name: e.target.value });
             }}
             placeholder="Name"
@@ -126,7 +124,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.email}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ email: e.target.value });
             }}
             placeholder="Your Email Address"
@@ -134,7 +132,7 @@ export default class Contact extends React.Component {
           <textarea
             className="contact-textarea"
             value={this.state.message}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ message: e.target.value });
             }}
             placeholder="Leave a Message"

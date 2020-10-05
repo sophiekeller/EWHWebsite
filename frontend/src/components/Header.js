@@ -1,6 +1,5 @@
 import React from "react";
 //ASSETS
-import { screenId } from "../constants.js";
 import images from "../assets/images/headerImages/headerImages.js";
 
 /* Header Component
@@ -13,7 +12,7 @@ export default class Header extends React.Component {
   /* renders header */
   render() {
     let overlay = null;
-    if (this.props.title == "About") {
+    if (this.props.title === "About") {
       overlay = (
         <img className="name-logo" alt="background" src={images.namelogo} />
       );
@@ -21,9 +20,7 @@ export default class Header extends React.Component {
       overlay = <div className="header-text">{this.props.title}</div>;
     }
     let headerPhoto = "header-photo";
-    let carouselClass = "carousel-class";
     if (this.props.mobile) {
-      carouselClass = "carousel-class-m";
       headerPhoto = "header-photo-m";
     }
     return (

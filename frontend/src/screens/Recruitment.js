@@ -1,8 +1,6 @@
 import React from "react";
 import images from "../assets/images/recruitmentImages/recruitmentImages.js";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
-import text from "../assets/pageData/recruitment.js";
-import { Link } from "react-router-dom";
 
 //COMPONENTS
 import Header from "../components/Header";
@@ -16,10 +14,6 @@ import MobileNavBar from "../components/MobileNavBar.js";
  * mobile = true if the screen rendering the site has width less than 650 px, bool
  */
 export default class Recruitment extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   /* renders contact page */
   render() {
     let navbar = <NavBar />;
@@ -42,6 +36,7 @@ export default class Recruitment extends React.Component {
             <a
               className="freshman-form"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.engineering.cornell.edu/students/undergraduate-students/special-programs/project-teams/cornell-engineering-student-project"
             >
               Project Fest
@@ -54,6 +49,7 @@ export default class Recruitment extends React.Component {
           <div className="recruitment-buttons-container">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://docs.google.com/forms/d/1a74OqNP2peyZ7fCdB9EvC7TfCWp5_fkkzM7HDpjzClY"
               className="contact-button"
             >
@@ -61,6 +57,7 @@ export default class Recruitment extends React.Component {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.facebook.com/Cornellewh"
               className="contact-button"
             >
@@ -68,6 +65,7 @@ export default class Recruitment extends React.Component {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://cornell.zoom.us/j/91692819477?pwd=cVpKcE9vRitudnRveXRUNXZ1Rjd6dz09"
               className="contact-button"
             >
@@ -75,6 +73,7 @@ export default class Recruitment extends React.Component {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://cornell.zoom.us/j/93549030828?pwd=Y1ZEL3FaeXFTYi9DVUsvR3IyT1g5UT09"
               className="contact-button"
             >

@@ -1,5 +1,4 @@
 import React from "react";
-import { screenId } from "../constants.js";
 import images from "../assets/images/navbarImages/navbarImages.js";
 import pageData from "../assets/pageData/navbar.js";
 
@@ -18,7 +17,7 @@ export default class NavBar extends React.Component {
     super(props);
     this.state = {
       pages: pageData.pages,
-      selected: this.getSelected(),
+      selected: this.getSelected()
     };
   }
   componentDidMount() {
@@ -29,7 +28,7 @@ export default class NavBar extends React.Component {
   getSelected() {
     let link = window.location.href;
     let current = null;
-    pageData.pages.forEach((page) => {
+    pageData.pages.forEach(page => {
       if (link.includes(page.url)) {
         current = page.url;
       }
@@ -52,7 +51,7 @@ export default class NavBar extends React.Component {
           />
         </Link>
         <div className="nav-buttons">
-          {this.state.pages.map((page) => {
+          {this.state.pages.map(page => {
             return (
               <Link to={"/" + page.url}>
                 <NavButton
@@ -61,7 +60,7 @@ export default class NavBar extends React.Component {
                   switchPage={() => {
                     this.forceUpdate();
                   }}
-                  selected={this.state.selected == page.url}
+                  selected={this.state.selected === page.url}
                 />
               </Link>
             );

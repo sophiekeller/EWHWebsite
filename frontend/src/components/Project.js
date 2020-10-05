@@ -2,7 +2,6 @@ import React from "react";
 //ASSETS
 import images from "../assets/images/projectImages/projectImages.js";
 //COMPONENTS
-import PersonBlock from "./PersonBlock.js";
 import ProjectModal from "../components/ProjectModal.js";
 
 /* Project Component
@@ -23,8 +22,8 @@ export default class Project2 extends React.Component {
         INDAGO: "#91F5AD",
         "Integrative Design": "#F896D8",
         Software: "#A77DFF",
-        Electrical: "#F6E4F6",
-      },
+        Electrical: "#F6E4F6"
+      }
     };
   }
 
@@ -71,8 +70,21 @@ export default class Project2 extends React.Component {
       );
     }
     let image = images.project;
-    if (images[data.title.split(" ").join("").toLowerCase()]) {
-      image = images[data.title.split(" ").join("").toLowerCase()];
+    if (
+      images[
+        data.title
+          .split(" ")
+          .join("")
+          .toLowerCase()
+      ]
+    ) {
+      image =
+        images[
+          data.title
+            .split(" ")
+            .join("")
+            .toLowerCase()
+        ];
     }
     return (
       <div className={containerClass}>
@@ -85,7 +97,7 @@ export default class Project2 extends React.Component {
           }}
           className={photoDescription}
         >
-          <img className={photo} src={image} />
+          <img className={photo} src={image} alt="" />
           {this.state.showOverlay && (
             <div className="project-description">{data.info}</div>
           )}
@@ -107,6 +119,8 @@ export default class Project2 extends React.Component {
                     {team}
                   </div>
                 );
+              } else {
+                return null;
               }
             })}
           </div>

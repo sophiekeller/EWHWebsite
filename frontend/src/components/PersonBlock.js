@@ -10,7 +10,7 @@ export default class PersonBlock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      flipped: false,
+      flipped: false
     };
   }
 
@@ -18,14 +18,16 @@ export default class PersonBlock extends React.Component {
   render() {
     let person = this.props.data;
     let imageTitle = person.name.toLowerCase().replace(/\s/g, "");
-    let picture = profilePics.noPhoto;
+    let picture = profilePics[imageTitle]
+      ? profilePics[imageTitle]
+      : profilePics.noPhoto;
     let personPhoto = "logo-person-photo";
     let orientation = "0 0px";
-    if (profilePics[imageTitle] !== undefined) {
-      orientation = "0 -30px";
-      picture = profilePics[imageTitle];
-      personPhoto = "person-photo";
-    }
+    // if (profilePics[imageTitle]) {
+    //   orientation = "0 -30px";
+    //   picture = profilePics[imageTitle];
+    //   personPhoto = "person-photo";
+    // }
     if (person.orientation) {
       orientation = person.orientation;
     }
@@ -39,7 +41,7 @@ export default class PersonBlock extends React.Component {
       info = "person-block-info-m";
     }
     let name = person.name;
-    if (person.name == "Michael Zhang1") {
+    if (person.name === "Michael Zhang1") {
       name = "Michael Zhang";
     }
 
@@ -51,6 +53,7 @@ export default class PersonBlock extends React.Component {
             className={personPhoto}
             style={{ "object-position": orientation }}
             src={picture}
+            alt="person"
           />
           <div className="person-fronttext">
             <div className="person-block-boldtext center">{name}</div>
