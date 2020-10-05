@@ -72,7 +72,7 @@ export default class App extends React.Component {
             <Route exact path="/contact">
               <Contact mobile={mobile} />
             </Route>
-            <Route exact path="/recruitment">
+            <Route exact path="/join">
               <Recruitment mobile={mobile} />
             </Route>
             <Route exact path="/team">

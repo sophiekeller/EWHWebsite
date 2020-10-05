@@ -62,4 +62,5 @@
 }
 .carousel-container {
   display: flex;
+  position: relative;
 }

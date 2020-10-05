@@ -68,18 +68,8 @@ export default class About extends React.Component {
         <div className="home-sections-container">
           <div className={homeOpener}>{aboutText.mission}</div>
           <div className={aboutNavButtons}>
-            <Link to="/team">
-              <div
-                onClick={() => {
-                  this.forceUpdate();
-                }}
-                className="home-button"
-              >
-                Learn more about our team>
-              </div>
-            </Link>
-            <Link to="/recruitment">
-              <div className="home-button">Apply</div>
+            <Link to="/join">
+              <div className="home-button">Apply Now</div>
             </Link>
           </div>
           <SubButtons mobile={this.props.mobile} />

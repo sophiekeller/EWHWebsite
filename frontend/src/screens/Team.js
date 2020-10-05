@@ -24,7 +24,7 @@ export default class Team extends React.Component {
       all_filters: [
         "All",
         "Business",
-        "INDAGO",
+        "MSH",
         "Software",
         "Electrical",
         "Integrative Design",
@@ -47,8 +47,8 @@ export default class Team extends React.Component {
         return teams.teams.integrative_design;
       case "Electrical":
         return teams.teams.electrical;
-      case "INDAGO":
-        return teams.teams.indago;
+      case "MSH":
+        return teams.teams.MSH;
       default:
         return members.members;
     }

@@ -27,6 +27,7 @@
   margin-bottom: 2vw;
 }
 .home-link {
+  font-size: 15px;
   color: #7bc8ff;
 }
 .home-link:hover {
@@ -139,29 +140,18 @@
   margin-top: -15px;
 }
 .about-nav-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 30vw;
   margin-bottom: 20px;
-  align-items: center;
 }
 .about-nav-buttons-m {
-  display: flex;
-  flex-direction: row;
   font-size: 10;
-  justify-content: space-between;
-  width: 80vw;
   margin-bottom: 20px;
-  align-items: center;
 }
 .home-button {
   background: #ff603e;
   color: white;
   border-radius: 15px;
   padding: 8px;
-  display: inline-block;
-  text-align: center;
   display: flex;
+  text-align: center;
   margin: 5px;
 }

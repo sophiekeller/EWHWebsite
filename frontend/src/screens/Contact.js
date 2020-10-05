@@ -74,8 +74,9 @@ export default class Contact extends React.Component {
   render() {
     let navbar = <NavBar />;
     if (this.props.mobile) {
-      let navbar = <MobileNavBar />;
+      navbar = <MobileNavBar />;
     }
+    console.log(navbar);
     return (
       <div className="home-container">
         {navbar}

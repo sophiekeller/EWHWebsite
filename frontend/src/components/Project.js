@@ -70,6 +70,10 @@ export default class Project2 extends React.Component {
         </div>
       );
     }
+    let image = images.project;
+    if (images[data.title.split(" ").join("").toLowerCase()]) {
+      image = images[data.title.split(" ").join("").toLowerCase()];
+    }
     return (
       <div className={containerClass}>
         <div
@@ -81,7 +85,7 @@ export default class Project2 extends React.Component {
           }}
           className={photoDescription}
         >
-          <img className={photo} src={images.project} />
+          <img className={photo} src={image} />
           {this.state.showOverlay && (
             <div className="project-description">{data.info}</div>
           )}

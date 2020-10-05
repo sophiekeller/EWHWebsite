@@ -144,7 +144,7 @@
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  object-position: 0 -30px;
+  /* object-position: 0 -30px; */
 }
 .logo-person-photo {
   display: inline-flex;

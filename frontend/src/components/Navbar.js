@@ -41,16 +41,6 @@ export default class NavBar extends React.Component {
   }
 
   render() {
-    // let link = window.location.href;
-    // let selected = null;
-    // this.state.pages.forEach((page) => {
-    //   if (link.includes(page.url)) {
-    //     selected = page.url;
-    //   }
-    // });
-    // if (!selected) {
-    //   selected = "about";
-    // }
     return (
       <div className="navbar-container sticky">
         <Link to="/about">

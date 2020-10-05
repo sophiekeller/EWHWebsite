@@ -4,8 +4,8 @@
 }
 .recruitment-paragraph {
   padding: 10px;
-  text-align: center;
-  width: 80vw;
+  text-align: left;
+  width: 60vw;
 }
 .recruitment-buttons-container {
   flex-direction: start;
@@ -19,4 +19,11 @@
   display: flex;
   flex-direction: column;
   padding: 25px;
+}
+.recruitment-light {
+  color: #828282;
+}
+.freshman-form {
+  color: #ff603e;
+  margin: 5px;
 }

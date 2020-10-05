@@ -8,7 +8,7 @@
         },
         {
             "name": "Alison Landry",
-            "title": "INDAGO & Business",
+            "title": "MSH & Business",
             "year": "Junior",
             "major": "Operations Research",
             "projects": "INDAGO, Business, Social Media"
@@ -36,14 +36,14 @@
         },
         {
             "name": "Catherine Kwak",
-            "title": "INDAGO",
+            "title": "MSH",
             "year": "Senior",
             "major": "Information Science",
             "projects": "INDAGO, Business"
         },
         {
             "name": "Chloe Hasund",
-            "title": "INDAGO",
+            "title": "MSH",
             "year": "Sophomore",
             "major": "Global and Public Health Sciences",
             "projects": "INDAGO"
@@ -64,17 +64,18 @@
         },
         {
             "name": "Elena Li",
-            "title": "INDAGO Lead",
+            "title": "MSH Lead",
             "year": "Junior",
             "major": "",
             "projects": "INDAGO, Business"
         },
         {
             "name": "Erika Hauschild",
-            "title": "INDAGO",
+            "title": "MSH",
             "year": "",
             "major": "Computer Science",
-            "projects": "INDAGO"
+            "projects": "INDAGO",
+            "orientation": "0 -10px"
         },
         {
             "name": "Hannah Daniel",
@@ -88,7 +89,8 @@
             "title": "Business",
             "year": "Senior",
             "major": "Information Science",
-            "projects": "INDAGO, Business"
+            "projects": "INDAGO, Business",
+            "orientation": "0 -50px"
         },
         {
             "name": "Jake Beckman",
@@ -102,18 +104,20 @@
             "title": "Software",
             "year": "",
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": "Menstrual Health Game",
+            "orientation": "0 -50px"
         },
         {
             "name": "Jessica Feng",
             "title": "Software",
             "year": "",
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": "Menstrual Health Game",
+            "orientation": "0 -20px"
         },
         {
             "name": "Julia Hans",
-            "title": "INDAGO",
+            "title": "MSH",
             "year": "Junior",
             "major": "Health Care Policy",
             "projects": "INDAGO"
@@ -123,7 +127,8 @@
             "title": "Integrative Design",
             "year": "",
             "major": "Mechanical Engineering",
-            "projects": ""
+            "projects": "",
+            "orientation": "0 0px"
         },
         {
             "name": "Kerry Johnson",
@@ -137,7 +142,8 @@
             "title": "Integrative Design",
             "year": "",
             "major": "Information Science & Biological Sciences",
-            "projects": ""
+            "projects": "",
+            "orientation": "0 -40px"
         },
         {
             "name": "Manan Modi",
@@ -154,18 +160,20 @@
             "projects": "Menstrual Health Game"
         },
         {
-            "name": "Michael Zhang",
+            "name": "Michael Zhang1",
             "title": "Integrative Design",
             "year": "",
             "major": "Bioengineering",
-            "projects": ""
+            "projects": "",
+            "orientation": "0 0px"
         },
         {
             "name": "Michaela Bettez",
             "title": "Electrical Lead",
             "year": "Senior",
             "major": "Electrical & Computer Engineering",
-            "projects": "tVNS"
+            "projects": "tVNS",
+            "orientation": "0 -40px"
         },
         {
             "name": "Navin Ramsaroop",
@@ -193,7 +201,8 @@
             "title": "Software",
             "year": "",
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": "Menstrual Health Game",
+            "orientation": "0 -10px"
         },
         {
             "name": "Sham Hamidian",
@@ -204,17 +213,19 @@
         },
         {
             "name": "Sharon Li",
-            "title": "INDAGO & Business",
+            "title": "MSH & Business",
             "year": "Junior",
             "major": "Information Science",
-            "projects": "INDAGO, Team Site"
+            "projects": "INDAGO, Team Site",
+            "orientation": "0 0px"
         },
         {
             "name": "Sheri Guo",
             "title": "Software",
             "year": "Junior",
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": "Menstrual Health Game",
+            "orientation": "0 -20px"
         },
         {
             "name": "Sophie Keller",
@@ -228,10 +239,11 @@
             "title": "Business",
             "year": "Senior",
             "major": "AEM",
-            "projects": "INDAGO, Business"
+            "projects": "INDAGO, Business",
+            "orientation": "0 -20px"
         },
         {
-            "name": "Theodore Klausner",
+            "name": "Teddy Klausner",
             "title": "Software",
             "year": "Sophomore",
             "major": "Computer Science",
@@ -252,11 +264,12 @@
             "projects": "Menstrual Waste Incinerator"
         },
         {
-            "name": "Yuwei Ye",
+            "name": "Vivi Ye",
             "title": "Software",
             "year": "",
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": "Menstrual Health Game",
+            "orientation": "0 -20px"
         }
     ],
     "leads": [{
@@ -289,7 +302,7 @@
         },
         {
             "name": "Elena Li",
-            "title": "INDAGO Lead",
+            "title": "MSH Lead",
             "year": "Junior",
             "major": "",
             "projects": "INDAGO, Business"
