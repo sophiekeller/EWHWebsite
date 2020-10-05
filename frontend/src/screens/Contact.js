@@ -43,8 +43,6 @@ export default class Contact extends React.Component {
     let service_id = "gmail";
     let template_id = "site_form";
     let user_id = process.env.REACT_APP_EMAIL_JS_USER_ID;
-    console.log("env", process.env);
-    console.log("user_id", user_id);
     let result = await emailjs.send(
       service_id,
       template_id,
@@ -76,7 +74,6 @@ export default class Contact extends React.Component {
     if (this.props.mobile) {
       navbar = <MobileNavBar />;
     }
-    console.log(navbar);
     return (
       <div className="home-container">
         {navbar}
