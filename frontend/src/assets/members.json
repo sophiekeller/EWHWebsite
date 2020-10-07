@@ -1,318 +1,408 @@
 {
     "members": [{
+            "name": "Victoria Tan",
+            "year": 2021,
+            "major": "Mechanical Engineering",
+            "projects": ["incinerator"],
+            "team": [],
+            "isAlumni": false,
+            "isLead": true,
+            "orientation": "0 -40px"
+        }, {
             "name": "Alan Li",
-            "title": "Integrative Design",
-            "year": "",
-            "major": "Biology",
-            "projects": ""
+            "year": 2023,
+            "major": "Biological Engineering",
+            "projects": ["kijenzi"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Alison Landry",
-            "title": "MSH & Business",
-            "year": "Junior",
+            "year": 2022,
             "major": "Operations Research",
-            "projects": "INDAGO, Business, Social Media"
+            "projects": ["indago", "business"],
+            "team": ["software", "business"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Ana Elhom",
-            "title": "Integrative Design Lead",
-            "year": "Senior",
+            "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": "Waste Incinerator"
+            "projects": ["incinerator", "kijenzi", "calmer"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": true
         },
         {
             "name": "Anna Nguyen",
-            "title": "Software",
-            "year": "",
+            "year": 2023,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
+            "name": "Anya Ji",
+            "year": 2023,
+            "major": "Computer Science and Psychology",
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 0px"
         },
         {
             "name": "Audrey Teasley",
-            "title": "Electrical",
-            "year": "",
+            "year": 2022,
             "major": "Physics",
-            "projects": "tVNS"
+            "projects": ["tvns"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Catherine Kwak",
-            "title": "MSH",
-            "year": "Senior",
+            "year": 2021,
             "major": "Information Science",
-            "projects": "INDAGO, Business"
+            "projects": ["indago", "msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 0px"
         },
         {
             "name": "Chloe Hasund",
-            "title": "MSH",
-            "year": "Sophomore",
+            "year": 2022,
             "major": "Global and Public Health Sciences",
-            "projects": "INDAGO"
+            "projects": ["indago", "msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
+            "name": "Chris Tran",
+            "year": 2023,
+            "major": "Healthcare Policy",
+            "projects": [],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -10px"
         },
         {
             "name": "Connie Hou",
-            "title": "Integrative Design",
-            "year": "",
+            "year": 2022,
             "major": "Computer Science",
-            "projects": ""
+            "projects": ["kijenzi", "incinerator", "msh"],
+            "team": ["integrative-design", "software"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Daniel Vitenson",
-            "title": "Integrative Design",
-            "year": "",
-            "major": "Bioengineering",
-            "projects": ""
+            "year": 2023,
+            "major": "Biological Sciences",
+            "projects": ["kijenzi", "incinerator"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Elena Li",
-            "title": "MSH Lead",
-            "year": "Junior",
-            "major": "",
-            "projects": "INDAGO, Business"
+            "year": 2022,
+            "major": "Information Science and Biology & Society",
+            "projects": ["indago", "msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": true
         },
         {
             "name": "Erika Hauschild",
-            "title": "MSH",
-            "year": "",
+            "year": 2022,
             "major": "Computer Science",
-            "projects": "INDAGO",
+            "projects": ["indago", "msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -10px"
         },
         {
             "name": "Hannah Daniel",
-            "title": "Electrical",
-            "year": "",
+            "year": 2023,
             "major": "Computer Science",
-            "projects": "tVNS"
+            "projects": ["tVNS"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Hannah Mahanti",
-            "title": "Business",
-            "year": "Senior",
+            "year": 2021,
             "major": "Information Science",
-            "projects": "INDAGO, Business",
+            "projects": ["indago"],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -50px"
         },
         {
             "name": "Jake Beckman",
-            "title": "Integrative Design",
-            "year": "",
+            "year": 2022,
             "major": "Mechanical Engineering",
-            "projects": ""
+            "projects": ["incinerator", "kijenzi"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Jennifer Lin",
-            "title": "Software",
-            "year": "",
+            "year": 2021,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game",
-            "orientation": "0 -50px"
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Jessica Feng",
-            "title": "Software",
-            "year": "",
+            "year": 2023,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game",
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -20px"
         },
         {
             "name": "Julia Hans",
-            "title": "MSH",
-            "year": "Junior",
+            "year": 2023,
             "major": "Health Care Policy",
-            "projects": "INDAGO"
-        },
-        {
-            "name": "Julia Halligan",
-            "title": "Integrative Design",
-            "year": "",
-            "major": "Mechanical Engineering",
-            "projects": "",
+            "projects": ["indago", "msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 0px"
         },
         {
+            "name": "Julia Halligan",
+            "year": 2023,
+            "major": "Mechanical Engineering",
+            "projects": ["kijenzi"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 0px"
+        },
+        {
+            "name": "Julia Xiong",
+            "year": 2023,
+            "major": "HBHS",
+            "projects": [],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
             "name": "Kerry Johnson",
-            "title": "Electrical",
-            "year": "Junior",
+            "year": 2022,
             "major": "Electrical & Computer Engineering",
-            "projects": "tVNS"
+            "projects": ["grip-sensor", "tvns"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Lane Fitzsimmons",
-            "title": "Integrative Design",
-            "year": "",
+            "year": 2022,
             "major": "Information Science & Biological Sciences",
-            "projects": "",
+            "projects": ["incinerator", "kijenzi", "calmer"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -40px"
         },
         {
             "name": "Manan Modi",
-            "title": "Business",
-            "year": "Senior",
+            "year": 2021,
             "major": "ILR",
-            "projects": "INDAGO, Business"
+            "projects": ["indago"],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Michael Zhang",
-            "title": "Software",
-            "year": "",
-            "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "year": 2022,
+            "major": "Information Science",
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Michael Zhang1",
-            "title": "Integrative Design",
-            "year": "",
+            "year": 2021,
             "major": "Bioengineering",
-            "projects": "",
+            "projects": ["incinerator", "kijenzi"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 0px"
         },
         {
             "name": "Michaela Bettez",
-            "title": "Electrical Lead",
-            "year": "Senior",
+            "year": 2021,
             "major": "Electrical & Computer Engineering",
-            "projects": "tVNS",
+            "projects": ["grip-sensor", "tvns"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": true,
             "orientation": "0 -40px"
         },
         {
             "name": "Navin Ramsaroop",
-            "title": "Software Lead",
-            "year": "Senior",
+            "year": 2021,
             "major": "Computer Science",
-            "projects": "Rex, Menstrual Health Game"
+            "projects": ["rex", "health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": true,
+            "orientation": "0 0px"
         },
         {
             "name": "Rebecca Hasser",
-            "title": "Electrical",
-            "year": "Junior",
+            "year": 2022,
             "major": "Computer Science",
-            "projects": "tVNS"
+            "projects": ["tvns", "grip-sensor"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
+            "name": "Rejoice Hu",
+            "year": 2023,
+            "major": "Information Science",
+            "projects": ["msh"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -50px"
+        },
+        {
+            "name": "Ryan Chan",
+            "year": 2023,
+            "major": "Electrical and Computer Engineering",
+            "projects": [],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Samantha Pitts",
-            "title": "Electrical",
-            "year": "",
+            "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": "tVNS"
+            "projects": ["tvns"],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -50px"
+        },
+        {
+            "name": "Sarika Kannan",
+            "year": 2023,
+            "major": "Electrical and Computer Engineering",
+            "projects": [],
+            "team": ["electrical"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Shaf Ibrahim",
-            "title": "Software",
-            "year": "",
+            "year": 2023,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game",
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -10px"
         },
         {
             "name": "Sham Hamidian",
-            "title": "Integrative Design",
-            "year": "Senior",
+            "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": "Waste Incinerator"
+            "projects": ["incinerator", "kijenzi"],
+            "team": ["integrative-design"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Sharon Li",
-            "title": "MSH & Business",
-            "year": "Junior",
+            "year": 2022,
             "major": "Information Science",
-            "projects": "INDAGO, Team Site",
+            "projects": ["indago", "msh"],
+            "team": ["software", "business"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 0px"
         },
         {
             "name": "Sheri Guo",
-            "title": "Software",
-            "year": "Junior",
-            "major": "Computer Science",
-            "projects": "Menstrual Health Game",
+            "year": 2022,
+            "major": "Information Science",
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -20px"
         },
         {
             "name": "Sophie Keller",
-            "title": "Business Lead",
-            "year": "Junior",
+            "year": 2022,
             "major": "Computer Science",
-            "projects": "INDAGO, Team Site, Business"
+            "projects": ["indago"],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": true
         },
         {
             "name": "Sungjae Ahn",
-            "title": "Business",
-            "year": "Senior",
+            "year": 2021,
             "major": "AEM",
-            "projects": "INDAGO, Business",
-            "orientation": "0 -20px"
+            "projects": ["indago"],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Teddy Klausner",
-            "title": "Software",
-            "year": "Sophomore",
+            "year": 2023,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game"
+            "projects": ["health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Tori DiStefano",
-            "title": "Business",
-            "year": "Junior",
+            "year": 2023,
             "major": "Biology and Society",
-            "projects": "INDAGO, Business, Finances"
-        },
-        {
-            "name": "Victoria Tan",
-            "title": "Team Lead",
-            "year": "Senior",
-            "major": "Mechanical Engineering",
-            "projects": "Menstrual Waste Incinerator"
+            "projects": ["indago"],
+            "team": ["business"],
+            "isAlumni": false,
+            "isLead": false
         },
         {
             "name": "Vivi Ye",
-            "title": "Software",
-            "year": "",
+            "year": 2022,
             "major": "Computer Science",
-            "projects": "Menstrual Health Game",
+            "projects": ["rex", "health-friend"],
+            "team": ["software"],
+            "isAlumni": false,
+            "isLead": false,
             "orientation": "0 -20px"
-        }
-    ],
-    "leads": [{
-            "name": "Victoria Tan",
-            "title": "Team Lead",
-            "year": "Senior",
-            "major": "Mechanical Engineering",
-            "projects": "Menstrual Waste Incinerator"
-        },
-        {
-            "name": "Sophie Keller",
-            "title": "Business Lead",
-            "year": "Junior",
-            "major": "Computer Science",
-            "projects": "INDAGO, Team Site, Business"
-        },
-        {
-            "name": "Ana Elhom",
-            "title": "Integrative Design Lead",
-            "year": "Senior",
-            "major": "Biomedical Engineering",
-            "projects": "Waste Incinerator"
-        },
-        {
-            "name": "Navin Ramsaroop",
-            "title": "Software Lead",
-            "year": "Senior",
-            "major": "Computer Science",
-            "projects": "Rex, Menstrual Health Game"
-        },
-        {
-            "name": "Elena Li",
-            "title": "MSH Lead",
-            "year": "Junior",
-            "major": "",
-            "projects": "INDAGO, Business"
-        },
-        {
-            "name": "Michaela Bettez",
-            "title": "Electrical Lead",
-            "year": "Senior",
-            "major": "Electrical & Computer Engineering",
-            "projects": "tVNS"
         }
     ]
 }

@@ -17,44 +17,41 @@ import FilterButton from "../components/FilterButton";
 export default class Team extends React.Component {
   constructor(props) {
     super(props);
+    let leads = [];
+    let membersList = members.members;
+    for (let i = 0; i < membersList.length; i++) {
+      let member = membersList[i];
+      if (member.isLead) {
+        leads.push(member);
+      }
+    }
+    let teamIds = Object.keys(teams);
+    teamIds.unshift("all");
     this.state = {
-      leads: members.leads,
+      leads: leads,
       selected: members.members,
-      filter: "All",
-      all_filters: [
-        "All",
-        "Business",
-        "MSH",
-        "Software",
-        "Electrical",
-        "Integrative Design",
-      ],
+      filter: "all",
+      all_filters: teamIds,
     };
   }
 
-  /* switches selected team members based on subtream buttons
-   * filter = name of filter button pressed, string
-   */
-  getFilter(filter) {
-    switch (filter) {
-      case "All":
-        return members.members;
-      case "Business":
-        return teams.teams.business;
-      case "Software":
-        return teams.teams.software;
-      case "Integrative Design":
-        return teams.teams.integrative_design;
-      case "Electrical":
-        return teams.teams.electrical;
-      case "MSH":
-        return teams.teams.MSH;
-      default:
-        return members.members;
+  getMembersForTeam(team) {
+    let allMembers = members.members;
+    let teamMembers = [];
+    for (let i = 0; i < allMembers.length; i++) {
+      let member = allMembers[i];
+      if (member.team.includes(team)) {
+        teamMembers.push(member);
+      }
     }
+    if (teamMembers.length == 0) {
+      teamMembers = allMembers;
+    }
+    return teamMembers;
   }
+
   updateFilter(filter) {
-    this.setState({ selected: this.getFilter(filter) });
+    this.setState({ selected: this.getMembersForTeam(filter) });
     this.setState({ filter: filter });
   }
 

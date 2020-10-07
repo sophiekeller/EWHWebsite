@@ -1,6 +1,7 @@
 import React from "react";
 import profilePics from "../assets/images/profilePics/profilePics.js";
-
+import members from "../assets/members.json";
+import teamsData from "../assets/teams.json";
 /* Person Block Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool
@@ -10,26 +11,24 @@ export default class PersonBlock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      flipped: false
+      flipped: false,
     };
   }
 
   /* renders person block */
   render() {
     let person = this.props.data;
-    let imageTitle = person.name.toLowerCase().replace(/\s/g, "");
-    let picture = profilePics[imageTitle]
-      ? profilePics[imageTitle]
-      : profilePics.noPhoto;
+
     let personPhoto = "logo-person-photo";
-    let orientation = "0 0px";
-    // if (profilePics[imageTitle]) {
-    //   orientation = "0 -30px";
-    //   picture = profilePics[imageTitle];
-    //   personPhoto = "person-photo";
-    // }
+    let orientation = "0 -30px";
     if (person.orientation) {
       orientation = person.orientation;
+    }
+    let imageTitle = person.name.toLowerCase().replace(/\s/g, "");
+    let picture = profilePics[imageTitle];
+    if (!picture) {
+      picture = profilePics.noPhoto;
+      orientation = "0 -10px";
     }
     let personBlockFront = "person-block-front";
     let personBlockBack = "person-block-back";
@@ -47,6 +46,17 @@ export default class PersonBlock extends React.Component {
 
     if (!this.state.flipped) {
       //return back if flipped
+      let title = "";
+      let teams = person.team;
+      for (let i = 0; i < teams.length; i++) {
+        title += teamsData[teams[i]].name + " & ";
+      }
+      title = title.substring(0, title.length - 3);
+      if (person.isLead) {
+        title += " Lead";
+      } else {
+        title += " Member";
+      }
       return (
         <div className={personBlockFront}>
           <img
@@ -57,7 +67,7 @@ export default class PersonBlock extends React.Component {
           />
           <div className="person-fronttext">
             <div className="person-block-boldtext center">{name}</div>
-            <div className="person-block-regtext center">{person.title}</div>
+            <div className="person-block-regtext center">{title}</div>
           </div>
         </div>
       );

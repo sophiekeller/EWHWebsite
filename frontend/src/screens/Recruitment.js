@@ -32,6 +32,12 @@ export default class Recruitment extends React.Component {
         <div className="recruitment-container">
           <div className="contact-title">Fall 2020 Recruitment</div>
           <div className="recruitment-paragraph">
+            We are looking for students who share our passion for tackling
+            health challenges around the world. We pride ourselves on the
+            diversity of our team and are not looking for any particular major
+            or skillset. If you're excited about our mission, apply!
+          </div>
+          <div className="recruitment-paragraph">
             Our freshman application is currently open. Come join us at
             <a
               className="freshman-form"
@@ -41,10 +47,7 @@ export default class Recruitment extends React.Component {
             >
               Project Fest
             </a>
-            on October 4th or at our Information Sessions.
-          </div>
-          <div className="recruitment-paragraph">
-            **We will be at Project Fest from 1 to 4 pm .
+            on October 4th or at one of our Information Sessions (links below).
           </div>
           <div className="recruitment-buttons-container">
             <a
@@ -85,6 +88,7 @@ export default class Recruitment extends React.Component {
             alt="timeline"
             src={images.timeline}
           />
+          <img className="timeline-photo" alt="info-slide" src={images.slide} />
         </div>
       </div>
     );

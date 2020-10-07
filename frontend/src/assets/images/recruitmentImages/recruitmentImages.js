@@ -1,3 +1,4 @@
 export default {
-  timeline: require("./timeline.png"),
+  timeline: require("./timeline.jpg"),
+  slide: require("./slide.jpg"),
 };

@@ -1,8 +1,10 @@
 import React from "react";
 //ASSETS
 import images from "../assets/images/projectImages/projectImages.js";
+import teams from "../assets/teams.json";
 //COMPONENTS
 import ProjectModal from "../components/ProjectModal.js";
+import SubteamBubbles from "../components/SubteamBubbles.js";
 
 /* Project Component
  * PROPS:
@@ -22,8 +24,8 @@ export default class Project2 extends React.Component {
         INDAGO: "#91F5AD",
         "Integrative Design": "#F896D8",
         Software: "#A77DFF",
-        Electrical: "#F6E4F6"
-      }
+        Electrical: "#F6E4F6",
+      },
     };
   }
 
@@ -70,21 +72,8 @@ export default class Project2 extends React.Component {
       );
     }
     let image = images.project;
-    if (
-      images[
-        data.title
-          .split(" ")
-          .join("")
-          .toLowerCase()
-      ]
-    ) {
-      image =
-        images[
-          data.title
-            .split(" ")
-            .join("")
-            .toLowerCase()
-        ];
+    if (images[data.id]) {
+      image = images[data.id];
     }
     return (
       <div className={containerClass}>
@@ -101,29 +90,10 @@ export default class Project2 extends React.Component {
           {this.state.showOverlay && (
             <div className="project-description">{data.info}</div>
           )}
+          <div className="project-title">{data.title}</div>
         </div>
         <div className="project-text">
-          <div className="project-title">{data.title}</div>
-          <div className="project-teams">
-            {data.subteams.map((team, index) => {
-              if (team != null) {
-                let color = this.state.map[team];
-                if (!color) {
-                  color = "#EAF9D9";
-                }
-                return (
-                  <div
-                    className="project-subteam-bubble"
-                    style={{ background: color }}
-                  >
-                    {team}
-                  </div>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </div>
+          <SubteamBubbles data={data.subteams} />
           {bar}
         </div>
       </div>

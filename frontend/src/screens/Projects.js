@@ -16,9 +16,20 @@ import MobileNavBar from "../components/MobileNavBar.js";
 export default class Projects extends React.Component {
   constructor(props, context) {
     super(props, context);
+    let current = [];
+    let past = [];
+    let projectsList = projects.projects;
+    for (let i = 0; i < projectsList.length; i++) {
+      let project = projectsList[i];
+      if (project.isActive) {
+        current.push(project);
+      } else {
+        past.push(project);
+      }
+    }
     this.state = {
-      current_projects: projects.current_projects,
-      past_projects: projects.past_projects
+      current_projects: current,
+      past_projects: past,
     };
   }
 

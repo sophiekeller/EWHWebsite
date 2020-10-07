@@ -1,5 +1,7 @@
 import React from "react";
 
+import teams from "../assets/teams.json";
+
 /* FilterButton Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool
@@ -18,6 +20,11 @@ export default class FilterButton extends React.Component {
     if (this.props.mobile) {
       className = "filter-button-m";
     }
+    let name = "All";
+    let obj = teams[this.props.title];
+    if (obj) {
+      name = obj.name;
+    }
     return (
       <div
         className={className}
@@ -25,7 +32,7 @@ export default class FilterButton extends React.Component {
           this.props.updateFilter(this.props.title);
         }}
       >
-        <div className="filter-button">{this.props.title}</div>
+        <div className="filter-button">{name}</div>
         {underline}
       </div>
     );
