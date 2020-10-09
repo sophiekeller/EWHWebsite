@@ -2,6 +2,7 @@ import React from "react";
 import profilePics from "../assets/images/profilePics/profilePics.js";
 import members from "../assets/members.json";
 import teamsData from "../assets/teams.json";
+import projectsData from "../assets/projects.json";
 /* Person Block Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool
@@ -14,6 +15,8 @@ export default class PersonBlock extends React.Component {
       flipped: false,
     };
   }
+
+  flip = () => this.setState({ flipped: !this.state.flipped });
 
   /* renders person block */
   render() {
@@ -58,7 +61,7 @@ export default class PersonBlock extends React.Component {
         title += " Member";
       }
       return (
-        <div className={personBlockFront}>
+        <div className={personBlockFront} onMouseEnter={() => this.flip()}>
           <img
             className={personPhoto}
             style={{ "object-position": orientation }}
@@ -73,8 +76,24 @@ export default class PersonBlock extends React.Component {
       );
     } else {
       //return front if not flipped
+      let projects = person.projects;
+      let projectsString = "";
+      for (let i = 0; i < projects.length; i++) {
+        for (let j = 0; j < projectsData.projects.length; j++) {
+          console.log(projects[i]);
+          console.log(projectsData.projects[j].id);
+          if (projects[i] == projectsData.projects[j].id) {
+            projectsString += projectsData.projects[j].title + ", ";
+          }
+        }
+      }
+      if (projectsString == "") {
+        projectsString = "None";
+      } else {
+        projectsString = projectsString.substring(0, projectsString.length - 2);
+      }
       return (
-        <div className={personBlockBack}>
+        <div className={personBlockBack} onMouseLeave={() => this.flip()}>
           <div className="person-block-boldtext center">{name}</div>
           <div className="person-block-regtext center">{person.title}</div>
           <div className={info}>
@@ -83,7 +102,7 @@ export default class PersonBlock extends React.Component {
             <div className="person-block-boldtext">Major</div>
             <div className="person-block-regtext">{person.major}</div>
             <div className="person-block-boldtext">Team Projects</div>
-            <div className="person-block-regtext">{person.projects}</div>
+            <div className="person-block-regtext">{projectsString}</div>
           </div>
         </div>
       );
