@@ -40,6 +40,8 @@ export default class ProjectModal extends React.Component {
   /* renders modal component */
   render() {
     let data = this.props.data;
+    console.log(data);
+    console.log(!data.collaborators.length);
     return (
       <div className="project-modal-container">
         <div
@@ -82,7 +84,7 @@ export default class ProjectModal extends React.Component {
                 })}
               </div>
             </div>
-            {!data.collaborators.length && (
+            {data.collaborators.length > 0 && (
               <div>
                 <div className="section-title">Collaborators</div>
                 {data.collaborators.map((collaborator, index) => {

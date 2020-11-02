@@ -61,10 +61,12 @@ export default class Team extends React.Component {
     let filters = "team-filters-container";
     let team = "team-blocks-container";
     let navbar = <NavBar />;
+    let teamContent = "team-content";
     if (this.props.mobile) {
       leads = "lead-blocks-container-m";
       filters = "team-filters-container-m";
       team = "team-blocks-container-m";
+      teamContent = "team-content-m";
       navbar = <MobileNavBar />;
     }
     return (
@@ -86,24 +88,33 @@ export default class Team extends React.Component {
           </div>
           <div className="team-container">
             <div className="team-title">Team</div>
-            <div className={filters}>
-              {this.state.all_filters.map((filter, index) => {
-                return (
-                  <FilterButton
-                    mobile={this.props.mobile}
-                    title={filter}
-                    selected={this.state.filter === filter}
-                    updateFilter={() => {
-                      this.updateFilter(filter);
-                    }}
-                  />
-                );
-              })}
-            </div>
-            <div className={team}>
-              {this.state.selected.map((person, index) => {
-                return <PersonBlock mobile={this.props.mobile} data={person} />;
-              })}
+            <div className={teamContent}>
+              <div className={filters}>
+                {this.state.all_filters.map((filter, index) => {
+                  return (
+                    <FilterButton
+                      mobile={this.props.mobile}
+                      title={filter}
+                      selected={this.state.filter === filter}
+                      updateFilter={() => {
+                        this.updateFilter(filter);
+                      }}
+                    />
+                  );
+                })}
+              </div>
+              <div className={team}>
+                {this.state.filter != "all" && (
+                  <div className="team-text">
+                    {teams[this.state.filter].description}{" "}
+                  </div>
+                )}
+                {this.state.selected.map((person, index) => {
+                  return (
+                    <PersonBlock mobile={this.props.mobile} data={person} />
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

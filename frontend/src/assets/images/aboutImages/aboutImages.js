@@ -4,6 +4,7 @@ export default {
   group: require("./group.png"),
   homepic: require("./homepic.png"),
   intdesign: require("./intdesign.png"),
+  infoslide: require("./infoslide.jpg"),
   namelogo: require("./namelogo.png"),
   software: require("./software.png"),
   graph: require("./piechart.png"),

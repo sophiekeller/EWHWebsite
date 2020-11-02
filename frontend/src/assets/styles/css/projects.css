@@ -1,6 +1,6 @@
 .projects-title {
   text-align: left;
-  font-size: 25px;
+  font-size: 30px;
   color: #253263;
   font-weight: bold;
 }
@@ -50,7 +50,7 @@
   height: 400px;
 }
 .past-project {
-  height: 475px;
+  height: 300px;
 }
 .project-title {
   text-align: center;
@@ -76,8 +76,8 @@
   margin-bottom: 8px;
   margin-top: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   bottom: 0px;
 }
 

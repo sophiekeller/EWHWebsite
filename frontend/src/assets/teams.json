@@ -2,21 +2,25 @@
      "business": {
          "name": "Business",
          "isActive": true,
-         "color": "#F6E4F6"
+         "color": "#91F5AD",
+         "description": "The Business subteam is responsible for ensuring the efficiency and fluidity of the organization’s global operations. Comprising students from diverse academic backgrounds, the team focuses on numerous functional areas that include, but are not limited to, marketing, budgeting, corporate sponsorship, website development, and branding. In the process, members sharpen their business acumen and discover what makes a student-led organization tick."
      },
      "software": {
          "name": "Software",
          "isActive": true,
-         "color": "#91F5AD"
+         "color": "#7CF7FF",
+         "description": "The Software subteam creates software-based, data-driven solutions to address and bridge resource gaps in a variety of healthcare settings. Whether designing iOS applications or building automated web scrapers, members emphasize the importance of user-friendly code and develop their own skills in app development, full stack web development, data visualization, product marketing, and user testing."
      },
      "integrative-design": {
          "name": "Integrative Design",
          "isActive": true,
-         "color": "#F896D8"
+         "color": "#D2ECFF",
+         "description": "The Integrative Design subteam designs and prototypes innovative health solutions that span across multidisciplinary academic fields. From ideation to end product, members gain first-hand experience in conducting market research, developing product specifications, using computer-aided design (CAD) software, and testing prototype iterations."
      },
      "electrical": {
          "name": "Electrical",
          "isActive": true,
-         "color": "#91F5AD"
+         "color": "#7BC8FF",
+         "description": "The Electrical subteam applies theory and systems-level design to the production of hardware. The team covers a wide array of fields that incorporate embedded systems, integrated circuits, signal processing, software, and analog circuit design. Members become self-made experts in product ideation, system design, prototyping, wireless communication, and other competencies."
      }
  }

@@ -11,6 +11,10 @@
   font-weight: bold;
   color: #253263;
 }
+.team-text {
+  margin: 10px;
+  color: #253263;
+}
 .lead-blocks-container {
   display: flex;
   flex-direction: row;
@@ -28,23 +32,27 @@
 .team-container {
   text-align: left;
 }
+.team-content {
+  display: flex;
+}
+.team-content-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .team-filters-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 85vw;
-  justify-content: space-between;
-  margin-top: 4vh;
-  margin-bottom: 1vh;
+  margin: 30px;
+  margin-left: 0px;
 }
 .team-filters-container-m {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 85vw;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 1vh;
+  width: 30vw;
+  text-align: center;
 }
 .team-blocks-container {
   display: flex;
@@ -179,16 +187,30 @@
 /* filter button styles */
 
 .filter-underline {
-  height: 4px;
-  background-color: red;
+  height: 3px;
+  background-color: #000000;
+}
+.filter-underline-selected {
+  height: 3px;
+  background-color: #ff603e;
 }
 .filter-button {
   font-weight: bold;
+  width: 180px;
+  margin-bottom: 20px;
+}
+.filter-button-selected {
+  font-weight: bold;
+  color: #ff603e;
 }
 .filter-button-m {
   font-weight: bold;
   margin: 10px;
+  margin-bottom: 20px;
 }
 .filter-button:hover {
   cursor: pointer;
+}
+.filter-text-selected {
+  color: #ff603e;
 }

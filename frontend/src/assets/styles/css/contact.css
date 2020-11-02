@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   margin: 4vw;
-  width: 92vw;
+  width: 80vw;
 }
 .contact-buttons-container {
   flex-direction: start;

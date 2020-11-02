@@ -12,9 +12,11 @@ import teams from "../assets/teams.json";
 export default class FilterButton extends React.Component {
   /* renders filter button component */
   render() {
-    let underline = <div />;
+    let underline = <div className="filter-underline" />;
+    let filterText = "filter-text";
     if (this.props.selected) {
-      underline = <div className="filter-underline" />;
+      underline = <div className="filter-underline-selected" />;
+      filterText = "filter-text-selected";
     }
     let className = "filter-button";
     if (this.props.mobile) {
@@ -32,7 +34,7 @@ export default class FilterButton extends React.Component {
           this.props.updateFilter(this.props.title);
         }}
       >
-        <div className="filter-button">{name}</div>
+        <div className={filterText}>{name}</div>
         {underline}
       </div>
     );

@@ -1,11 +1,12 @@
 import React from "react";
 import images from "../assets/images/recruitmentImages/recruitmentImages.js";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
-
+import pageData from "../assets/pageData/recruitment.js";
 //COMPONENTS
 import Header from "../components/Header";
 import NavBar from "../components/Navbar.js";
 import MobileNavBar from "../components/MobileNavBar.js";
+import Faq from "../components/Faq.js";
 
 // const {google} = require('googleapis');
 
@@ -17,8 +18,12 @@ export default class Recruitment extends React.Component {
   /* renders contact page */
   render() {
     let navbar = <NavBar />;
+    let recruitmentParagraph = "recruitment-paragraph";
+    let recruitmentTitle = "recruitment-title";
     if (this.props.mobile) {
       navbar = <MobileNavBar />;
+      recruitmentParagraph = "recruitment-paragraph-m";
+      recruitmentTitle = "recruitment-title-m";
     }
     return (
       <div className="home-container">
@@ -30,65 +35,32 @@ export default class Recruitment extends React.Component {
           title="Join Us"
         />
         <div className="recruitment-container">
-          <div className="contact-title">Fall 2020 Recruitment</div>
-          <div className="recruitment-paragraph">
-            We are looking for students who share our passion for tackling
-            health challenges around the world. We pride ourselves on the
-            diversity of our team and are not looking for any particular major
-            or skillset. If you're excited about our mission, apply!
+          <div className="contact-title">Recruitment</div>
+          <div className={recruitmentParagraph}>
+            Our application is currently closed for fall of 2020. If you are
+            interested in joining our team or want more information, email us at
+            <a className="freshman-form" href="mailto:ewhcornell@gmail.com">
+              ewhcornell@gmail.com
+            </a>
+            .
           </div>
-          <div className="recruitment-paragraph">
-            Our freshman application is currently open. Come join us at
-            <a
-              className="freshman-form"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.engineering.cornell.edu/students/undergraduate-students/special-programs/project-teams/cornell-engineering-student-project"
-            >
-              Project Fest
-            </a>
-            on October 4th or at one of our Information Sessions (links below).
+
+          <img className="timeline-photo" alt="timeline" src={images.team} />
+          <div className="faqs-container">
+            <div className={recruitmentTitle}>Frequently Asked Questions</div>
+            <div className="faq-dropdowns-container">
+              {pageData.questions.map((q, index) => {
+                return (
+                  <Faq
+                    question={q.question}
+                    answer={q.answer}
+                    index={index}
+                    mobile={this.props.mobile}
+                  />
+                );
+              })}
+            </div>
           </div>
-          <div className="recruitment-buttons-container">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://docs.google.com/forms/d/1a74OqNP2peyZ7fCdB9EvC7TfCWp5_fkkzM7HDpjzClY"
-              className="contact-button"
-            >
-              Apply Now
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/Cornellewh"
-              className="contact-button"
-            >
-              Facebook Events
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://cornell.zoom.us/j/91692819477?pwd=cVpKcE9vRitudnRveXRUNXZ1Rjd6dz09"
-              className="contact-button"
-            >
-              Info Session 10/8
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://cornell.zoom.us/j/93549030828?pwd=Y1ZEL3FaeXFTYi9DVUsvR3IyT1g5UT09"
-              className="contact-button"
-            >
-              Info Session 10/12
-            </a>
-          </div>
-          <img
-            className="timeline-photo"
-            alt="timeline"
-            src={images.timeline}
-          />
-          <img className="timeline-photo" alt="info-slide" src={images.slide} />
         </div>
       </div>
     );
