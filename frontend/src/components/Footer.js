@@ -44,9 +44,9 @@ export default class Footer extends React.Component {
           </div>
         </div>
         <div className={right}>
-          {Object.keys(links).map((site) => {
+          {Object.keys(links).map(site => {
             return (
-              <a href={links[site]} target="_blank">
+              <a href={links[site]} target="_blank" rel="noopener noreferrer">
                 <img
                   className={social}
                   src={images[site]}

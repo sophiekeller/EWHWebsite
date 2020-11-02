@@ -2,9 +2,10 @@ import React from "react";
 //COMPONENTS
 import Modal from "react-bootstrap/Modal";
 import PersonBlock from "./PersonBlock.js";
+import SubteamBubbles from "./SubteamBubbles.js";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
 import collaborators from "../assets/images/institutions/institutions.js";
-
+import members from "../assets/members.json";
 /* Project Modal Component for Project Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool
@@ -12,9 +13,17 @@ import collaborators from "../assets/images/institutions/institutions.js";
 export default class ProjectModal extends React.Component {
   constructor(props, context) {
     super(props, context);
+    let membersList = members.members;
+    let projectMembers = [];
+    for (let i = 0; i < membersList.length; i++) {
+      if (membersList[i].projects.includes(props.data.id)) {
+        projectMembers.push(membersList[i]);
+      }
+    }
     this.state = {
       showModal: false,
       data: this.props.data,
+      projectMembers: projectMembers,
     };
   }
 
@@ -31,6 +40,8 @@ export default class ProjectModal extends React.Component {
   /* renders modal component */
   render() {
     let data = this.props.data;
+    console.log(data);
+    console.log(!data.collaborators.length);
     return (
       <div className="project-modal-container">
         <div
@@ -42,24 +53,17 @@ export default class ProjectModal extends React.Component {
         </div>
         <Modal size="lg" show={this.state.showModal} onHide={this.handleClose}>
           <div closeButton />
-          <img className="project-modal-pic" src={headerPhotos.projectHeader} />
+          <img
+            className="project-modal-pic"
+            src={headerPhotos.projectHeader}
+            alt=""
+          />
           <Modal.Header closeButton>
             <Modal.Title>
               <div className="project-modal-title-container">
                 <div className="projects-title">{data.title}</div>
                 <div className="modal-project-teams-container">
-                  <div className="project-teams">
-                    {data.subteams.map((team, index) => {
-                      return (
-                        <div
-                          className="project-subteam-bubble"
-                          style={{ background: this.props.map[team] }}
-                        >
-                          {team}
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <SubteamBubbles data={data.subteams} />
                 </div>
               </div>
             </Modal.Title>
@@ -71,23 +75,24 @@ export default class ProjectModal extends React.Component {
               })}
             </div>
             <div className="modal-members">
-              <div className="project-title">Team Members</div>
+              <div className="section-title">Team Members</div>
               <div className="modal-members-blocks">
-                {data.members.map((person, index) => {
+                {this.state.projectMembers.map((person, index) => {
                   return (
                     <PersonBlock mobile={this.props.mobile} data={person} />
                   );
                 })}
               </div>
             </div>
-            {!data.collaborators.length && (
+            {data.collaborators.length > 0 && (
               <div>
-                <div className="project-title">Collaborators</div>
+                <div className="section-title">Collaborators</div>
                 {data.collaborators.map((collaborator, index) => {
                   return (
                     <img
                       className="collaborator-image"
                       src={collaborators[collaborator]}
+                      alt=""
                     />
                   );
                 })}

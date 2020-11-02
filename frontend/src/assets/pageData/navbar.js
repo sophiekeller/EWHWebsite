@@ -1,11 +1,11 @@
 export default {
   pages: [
     {
-      title: "About Us",
+      title: "About",
       url: "about",
     },
     {
-      title: "Our Team",
+      title: "Team",
       url: "team",
     },
     {
@@ -13,12 +13,12 @@ export default {
       url: "projects",
     },
     {
-      title: "Contact Us",
+      title: "Contact",
       url: "contact",
     },
     {
-      title: "Recruitment",
-      url: "recruitment",
+      title: "Join",
+      url: "join",
     },
   ],
 };

@@ -1,0 +1,6 @@
+Instructions for install:
+Download zip, unzip using command line, and open file inside ginrummy directory.
+
+Instructions for build:
+Run "make" to build and open utop.
+Run "make play" to start game play. 

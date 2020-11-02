@@ -4,11 +4,11 @@ import pageData from "../assets/pageData/contact.js";
 //COMPONENTS
 import Header from "../components/Header";
 import Modal from "react-bootstrap/Modal";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 import { Document, Page } from "react-pdf/dist/umd/entry.webpack";
 import samplePDF from "./info_packet.pdf";
 
-const gapi = require("gapi-client");
-const fetch = require("node-fetch");
 const emailjs = require("emailjs-com");
 // const {google} = require('googleapis');
 
@@ -25,7 +25,7 @@ export default class Contact extends React.Component {
       message: "",
       error: "",
       showModal: false,
-      numPages: null,
+      numPages: null
     };
   }
   clear() {
@@ -36,26 +36,24 @@ export default class Contact extends React.Component {
     let template_params = {
       from_name: this.state.name,
       from_email: this.state.email,
-      message: this.state.message,
+      message: this.state.message
     };
     let service_id = "gmail";
     let template_id = "site_form";
     let user_id = process.env.REACT_APP_EMAIL_JS_USER_ID;
-    console.log("env", process.env);
-    console.log("user_id", user_id);
     let result = await emailjs.send(
       service_id,
       template_id,
       template_params,
       user_id
     );
-    if (result.status == 200) {
+    if (result.status === 200) {
       this.clear();
       this.setState({ error: "your message was sent" });
     } else {
       this.setState({
         error:
-          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message.",
+          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message."
       });
     }
   }
@@ -70,8 +68,13 @@ export default class Contact extends React.Component {
   }
   /* renders contact page */
   render() {
+    let navbar = <NavBar />;
+    if (this.props.mobile) {
+      navbar = <MobileNavBar />;
+    }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={headerPhotos.secondHeader}
@@ -82,14 +85,6 @@ export default class Contact extends React.Component {
           <div className="contact-title">Support Our Mission</div>
           <div className="contact-paragraph">{pageData.paragraph}</div>
           <div className="contact-buttons-container">
-            <div
-              className="contact-button"
-              onClick={() => {
-                this.setState({ showModal: true });
-              }}
-            >
-              Sponsorship Packet
-            </div>
             <Modal
               classname="contact-modal"
               size="lg"
@@ -121,7 +116,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.name}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ name: e.target.value });
             }}
             placeholder="Name"
@@ -129,7 +124,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.email}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ email: e.target.value });
             }}
             placeholder="Your Email Address"
@@ -137,7 +132,7 @@ export default class Contact extends React.Component {
           <textarea
             className="contact-textarea"
             value={this.state.message}
-            onChange={(e) => {
+            onChange={e => {
               this.setState({ message: e.target.value });
             }}
             placeholder="Leave a Message"

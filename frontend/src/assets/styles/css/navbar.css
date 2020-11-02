@@ -65,6 +65,8 @@
   flex-direction: row;
   white-space: nowrap;
   font-size: 18px;
+  transition-delay: 0.4s;
+  text-decoration: none;
 }
 .nav-button:hover {
   cursor: pointer;

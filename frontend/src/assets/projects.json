@@ -1,488 +1,77 @@
 {
-    "current_projects": [{
-        "title": "Health Friend",
-        "subteams": ["Software"],
-        "info": "Currently, menstrual health is considered very taboo in low-resource communities in India. The software subteam is partnering with Barefoot College to design and implement an educational game with an engaging story-line and rich visuals to teach women about their bodies from the safety of their own homes."
-    }, {
-        "title": "Management Sciences for Health Collaboration",
-        "subteams": ["MSH"],
-        "info": "This newly formed subteam is building an online platform for immunization and health economics professionals to share resources, showcase new initiatives, and connect with one another. The team is also developing an automated web-scraper to collect job and funding information from target sites such as ThinkWell, UNICEF, WHO, Bill and Melinda Gates Foundation, etc.",
-        "collaborators": ["Management Sciences for Health Collaboration"]
-    }, {
-        "title": "Calmer Project",
-        "subteams": ["Integrative Design"],
-        "info": "Our Integrative Design team is currently developing a device to aid pain management for infants in the NICU, working with a Professor at B.C. Children's Hospital.",
-        "collaborators": ["Management Sciences for Health Collaboration"]
-    }],
-    "past_projects": [{
+    "projects": [{
+            "id": "health-friend",
+            "title": "Health Friend",
+            "subteams": ["software"],
+            "info": "Currently, menstrual health is considered very taboo in low-resource communities in India. The software subteam is partnering with Barefoot College to design and implement an educational game with an engaging story-line and rich visuals to teach women about their bodies from the safety of their own homes.",
+            "isActive": true
+        }, {
+            "id": "msh",
+            "title": "Management Sciences for Health Collaboration",
+            "subteams": ["software"],
+            "info": "This newly formed subteam is developing an automated web-scraper to collect job and funding information from target sites such as ThinkWell, UNICEF, WHO, Bill and Melinda Gates Foundation, etc.",
+            "isActive": true,
+            "collaborators": ["Management Sciences for Health Collaboration"]
+        }, {
+            "id": "calmer",
+            "title": "Calmer Project",
+            "subteams": ["integrative-design"],
+            "info": "Our Integrative Design team is currently developing a device to aid pain management for infants in the NICU, working with a Professor at B.C. Children's Hospital.",
+            "isActive": true,
+            "collaborators": ["Management Sciences for Health Collaboration"]
+        }, {
+            "id": "tvns",
             "title": "tVNS",
-            "subteams": ["Electrical"],
+            "subteams": ["electrical"],
+            "isActive": false,
             "info": "The electrical team collaborated with a neurostimulation company to develop a mechanism for measuring heart rate variability at the auricular region during simultaneous usage of the company’s tVNS device.",
             "info_long": "This project involved collaboration with a neurostimulation company that develops devices to alleviate symptoms from conditions such as depression, cardiac fibrillation, and epilepsy by utilizing vagus nerve stimulation. Our objective was to develop a mechanism for measuring heart rate variability at the auricular region during simultaneous usage of the company’s tVNS device. The collaborator supplied the first model of a tVNS device for comparison and compatibility with our “prototype” heart rate variability sensor. We performed research to identify a cost effective heart rate sensor and an accurate gold standard device for data verification, and developed Arduino code implementing the RMSSD (root mean square of successive differences) algorithm for real time heart rate variability calculations.\n The next steps involved verifying the accuracy of our device and algorithm prototype in controlled trials. We performed data collection and analysis using different anatomical locations for extracting heart rate signals (in beats per minute), evaluating multiple methods for securely fitting the prototype. Additionally, we checked for interference between our prototype and the collaborator’s device. \n Finally, we rigorously verified our prototype through analysis of post-processing outlier data and analysis of other potential sources of measurement errors. We concluded that the collaborator’s device did not interfere with the accuracy of our prototype. Since photoplethysmography (PPG) measurement requires tight contact, further work will be necessary to design a flexible and possibly customizable housing for the prototype that fits snugly against the curvature of the concha in a variety of subjects. Due to logistical complications of COVID-19, later stages of testing were canceled and we advise that our prototype should be further verified with a medical-grade EKG sensor before being adapted and applied in a consumer medical device.  After final verification and integration, the prototype can be utilized to track HRV in conjunction with the collaborator’s device.",
-            "collaborators": ["classified under NDA"],
-            "members": [{
-                    "name": "Michaela Bettez",
-                    "title": "Electrical Lead",
-                    "year": "Senior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                }, {
-                    "name": "Audrey Teasley",
-                    "title": "Electrical",
-                    "year": "",
-                    "major": "Physics",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Kerry Johnson",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Hannah Daniel",
-                    "title": "Electrical",
-                    "year": "",
-                    "major": "Computer Science",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Rebecca Hasser",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Computer Science",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Samantha Pitts",
-                    "title": "Electrical",
-                    "year": "",
-                    "major": "Biomedical Engineering",
-                    "projects": "tVNS"
-                }
-
-            ]
+            "collaborators": []
         },
         {
+            "id": "kijenzi",
             "title": "Kijenzi Projects",
-            "subteams": ["Integrative Design"],
+            "subteams": ["integrative-design"],
+            "isActive": false,
             "info": "The Integrative Design Subteam completed 3D-printable designs for an Assistive Sock Aid device and Arm Supinator/Pronator device to be distributed by Kijenzi, a nonprofit that 3D prints medical devices in under resourced communities.",
             "info_long": "The Integrative Design Subteam completed 3D-printable designs to be used by Kijenzi, a nonprofit that 3-D prints medical devices in under resourced communities.The Assistive Sock Aid and Arm Supinator/Pronator designs were solutions in order to meet the needs of occupational therapy patients in Sub-Saharan Africa. Both designs are 3D-printable and minimize the need for additional material, thus creating cost-effective and efficient solutions.\n The Assistive Sock Aid device, which helps a patient who cannot bend their spine to place a sock on their foot, went through many iterations of design beginning with a prototype made out of a plastic water bottle. Testing was able to occur on the second iteration design which was 3D printed and the results surfaced the need for the device to be thinner, have a mechanism to hold the sock in a more secure manner and have lips that could be threaded. Ultimately, the most optimal design was composed of a tapered semi-cylindrical tube with a lip at the top that allowed for the threading of twine, a hook on the back of the device to hold the sock and holes for the final tying of twine. \n The Arm Supinator/Pronator device, which helps nurse and strengthen a patients injured shoulder through repeated motion of pronation and supination, began with an initial design of a wheel with a center handle that could be used to twist the wheel back and forward. Although testing of the second iteration was supposed to occur with a 3D-printed prototype due to COVID-19 that was not possible. As a result, finite element analysis (FEA) on Fusion 360 was used to determine structural weak points in the design. In the end, the most optimal design attempted to fix these weak points and was composed of a wheel that could attach to the wall through a mount, had a handle in the middle with holes for grip strength and had weights that could be added for increased resistance during use.",
-            "collaborators": ["Kijenzi"],
-            "members": [{
-                    "name": "Ana Elhom",
-                    "title": "Integrative Design Lead",
-                    "year": "Senior",
-                    "major": "Biomedical Engineering",
-                    "projects": "Waste Incinerator"
-                }, {
-                    "name": "Alan Li",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Biology",
-                    "projects": ""
-                },
-                {
-                    "name": "Connie Hou",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Computer Science",
-                    "projects": ""
-                },
-                {
-                    "name": "Daniel Vitenson",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Bioengineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Evan Cheng",
-                    "title": "Integrative Design & INDAGO",
-                    "year": "Senior",
-                    "major": "Bioenginereing",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Jake Beckman",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Mechanical Engineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Julia Halligan",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Mechanical Engineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Lane Fitzsimmons",
-                    "title": "Integrative Design",
-                    "year": "Junior",
-                    "major": "Information Science & Biological Sciences",
-                    "projects": ""
-                },
-                {
-                    "name": "Michael Zhang",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Bioengineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Sham Hamidian",
-                    "title": "Integrative Design",
-                    "year": "Senior",
-                    "major": "Biomedical Engineering",
-                    "projects": "Waste Incinerator"
-                }
-            ]
+            "collaborators": ["kijenzi"]
         },
         {
+            "id": "indago",
             "title": "INDAGO",
-            "subteams": ["INDAGO"],
-            "info": "The INDAGO subteam designed an online tool to streamline the FDA approval process for entering the clinical trial phase of new drug development. This tool allowed researchers to create and manage their Investigational New Drug Application (IND) while receiving tailored advice through a computerized support system that united FDA guidelines with institutional and third-party guidance. ",
+            "subteams": ["software"],
+            "isActive": false,
+            "info": "The INDAGO subteam designed an online tool to streamline the FDA approval process for entering the clinical trial phase of new drug development. This tool allowed researchers to create and manage their Investigational New Drug Application (IND) while receiving tailored advice through a computerized support system.",
             "info_long": "The INDAGO subteam designed an interface to streamline the FDA approval process for researchers preparing to enter the clinical trial phase of new drug development. \n INDAGO is an online tool designed to streamline the FDA approval process for researchers preparing to enter the clinical trial phase of new drug development. Similar to a college application or TurboTax, it walks users through the steps to submit the Investigational New Drug Application (IND) and offers various tools to facilitate the process. It allows users to create and manage their application while accessing tailored advice through a computerized support system that unites FDA guidelines with institutional and third-party guidance. The implications of this project are that new, potentially life-saving medications can be tested and made available for use in a more efficient manner. \n This project was initiated in early 2019 by a Cornell Engineering World Health (EWH) member who worked with an early-stage startup in the pharmaceutical industry and saw many issues when it came to navigating the path toward clinical trials. In creating INDAGO, he hoped to mitigate the challenges researchers face when proceeding to clinical trials. More specifically, these challenges surround understanding and successfully submitting pertinent documentation, such as the Investigational New Drug Application (IND) and New Drug Application (NDA). \n Finding a potential solution to these problems could organize and simplify this process, which is what INDAGO aims to do.",
-            "collaborators": [],
-            "members": [{
-                    "name": "Elena Li",
-                    "title": "INDAGO Lead",
-                    "year": "Junior",
-                    "major": "",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Arun Chaudhuri",
-                    "title": "INDAGO",
-                    "year": "Junior",
-                    "major": "Computer Science",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Catherine Kwak",
-                    "title": "INDAGO",
-                    "year": "Senior",
-                    "major": "Information Science",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Chloe Hasund",
-                    "title": "INDAGO",
-                    "year": "Sophomore",
-                    "major": "Global and Public Health Sciences",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Erika Hauschild",
-                    "title": "INDAGO",
-                    "year": "",
-                    "major": "Computer Science",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Evan Cheng",
-                    "title": "Integrative Design & INDAGO",
-                    "year": "Senior",
-                    "major": "Bioenginereing",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Julia Hans",
-                    "title": "INDAGO",
-                    "year": "Junior",
-                    "major": "Health Care Policy",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Orko Sinha",
-                    "title": "INDAGO",
-                    "year": "Junior",
-                    "major": "Biometry & Statistics, Information Science",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Sharon Li",
-                    "title": "INDAGO & Business",
-                    "year": "Junior",
-                    "major": "Information Science",
-                    "projects": "INDAGO, Team Site"
-                }, {
-                    "name": "Alison Landry",
-                    "title": "INDAGO & Business",
-                    "year": "Junior",
-                    "major": "Operations Research",
-                    "projects": "INDAGO, Business, Social Media"
-                },
-                {
-                    "name": "Hannah Mahanti",
-                    "title": "Business",
-                    "year": "Senior",
-                    "major": "Information Science",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Manan Modi",
-                    "title": "Business",
-                    "year": "Senior",
-                    "major": "ILR",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Sharon Li",
-                    "title": "INDAGO & Business",
-                    "year": "Junior",
-                    "major": "Information Science",
-                    "projects": "INDAGO, Team Site"
-                },
-                {
-                    "name": "Sophie Keller",
-                    "title": "Business Lead",
-                    "year": "Junior",
-                    "major": "Computer Science",
-                    "projects": "INDAGO, Team Site, Business"
-                },
-                {
-                    "name": "Sungjae Ahn",
-                    "title": "Business",
-                    "year": "Senior",
-                    "major": "AEM",
-                    "projects": "INDAGO, Business"
-                },
-                {
-                    "name": "Tori DiStefano",
-                    "title": "Business",
-                    "year": "Junior",
-                    "major": "Biology and Society",
-                    "projects": "INDAGO, Business, Finances"
-                },
-                {
-                    "name": "Kaav Shariati",
-                    "title": "Business & Integrative Design",
-                    "year": "Alum",
-                    "major": "Biological Engineering",
-                    "projects": "Incinerator, INDAGO"
-                }
-            ]
+            "collaborators": []
         },
         {
+            "id": "incinerator",
             "title": "Incinerator",
-            "subteams": ["Integrative Design"],
+            "subteams": ["integrative-design"],
+            "isActive": false,
             "info": "The Integrative Design partnered with a nonprofit in India called Barefoot College to develop a waste incinerator: an environmental alternative for women disposing of menstrual waste items. ",
             "info_long": "The Integrative Design partnered with a nonprofit in India called Barefoot College to develop an environmental alternative to waste removal. The Incinerator. design is a solution developed for Barefoot College in order to meet the needs of women in Rajasthan, India. Three solutions were first proposed in order to create a clean-energy and low cost menstrual waste disposal system. The activated charcoal filter design focused on filtering out harmful toxins in the smoke produced while burning menstrual waste by adding the activated charcoal filter to a pre-existing mudka. The fresnel lens design aimed to incinerate the menstrual pads by using a fresnel lens which concentrated sunlight onto the pads in order to begin combustion. Lastly, the solar cooker design looked at once again harnessing the power of sunlight in order to then incinerate the pads.\n This design was not prototyped or tested due to time constraints and feasibility. After prototyping the activated charcoal design and testing it with the Wynd Air Quality Tracker it was found that the design did not seem effective in reducing the amount of toxins being produced by the mudka. However, after testing the fresnel lens design in Florida it was found that this design allowed for simple combustion by having the fresnel lens effectively concentrate sunlight to an area and begin combustion around the same time each day. Ultimately, the fresnel lens design was deemed the most successful and optimal design created.",
-            "collaborators": ["Barefoot College"],
-            "members": [{
-                    "name": "Victoria Tan",
-                    "title": "Team Lead",
-                    "year": "Senior",
-                    "major": "Mechanical Engineering",
-                    "projects": "Menstrual Waste Incinerator"
-                }, {
-                    "name": "Alan Li",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Biology",
-                    "projects": ""
-                },
-                {
-                    "name": "Ana Elhom",
-                    "title": "Integrative Design Lead",
-                    "year": "Senior",
-                    "major": "Biomedical Engineering",
-                    "projects": "Waste Incinerator"
-                },
-                {
-                    "name": "Connie Hou",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Computer Science",
-                    "projects": ""
-                },
-                {
-                    "name": "Daniel Vitenson",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Bioengineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Evan Cheng",
-                    "title": "Integrative Design & INDAGO",
-                    "year": "Senior",
-                    "major": "Bioenginereing",
-                    "projects": "INDAGO"
-                },
-                {
-                    "name": "Jake Beckman",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Mechanical Engineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Lane Fitzsimmons",
-                    "title": "Integrative Design",
-                    "year": "Junior",
-                    "major": "Information Science & Biological Sciences",
-                    "projects": ""
-                },
-                {
-                    "name": "Michael Zhang",
-                    "title": "Integrative Design",
-                    "year": "",
-                    "major": "Bioengineering",
-                    "projects": ""
-                },
-                {
-                    "name": "Sham Hamidian",
-                    "title": "Integrative Design",
-                    "year": "Senior",
-                    "major": "Biomedical Engineering",
-                    "projects": "Waste Incinerator"
-                },
-                {
-                    "name": "Kaav Shariati",
-                    "title": "Business & Integrative Design",
-                    "year": "Alum",
-                    "major": "Biological Engineering",
-                    "projects": "Incinerator, INDAGO"
-                }
-            ]
+            "collaborators": ["barefootcollege"]
         },
         {
+            "id": "rex",
             "title": "Rex",
-            "subteams": ["Software"],
+            "subteams": ["software"],
+            "isActive": false,
             "info": "Rex is an app empowering patients and doctors with a simple solution for tracking long-term medical conditions. ",
             "info_long": "Rex is an app empowering patients and doctors with a simple solution for tracking long-term medical conditions. Patients utilize the app to record their symptoms as they are happening. Doctors then use this reliable information to aid in treatment and diagnosis. The app also lets patients create reminders for them to take their medication. \n The application features symptom tracking including fast symptom logging and the ability to review past symptom history. It also includes medication controls to easily organize medications by keeping track of them, customizing push notifications as reminders, and calendar views to access progress. Lastly, it features a user-focused interface not requiring account registration and using simple visualizations and controls. \n Our simple-to-use application encourages patients to be more proactive in logging their conditions, and enables doctors to easily access their progress. The app was handed off to a doctor at Weill Cornell for testing.",
-            "collaborators": ["Weill Cornell"],
-            "members": [{
-                    "name": "Ben Edwards",
-                    "title": "Previous Software Lead",
-                    "year": "Alum",
-                    "major": "Computer Science",
-                    "projects": "Rex"
-                },
-                {
-                    "name": "Navin Ramsaroop",
-                    "title": "Software Lead",
-                    "year": "Senior",
-                    "major": "Computer Science",
-                    "projects": "Rex, Menstrual Health Game"
-                },
-                {
-                    "name": "Albert Chung",
-                    "title": "Previous Software Lead",
-                    "year": "Alum",
-                    "major": "Computer Science",
-                    "projects": "Rex"
-                },
-                {
-                    "name": "Katy Voor",
-                    "title": "Software",
-                    "year": "Alum",
-                    "major": "Computer Science",
-                    "projects": "Rex, Health Friend"
-                },
-                {
-                    "name": "Eashan Garg",
-                    "title": "Previous Team Lead",
-                    "year": "Alum",
-                    "major": "Computer Science",
-                    "projects": "Rex, Health Friend"
-                }
-            ]
-        }, {
+            "collaborators": ["weillcornell"]
+        },
+        {
+            "id": "grip-sensor",
             "title": "Grip Sensor Project",
-            "subteams": ["Electrical"],
+            "subteams": ["electrical"],
+            "isActive": false,
             "info": "The electrical subteam partnered with the National Institute of Health (NIH) to build a patient grip device that could be used for opioid addiction research.",
             "info_long": "The electrical subteam partnered with the National Institute of Health (NIH) to build a device that could be used for opioid addiction research. NIH requested that we build a device that could take information on the force of a patient's grip over time for use in collecting data. We built a small, hollow, hand-held cylinder with three force-sensitive resistors connected to an internal arduino that could track the average force applied to the device based on a set of voltage dividers. This data was transmitted via bluetooth to an external computer. We used an Arduino script on the Adafruit Feather board and a python script for the receiving computer where we saved the data in a CSV. \n Our initial prototype ran on a small internal battery, however when we tested it this semester, we realized the battery ran out of power within about ten minutes, which wasn’t practical for lab use. We eliminated the battery, making it power off a USB connection to a computer instead, allowing for prolonged use. \n An additional capability to our final iteration was serial output via USB, which was integrated in the existing python script. This feature ensured that data could be transmitted in the case that the computers used didn’t have bluetooth capability. The serial output transmits the average of the force-sensitive resistor values over time, the same data as is transmitted by the bluetooth. ",
-            "collaborators": ["NIH"],
-            "members": [{
-                    "name": "Michael Solomentsov",
-                    "title": "Previous Electrical Lead",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Gautam Mekkat",
-                    "title": "Previous Electrical Lead",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Rohan Rai",
-                    "title": "Electrical",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Kerry Johnson",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Michaela Bettez",
-                    "title": "Electrical Lead",
-                    "year": "Senior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                }, {
-                    "name": "Rebecca Hasser",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Computer Science",
-                    "projects": "tVNS"
-                }
-            ]
-        }, {
-            "title": "Eye Sensor Project",
-            "subteams": ["Electrical"],
-            "info": " The electrical subteam partnered with the National Institute of Health (NIH) to build a patient grip device that could be used for opioid addiction research.",
-            "info_long": "The electrical subteam collaborated with the National Institute of Drug Administration (NIDA) to build a blink sensor to be used in opioid addiction research. The device consisted of a frame modeled after a pair of normal eyeglasses, with a small camera attached and pointed at the eye. These glasses could be worn comfortably, causing minimal interference with normal activities. The goal was to track useful eye-related data including blink rate and pupil dilation. We achieved this by using computer vision techniques to process the camera output, identifying key parts of the eye and analyzing changes. To further improve accuracy, we added a UV filter to the camera lens. \n In multiple iterations, we made various tweaks in the mechanical structure and software implementation, including rebuilding with a new camera, improving eye lighting, and adding a python script so that data could be exported in csv format. These changes allowed for greater consistency in measurements as well as upgraded adaptability and ease of use.",
-            "collaborators": ["NIDA"],
-            "members": [{
-                    "name": "Michael Solomentsov",
-                    "title": "Previous Electrical Lead",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Gautam Mekkat",
-                    "title": "Previous Electrical Lead",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Rohan Rai",
-                    "title": "Electrical",
-                    "year": "Alum",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "Grip Sensor Project"
-                }, {
-                    "name": "Kerry Johnson",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                },
-                {
-                    "name": "Michaela Bettez",
-                    "title": "Electrical Lead",
-                    "year": "Senior",
-                    "major": "Electrical & Computer Engineering",
-                    "projects": "tVNS"
-                }, {
-                    "name": "Rebecca Hasser",
-                    "title": "Electrical",
-                    "year": "Junior",
-                    "major": "Computer Science",
-                    "projects": "tVNS"
-                }
-            ]
+            "collaborators": ["nih"]
         }
     ]
 }

@@ -1,10 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Design
 //https://www.figma.com/file/iHNf8ii0cEDhOkLSrFXU2e/EHW-Website?node-id=0%3A1
-//COMPONENTS
-import NavBar from "./components/NavBar.js";
-import MobileNavBar from "./components/MobileNavBar.js";
+
 //SCREENS
 import About from "./screens/About.js";
 import Recruitment from "./screens/Recruitment.js";
@@ -34,7 +32,7 @@ export default class App extends React.Component {
     //initialize state
     this.state = {
       screenId: screenId.about, //default to home page
-      width: window.innerWidth, //get width of page(for mobile)
+      width: window.innerWidth //get width of page(for mobile)
     };
   }
 
@@ -55,14 +53,13 @@ export default class App extends React.Component {
   /* render the navbar and the current page being looked at with router */
   render() {
     const mobile = this.state.width <= 650;
-    let navbar = <NavBar />;
-    if (mobile) {
-      navbar = <MobileNavBar />;
-    }
+    // let navbar = <NavBar />;
+    // if (mobile) {
+    //   navbar = <MobileNavBar />;
+    // }
     return (
       <div class="main-container">
         <Router>
-          {navbar}
           <Switch>
             <Route exact path="/">
               <About mobile={mobile} />
@@ -73,7 +70,7 @@ export default class App extends React.Component {
             <Route exact path="/contact">
               <Contact mobile={mobile} />
             </Route>
-            <Route exact path="/recruitment">
+            <Route exact path="/join">
               <Recruitment mobile={mobile} />
             </Route>
             <Route exact path="/team">

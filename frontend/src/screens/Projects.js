@@ -6,9 +6,8 @@ import projects from "../assets/projects.json";
 //COMPONENTS
 import Header from "../components/Header";
 import Project from "../components/Project";
-import ProjectModal from "../components/ProjectModal";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import NavBar from "../components/Navbar.js";
+import MobileNavBar from "../components/MobileNavBar.js";
 
 /* Projects Page Component
  * PROPS:
@@ -17,9 +16,20 @@ import Button from "react-bootstrap/Button";
 export default class Projects extends React.Component {
   constructor(props, context) {
     super(props, context);
+    let current = [];
+    let past = [];
+    let projectsList = projects.projects;
+    for (let i = 0; i < projectsList.length; i++) {
+      let project = projectsList[i];
+      if (project.isActive) {
+        current.push(project);
+      } else {
+        past.push(project);
+      }
+    }
     this.state = {
-      current_projects: projects.current_projects,
-      past_projects: projects.past_projects,
+      current_projects: current,
+      past_projects: past,
     };
   }
 
@@ -28,11 +38,14 @@ export default class Projects extends React.Component {
     let current = this.state.current_projects;
     let past = this.state.past_projects;
     let cont = "projects-blocks-container";
+    let navbar = <NavBar />;
     if (this.props.mobile) {
+      navbar = <MobileNavBar />;
       cont = "projects-blocks-container-m";
     }
     return (
       <div className="home-container">
+        {navbar}
         <Header
           mobile={this.props.mobile}
           photo={headerPhotos.projectHeader}

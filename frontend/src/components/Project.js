@@ -1,9 +1,10 @@
 import React from "react";
 //ASSETS
 import images from "../assets/images/projectImages/projectImages.js";
+import teams from "../assets/teams.json";
 //COMPONENTS
-import PersonBlock from "./PersonBlock.js";
 import ProjectModal from "../components/ProjectModal.js";
+import SubteamBubbles from "../components/SubteamBubbles.js";
 
 /* Project Component
  * PROPS:
@@ -70,6 +71,10 @@ export default class Project2 extends React.Component {
         </div>
       );
     }
+    let image = images.project;
+    if (images[data.id]) {
+      image = images[data.id];
+    }
     return (
       <div className={containerClass}>
         <div
@@ -81,31 +86,14 @@ export default class Project2 extends React.Component {
           }}
           className={photoDescription}
         >
-          <img className={photo} src={images.project} />
+          <img className={photo} src={image} alt="" />
           {this.state.showOverlay && (
             <div className="project-description">{data.info}</div>
           )}
+          <div className="project-title">{data.title}</div>
         </div>
         <div className="project-text">
-          <div className="project-title">{data.title}</div>
-          <div className="project-teams">
-            {data.subteams.map((team, index) => {
-              if (team != null) {
-                let color = this.state.map[team];
-                if (!color) {
-                  color = "#EAF9D9";
-                }
-                return (
-                  <div
-                    className="project-subteam-bubble"
-                    style={{ background: color }}
-                  >
-                    {team}
-                  </div>
-                );
-              }
-            })}
-          </div>
+          <SubteamBubbles data={data.subteams} />
           {bar}
         </div>
       </div>
