@@ -9,7 +9,7 @@ To add a new photo or change the current profile picture for someone
 1. Open frontend/src/assets/images/profilePics directory
 2. Add the photo to this folder
 3. Open profilePics.js (in the profilePics directory) and either change the current photo url for this person's entry or if adding a new member, add a new entry to the list of entries. An example entry for a person named Sophie Keller with profile pic sophiespic.jpg would be:
-`sophiekeller: require("./sophiespic.jpg"),`
+   `sophiekeller: require("./sophiespic.jpg"),`
 4. To change the orientation of the member's profile pic, see updating/adding member profile information.
 
 ### Updating/Adding Member Profile Information
@@ -26,15 +26,15 @@ To add a new photo or change the current profile picture for someone
 
 1. Open frontend/src/assets/pageData/projects.json.
 2. If you're adding, add a new entry that matches the format of the previous entries. Otherwise, edit the entry that corresponds to the project you are editing.
-3. Make sure the formatting matches those of the other entries in the file. For example, isActiveshould be true or false with no quotes. Id, title, and info should have quotes around them. Subteams and collaborators should have square brackets around them and be separated by commas.
-4. If this is a project that doesn't have collaborators, enter an empty list ([]) for the collaborators entry. Otherwise, make sure that the collaborator name in your list is listed in frontend/src/assets/images/institutions/institutions.js. If these names don't match, this image won't be rendered correctly. To add a new collaborator photo, see steps below.
+3. Make sure the formatting matches those of the other entries in the file. For example, `isActiveshould` be `true` or `false` with no quotes. `id`, `title`, and `info` should have quotes around them. `subteams` and `collaborators` should have square brackets around them and be separated by commas.
+4. If this is a project that doesn't have collaborators, enter an empty list (`[]`) for the collaborators entry. Otherwise, make sure that the collaborator name in your list is listed in frontend/src/assets/images/institutions/institutions.js. If these names don't match, this image won't be rendered correctly. To add a new collaborator photo, see steps below.
 
 #### Add Collaborator Photo
 
 1. Open frontend/src/assets/pageData/institutions
 2. Add the photo in this directory
 3. Open the institutions.js in this directory and add a new entry corresponding to the image you just added. For example, if you added a collaborator called kijenzi with photo kijenzipic.jpg, you would add the entry:
-   kijenzi: require("./kijenzi.png"),
+   `kijenzi: require("./kijenzi.png"),`
    
 ## Running and Deploying
 
