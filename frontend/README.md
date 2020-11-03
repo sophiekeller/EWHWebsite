@@ -47,17 +47,18 @@ Then, open up a web browser and go to url: [http://localhost:3000](http://localh
 
 ### Deploy
 
-The site is currently deployed to Google Firebase. To deploy,
+The site is currently deployed to Google Firebase. 
 
-If logged in to the Firebase CLI already: 
+#### If logged in to the Firebase CLI already: 
 1. Run `yarn build` to build current version
 2. Run `firebase deploy` to deploy to Google Firebase
 3. Double check that ewh.engineering.cornell.edu has been updated 
 
-If not logged in on your computer:
-1. Install the Firebase [CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli) on your computer 
-2. Log in to Firebase by running `firebase login` in terminal and filling in Google account login information (found in [Accounts](https://docs.google.com/spreadsheets/d/1NJMM7ez66XNr1QrU-9lOYVqr33pNkcLb_YiSPztUlYk/edit#gid=0) document in the google drive. 
-3. In frontend directory, run firebase deploy
+#### If not logged in on your computer:
+1. Install the [Firebase CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli) on your computer 
+2. Log in to Firebase by running `firebase login` in terminal and filling in EWH Google account login information (found in [Accounts Document](https://docs.google.com/spreadsheets/d/1NJMM7ez66XNr1QrU-9lOYVqr33pNkcLb_YiSPztUlYk/edit#gid=0).
+3. In frontend directory, run `firebase deploy`
+4. Double check that ewh.engineering.cornell.edu has been updated 
 
 
 ## Available Scripts
