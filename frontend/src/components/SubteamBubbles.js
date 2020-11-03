@@ -1,6 +1,6 @@
 import React from "react";
 
-import teams from "../assets/teams.json";
+import teams from "../assets/pageData/teams.json";
 /* Image Buttons in About Page Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool

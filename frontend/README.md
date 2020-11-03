@@ -2,7 +2,62 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Editing Site Content
 
-### Updating images
+### Updating/Adding Member Profile Pictures
+
+To add a new photo or change the current profile picture for someone
+
+1. Open frontend/src/assets/images/profilePics directory
+2. Add the photo to this folder
+3. Open profilePics.js (in the profilePics directory) and either change the current photo url for this person's entry or if adding a new member, add a new entry to the list of entries. An example entry for a person named Sophie Keller with profile pic sophiespic.jpg would be:  
+`sophiekeller: require("./sophiespic.jpg"),`
+4. To change the orientation of the member's profile pic, see updating/adding member profile information.
+
+### Updating/Adding Member Profile Information
+
+1. Open frontend/src/assets/pageData/members.json
+2. If you're adding, add a new entry that matches one of the previous. Otherwise, edit the entry that corresponds to the member you are editing.
+3. Make sure the formatting matches those of the other entries in the file. For example, `isAlumni` and `isLead` should be true or false with no quotes. `name` and `major` should have quotes around them. `projects` and `teams` should have square brackets around them and be separated by commas.
+4. Open frontend/src/assets/pageData/projects.json and frontend/src/assets/pageData/teams.json.
+5. Make sure that any project names in your member's projects list as well as any team name in their teams list match the corresponding file. Id's in projects.json are explicitly shown. In teams.json, the id's are the value that comes to the left of the colon for each entry: ex: `business`, `software`, etc.
+
+\*\* To change the orientation of the member's profile pic, add the pair `"orientation": "0 _px"` to the member's profile json. In place of `_`, put the new number to orient the photo up and down (more negative numbers will move the photo up and more positive ones will move it down).
+
+### Updating/Adding Project Information
+
+1. Open frontend/src/assets/pageData/projects.json.
+2. If you're adding, add a new entry that matches the format of the previous entries. Otherwise, edit the entry that corresponds to the project you are editing.
+3. Make sure the formatting matches those of the other entries in the file. For example, `isActiveshould` be `true` or `false` with no quotes. `id`, `title`, and `info` should have quotes around them. `subteams` and `collaborators` should have square brackets around them and be separated by commas.
+4. If this is a project that doesn't have collaborators, enter an empty list (`[]`) for the collaborators entry. Otherwise, make sure that the collaborator name in your list is listed in frontend/src/assets/images/institutions/institutions.js. If these names don't match, this image won't be rendered correctly. To add a new collaborator photo, see steps below.
+
+#### Add Collaborator Photo
+
+1. Open frontend/src/assets/pageData/institutions
+2. Add the photo in this directory
+3. Open the institutions.js in this directory and add a new entry corresponding to the image you just added. For example, if you added a collaborator called kijenzi with photo kijenzipic.jpg, you would add the entry:  
+`kijenzi: require("./kijenzi.png"),`
+   
+## Running and Deploying
+
+### Run
+To run this web app locally, navigate to the frontend folder in your terminal and run
+`npm start` 
+Then, open up a web browser and go to url: [http://localhost:3000](http://localhost:3000). The site should open there. 
+
+### Deploy
+
+The site is currently deployed to Google Firebase. 
+
+#### If logged in to the Firebase CLI already: 
+1. Run `yarn build` to build current version
+2. Run `firebase deploy` to deploy to Google Firebase
+3. Double check that ewh.engineering.cornell.edu has been updated 
+
+#### If not logged in on your computer:
+1. Install the [Firebase CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli) on your computer 
+2. Log in to Firebase by running `firebase login` in terminal and filling in EWH Google account login information (found in [Accounts Document](https://docs.google.com/spreadsheets/d/1NJMM7ez66XNr1QrU-9lOYVqr33pNkcLb_YiSPztUlYk/edit#gid=0).
+3. In frontend directory, run `firebase deploy`
+4. Double check that ewh.engineering.cornell.edu has been updated 
+
 
 ## Available Scripts
 
@@ -47,26 +102,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
 ### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+See https://facebook.github.io/create-react-app/docs/advanced-configuration for advanced config info.
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

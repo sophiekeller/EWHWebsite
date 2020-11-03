@@ -1,6 +1,6 @@
 import React from "react";
 
-import teams from "../assets/teams.json";
+import teams from "../assets/pageData/teams.json";
 
 /* FilterButton Component
  * PROPS:
