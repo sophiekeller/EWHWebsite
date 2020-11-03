@@ -1,7 +1,7 @@
 import React from "react";
 
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
-import projects from "../assets/projects.json";
+import projects from "../assets/pageData/projects.json";
 
 //COMPONENTS
 import Header from "../components/Header";

@@ -1,7 +1,7 @@
 import React from "react";
 import images from "../assets/images/aboutImages/aboutImages.js";
-import members from "../assets/members.json";
-import teams from "../assets/teams.json";
+import members from "../assets/pageData/members.json";
+import teams from "../assets/pageData/teams.json";
 
 //COMPONENTS
 import Header from "../components/Header";

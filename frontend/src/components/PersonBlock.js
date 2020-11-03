@@ -1,8 +1,8 @@
 import React from "react";
 import profilePics from "../assets/images/profilePics/profilePics.js";
-import members from "../assets/members.json";
-import teamsData from "../assets/teams.json";
-import projectsData from "../assets/projects.json";
+import members from "../assets/pageData/members.json";
+import teamsData from "../assets/pageData/teams.json";
+import projectsData from "../assets/pageData/projects.json";
 /* Person Block Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool

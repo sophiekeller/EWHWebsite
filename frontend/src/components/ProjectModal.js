@@ -5,7 +5,7 @@ import PersonBlock from "./PersonBlock.js";
 import SubteamBubbles from "./SubteamBubbles.js";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
 import collaborators from "../assets/images/institutions/institutions.js";
-import members from "../assets/members.json";
+import members from "../assets/pageData/members.json";
 /* Project Modal Component for Project Component
  * PROPS:
  * mobile = true if the screen rendering the site has width less than 650 px, bool

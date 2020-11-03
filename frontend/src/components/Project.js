@@ -1,7 +1,7 @@
 import React from "react";
 //ASSETS
 import images from "../assets/images/projectImages/projectImages.js";
-import teams from "../assets/teams.json";
+import teams from "../assets/pageData/teams.json";
 //COMPONENTS
 import ProjectModal from "../components/ProjectModal.js";
 import SubteamBubbles from "../components/SubteamBubbles.js";
