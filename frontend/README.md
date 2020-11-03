@@ -8,21 +8,19 @@ To add a new photo or change the current profile picture for someone
 
 1. Open frontend/src/assets/images/profilePics directory
 2. Add the photo to this folder
-3. Open profilePics.js (in the profilePics directory) and either
-   change the current photo url for this person's entry or if adding
-   a new member, add a new entry to the list of entries. An example entry for a person named Sophie Keller with profile pic sophiespic.jpg would be:
-   sophiekeller: require("./sophiespic.jpg"),
+3. Open profilePics.js (in the profilePics directory) and either change the current photo url for this person's entry or if adding a new member, add a new entry to the list of entries. An example entry for a person named Sophie Keller with profile pic sophiespic.jpg would be:
+`sophiekeller: require("./sophiespic.jpg"),`
 4. To change the orientation of the member's profile pic, see updating/adding member profile information.
 
 ### Updating/Adding Member Profile Information
 
 1. Open frontend/src/assets/pageData/members.json
 2. If you're adding, add a new entry that matches one of the previous. Otherwise, edit the entry that corresponds to the member you are editing.
-3. Make sure the formatting matches those of the other entries in the file. For example, isAlumni and isLead should be true or false with no quotes. Name and major should have quotes around them. Projects and teams should have square brackets around them and be separated by commas.
+3. Make sure the formatting matches those of the other entries in the file. For example, `isAlumni` and `isLead` should be true or false with no quotes. `name` and `major` should have quotes around them. `projects` and `teams` should have square brackets around them and be separated by commas.
 4. Open frontend/src/assets/pageData/projects.json and frontend/src/assets/pageData/teams.json.
-5. Make sure that any project names in your member's projects list as well as any team name in their teams list match the corresponding file. Id's in projects.json are explicitly shown. In teams.json, the id's are the value that comes to the left of the colon for each entry: ex: business, software, etc.
+5. Make sure that any project names in your member's projects list as well as any team name in their teams list match the corresponding file. Id's in projects.json are explicitly shown. In teams.json, the id's are the value that comes to the left of the colon for each entry: ex: `business`, `software`, etc.
 
-\*\* To change the orientation of the member's profile pic, add the pair "orientation": "0 _px" to the member's profile json. In place of _, put the new number to orient the photo up and down (more negative numbers will move the photo up and more positive ones will move it down).
+\*\* To change the orientation of the member's profile pic, add the pair `"orientation": "0 _px"` to the member's profile json. In place of `_`, put the new number to orient the photo up and down (more negative numbers will move the photo up and more positive ones will move it down).
 
 ### Updating/Adding Project Information
 
