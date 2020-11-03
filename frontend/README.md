@@ -37,6 +37,28 @@ To add a new photo or change the current profile picture for someone
 2. Add the photo in this directory
 3. Open the institutions.js in this directory and add a new entry corresponding to the image you just added. For example, if you added a collaborator called kijenzi with photo kijenzipic.jpg, you would add the entry:
    kijenzi: require("./kijenzi.png"),
+   
+## Running and Deploying
+
+### Run
+To run this web app locally, navigate to the frontend folder in your terminal and run
+`npm start` 
+Then, open up a web browser and go to url: [http://localhost:3000](http://localhost:3000). The site should open there. 
+
+### Deploy
+
+The site is currently deployed to Google Firebase. To deploy,
+
+If logged in to the Firebase CLI already: 
+1. Run `yarn build` to build current version
+2. Run `firebase deploy` to deploy to Google Firebase
+3. Double check that ewh.engineering.cornell.edu has been updated 
+
+If not logged in on your computer:
+1. Install the Firebase [CLI](https://firebase.google.com/docs/cli#install_the_firebase_cli) on your computer 
+2. Log in to Firebase by running `firebase login` in terminal and filling in Google account login information (found in [Accounts](https://docs.google.com/spreadsheets/d/1NJMM7ez66XNr1QrU-9lOYVqr33pNkcLb_YiSPztUlYk/edit#gid=0) document in the google drive. 
+3. In frontend directory, run firebase deploy
+
 
 ## Available Scripts
 
@@ -81,26 +103,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
 ### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+See https://facebook.github.io/create-react-app/docs/advanced-configuration for advanced config info.
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
