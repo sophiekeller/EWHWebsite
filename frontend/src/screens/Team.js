@@ -18,25 +18,30 @@ export default class Team extends React.Component {
   constructor(props) {
     super(props);
     let leads = [];
-    let membersList = members.members;
-    for (let i = 0; i < membersList.length; i++) {
-      let member = membersList[i];
-      if (member.isLead) {
-        leads.push(member);
+    let membersList = [];
+    let m = members.members;
+    for (let i = 0; i < m.length; i++) {
+      let member = m[i];
+      if (!member.isAlumni) {
+        membersList.push(member);
+        if (member.isLead) {
+          leads.push(member);
+        }
       }
     }
     let teamIds = Object.keys(teams);
     teamIds.unshift("all");
     this.state = {
       leads: leads,
-      selected: members.members,
+      selected: membersList,
       filter: "all",
       all_filters: teamIds,
+      members: membersList,
     };
   }
 
   getMembersForTeam(team) {
-    let allMembers = members.members;
+    let allMembers = this.state.members;
     let teamMembers = [];
     for (let i = 0; i < allMembers.length; i++) {
       let member = allMembers[i];
@@ -117,6 +122,15 @@ export default class Team extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="sections-container">
+          <div className="team-title">Where We've Gone</div>
+          <img
+            className={"employers-pic"}
+            src={images.employers}
+            alt={"employers"}
+          />
         </div>
       </div>
     );

@@ -124,9 +124,12 @@
   position: relative;
   background-color: #dce1f3;
   border-radius: 10px;
+  transition-duration: 0.3s;
+  top: 0px;
 }
 .photo-description-container:hover {
   top: -20px;
+  transition-duration: 0.3s;
 }
 
 .project-photo {
@@ -235,7 +238,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.modal-members {
+.modal-section {
   margin-left: 20px;
   margin-right: 20px;
 }

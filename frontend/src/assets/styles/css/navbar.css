@@ -57,6 +57,7 @@
 }
 .nav-button-unselected {
   color: #bdbdbd;
+  text-decoration: none;
 }
 .nav-button {
   font-style: normal;
@@ -70,6 +71,7 @@
 }
 .nav-button:hover {
   cursor: pointer;
+  text-decoration: none;
 }
 .nav-button-m:hover {
   cursor: pointer;

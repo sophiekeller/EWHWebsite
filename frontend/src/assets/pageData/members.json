@@ -1,19 +1,29 @@
 {
-    "members": [{
-            "name": "Victoria Tan",
-            "year": 2021,
-            "major": "Mechanical Engineering",
-            "projects": ["incinerator"],
+    "members": [
+        {
+            "name": "Lane Fitzsimmons",
+            "year": 2022,
+            "major": "Information Science & Biological Sciences",
+            "projects": [
+                "incinerator",
+                "kijenzi",
+                "calmer"
+            ],
             "team": [],
             "isAlumni": false,
             "isLead": true,
             "orientation": "0 -40px"
-        }, {
+        },
+        {
             "name": "Alan Li",
             "year": 2023,
             "major": "Biological Engineering",
-            "projects": ["kijenzi"],
-            "team": ["integrative-design"],
+            "projects": [
+                "kijenzi"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -21,8 +31,14 @@
             "name": "Alison Landry",
             "year": 2022,
             "major": "Operations Research",
-            "projects": ["indago", "msh"],
-            "team": ["software", "business"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software",
+                "business"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -30,17 +46,27 @@
             "name": "Ana Elhom",
             "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": ["incinerator", "kijenzi", "calmer"],
-            "team": ["integrative-design"],
+            "projects": [
+                "incinerator",
+                "kijenzi",
+                "calmer"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
-            "isLead": true
+            "isLead": false
         },
         {
             "name": "Anna Nguyen",
             "year": 2023,
             "major": "Computer Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -48,8 +74,12 @@
             "name": "Anya Ji",
             "year": 2023,
             "major": "Computer Science and Psychology",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -58,8 +88,12 @@
             "name": "Audrey Teasley",
             "year": 2022,
             "major": "Physics",
-            "projects": ["tvns"],
-            "team": ["electrical"],
+            "projects": [
+                "tvns"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -67,8 +101,13 @@
             "name": "Catherine Kwak",
             "year": 2021,
             "major": "Information Science",
-            "projects": ["indago", "msh"],
-            "team": ["software"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -77,36 +116,54 @@
             "name": "Chloe Hasund",
             "year": 2022,
             "major": "Global and Public Health Sciences",
-            "projects": ["indago", "msh"],
-            "team": ["software"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
-            "isLead": false
+            "isLead": true
         },
         {
             "name": "Chris Tran",
             "year": 2023,
             "major": "Healthcare Policy",
             "projects": [],
-            "team": ["business"],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
             "isLead": false,
-            "orientation": "0 -10px"
+            "orientation": "0 -20px"
         },
         {
             "name": "Connie Hou",
             "year": 2022,
             "major": "Computer Science",
-            "projects": ["kijenzi", "incinerator", "msh"],
-            "team": ["integrative-design", "software"],
+            "projects": [
+                "kijenzi",
+                "incinerator",
+                "msh"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
-            "isLead": false
+            "isLead": true
         },
         {
             "name": "Daniel Vitenson",
             "year": 2023,
             "major": "Biological Sciences",
-            "projects": ["kijenzi", "incinerator"],
-            "team": ["integrative-design"],
+            "projects": [
+                "kijenzi",
+                "incinerator"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -114,17 +171,27 @@
             "name": "Elena Li",
             "year": 2022,
             "major": "Information Science and Biology & Society",
-            "projects": ["indago", "msh"],
-            "team": ["software"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
-            "isLead": true
+            "isLead": false
         },
         {
             "name": "Erika Hauschild",
             "year": 2022,
             "major": "Computer Science",
-            "projects": ["indago", "msh"],
-            "team": ["software"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 -10px"
@@ -133,8 +200,12 @@
             "name": "Hannah Daniel",
             "year": 2023,
             "major": "Computer Science",
-            "projects": ["tVNS"],
-            "team": ["electrical"],
+            "projects": [
+                "tVNS"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -142,9 +213,13 @@
             "name": "Hannah Mahanti",
             "year": 2021,
             "major": "Information Science",
-            "projects": ["indago"],
-            "team": ["business"],
-            "isAlumni": false,
+            "projects": [
+                "indago"
+            ],
+            "team": [
+                "business"
+            ],
+            "isAlumni": true,
             "isLead": false,
             "orientation": "0 -50px"
         },
@@ -152,8 +227,13 @@
             "name": "Jake Beckman",
             "year": 2022,
             "major": "Mechanical Engineering",
-            "projects": ["incinerator", "kijenzi"],
-            "team": ["integrative-design"],
+            "projects": [
+                "incinerator",
+                "kijenzi"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -161,8 +241,12 @@
             "name": "Jennifer Lin",
             "year": 2021,
             "major": "Computer Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -170,9 +254,13 @@
             "name": "Jessica Feng",
             "year": 2023,
             "major": "Computer Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
-            "isAlumni": false,
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
+            "isAlumni": true,
             "isLead": false,
             "orientation": "0 -20px"
         },
@@ -180,8 +268,13 @@
             "name": "Julia Hans",
             "year": 2023,
             "major": "Health Care Policy",
-            "projects": ["indago", "msh"],
-            "team": ["software"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -190,8 +283,12 @@
             "name": "Julia Halligan",
             "year": 2023,
             "major": "Mechanical Engineering",
-            "projects": ["kijenzi"],
-            "team": ["integrative-design"],
+            "projects": [
+                "kijenzi"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -201,7 +298,9 @@
             "year": 2023,
             "major": "HBHS",
             "projects": [],
-            "team": ["business"],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -209,27 +308,26 @@
             "name": "Kerry Johnson",
             "year": 2022,
             "major": "Electrical & Computer Engineering",
-            "projects": ["grip-sensor", "tvns"],
-            "team": ["electrical"],
+            "projects": [
+                "grip-sensor",
+                "tvns"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
-            "isLead": false
-        },
-        {
-            "name": "Lane Fitzsimmons",
-            "year": 2022,
-            "major": "Information Science & Biological Sciences",
-            "projects": ["incinerator", "kijenzi", "calmer"],
-            "team": ["integrative-design"],
-            "isAlumni": false,
-            "isLead": false,
-            "orientation": "0 -40px"
+            "isLead": true
         },
         {
             "name": "Manan Modi",
             "year": 2021,
             "major": "ILR",
-            "projects": ["indago"],
-            "team": ["business"],
+            "projects": [
+                "indago"
+            ],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -237,17 +335,27 @@
             "name": "Michael Zhang",
             "year": 2022,
             "major": "Information Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
-            "isLead": false
+            "isLead": false,
+            "orientation": "0 0px"
         },
         {
             "name": "Michael Zhang1",
             "year": 2021,
             "major": "Bioengineering",
-            "projects": ["incinerator", "kijenzi"],
-            "team": ["integrative-design"],
+            "projects": [
+                "incinerator",
+                "kijenzi"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -256,28 +364,44 @@
             "name": "Michaela Bettez",
             "year": 2021,
             "major": "Electrical & Computer Engineering",
-            "projects": ["grip-sensor", "tvns"],
-            "team": ["electrical"],
+            "projects": [
+                "grip-sensor",
+                "tvns",
+                "heater"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
-            "isLead": true,
+            "isLead": false,
             "orientation": "0 -40px"
         },
         {
             "name": "Navin Ramsaroop",
             "year": 2021,
             "major": "Computer Science",
-            "projects": ["rex", "health-friend"],
-            "team": ["software"],
+            "projects": [
+                "rex",
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
-            "isLead": true,
+            "isLead": false,
             "orientation": "0 0px"
         },
         {
             "name": "Rebecca Hasser",
             "year": 2022,
             "major": "Computer Science",
-            "projects": ["tvns", "grip-sensor"],
-            "team": ["electrical"],
+            "projects": [
+                "tvns",
+                "grip-sensor"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -285,8 +409,12 @@
             "name": "Rejoice Hu",
             "year": 2023,
             "major": "Information Science",
-            "projects": ["msh"],
-            "team": ["software"],
+            "projects": [
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 -50px"
@@ -296,7 +424,9 @@
             "year": 2023,
             "major": "Electrical and Computer Engineering",
             "projects": [],
-            "team": ["electrical"],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -304,8 +434,12 @@
             "name": "Samantha Pitts",
             "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": ["tvns"],
-            "team": ["electrical"],
+            "projects": [
+                "tvns"
+            ],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 -50px"
@@ -315,7 +449,9 @@
             "year": 2023,
             "major": "Electrical and Computer Engineering",
             "projects": [],
-            "team": ["electrical"],
+            "team": [
+                "electrical"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -323,8 +459,12 @@
             "name": "Shaf Ibrahim",
             "year": 2023,
             "major": "Computer Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 -10px"
@@ -333,8 +473,13 @@
             "name": "Sham Hamidian",
             "year": 2021,
             "major": "Biomedical Engineering",
-            "projects": ["incinerator", "kijenzi"],
-            "team": ["integrative-design"],
+            "projects": [
+                "incinerator",
+                "kijenzi"
+            ],
+            "team": [
+                "integrative-design"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -342,8 +487,13 @@
             "name": "Sharon Li",
             "year": 2022,
             "major": "Information Science",
-            "projects": ["indago", "msh"],
-            "team": ["software", "business"],
+            "projects": [
+                "indago",
+                "msh"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 0px"
@@ -352,9 +502,13 @@
             "name": "Sheri Guo",
             "year": 2022,
             "major": "Information Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
-            "isAlumni": false,
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
+            "isAlumni": true,
             "isLead": false,
             "orientation": "0 -20px"
         },
@@ -362,17 +516,25 @@
             "name": "Sophie Keller",
             "year": 2022,
             "major": "Computer Science",
-            "projects": ["indago"],
-            "team": ["business"],
+            "projects": [
+                "indago"
+            ],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
-            "isLead": true
+            "isLead": false
         },
         {
             "name": "Sungjae Ahn",
             "year": 2021,
             "major": "AEM",
-            "projects": ["indago"],
-            "team": ["business"],
+            "projects": [
+                "indago"
+            ],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
             "isLead": false
         },
@@ -380,29 +542,570 @@
             "name": "Teddy Klausner",
             "year": 2023,
             "major": "Computer Science",
-            "projects": ["health-friend"],
-            "team": ["software"],
+            "projects": [
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
-            "isLead": false
+            "isLead": true
         },
         {
             "name": "Tori DiStefano",
             "year": 2023,
             "major": "Biology and Society",
-            "projects": ["indago"],
-            "team": ["business"],
+            "projects": [
+                "indago"
+            ],
+            "team": [
+                "business"
+            ],
             "isAlumni": false,
-            "isLead": false
+            "isLead": true
+        },
+        {
+            "name": "Victoria Tan",
+            "year": 2021,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "incinerator",
+                "heater"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -40px"
         },
         {
             "name": "Vivi Ye",
             "year": 2022,
             "major": "Computer Science",
-            "projects": ["rex", "health-friend"],
-            "team": ["software"],
+            "projects": [
+                "rex",
+                "health-friend"
+            ],
+            "team": [
+                "software"
+            ],
             "isAlumni": false,
             "isLead": false,
             "orientation": "0 -20px"
+        },
+        {
+            "name": "Priya Malla",
+            "year": 2021,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "heater"
+            ],
+            "team": [
+                "software",
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false,
+            "orientation": "0 -20px"
+        },
+        {
+            "name": "Katy Voor",
+            "year": 2020,
+            "major": "Computer Science",
+            "projects": [
+                "heater"
+            ],
+            "team": [
+                "software"
+            ],
+            "isAlumni": true,
+            "isLead": false,
+            "orientation": "0 -20px"
+        },
+        {
+            "name": "Jacob Mathai",
+            "year": 2020,
+            "major": "Chemical Engineering",
+            "projects": [
+                "heater"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Shivani Sanghani",
+            "year": 2020,
+            "major": "Economics",
+            "projects": [
+                "heater",
+                "jaundice"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Kaav Shariati",
+            "year": 2019,
+            "major": "Biological Engineering",
+            "projects": [
+                "indago",
+                "heater",
+                "incinerator"
+            ],
+            "team": [
+                "business",
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Cassandra Gologorsky",
+            "year": 2019,
+            "major": "Biomedical Engineering",
+            "projects": [
+                "heater"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Kate Schole",
+            "year": 2017,
+            "projects": [
+                "water-monitor"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Justin Selig",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "water-monitor",
+                "vaccine-fridge",
+                "medlife",
+                "vital-signs"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Manish Patel",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "water-monitor",
+                "medlife"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Peaky Yuter",
+            "year": 2016,
+            "major": "Computer Science",
+            "projects": [
+                "water-monitor"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Fahmida Rashid",
+            "year": 2016,
+            "major": "Biological Engineering",
+            "projects": [
+                "water-monitor",
+                "vaccine-fridge",
+                "medlife",
+                "baby-holster"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Jennifer DiPietro",
+            "year": 2017,
+            "major": "Global Health",
+            "projects": [
+                "water-monitor"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Yan Zhang",
+            "year": 2016,
+            "major": "Biological Engineering",
+            "projects": [
+                "water-monitor"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Anna Botto",
+            "year": 2014,
+            "major": "Biological Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Mytien Nguyen",
+            "year": 2014,
+            "major": "Biology",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Ankai Xu",
+            "year": 2014,
+            "major": "Chem and Bio Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Theresa Cao",
+            "year": 2018,
+            "major": "Hotel Administration",
+            "projects": [
+                "vaccine-fridge",
+                "vital-signs"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Rohit Jha",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "vaccine-fridge",
+                "vital-signs",
+                "jaundice"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Paul Chang",
+            "year": 2014,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "vaccine-fridge",
+                "medlife"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Daniel Cao",
+            "year": 2017,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Theresa Cao",
+            "year": 2018,
+            "major": "Hotel Administration",
+            "projects": [
+                "vaccine-fridge",
+                "jaundice"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Ben Solasky",
+            "year": 2015,
+            "major": "Biological Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Humale Khan",
+            "year": 2015,
+            "major": "Computer Science",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Judy Jiang",
+            "year": 2014,
+            "major": "Biological & Environmental Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Srikanth Kowtha",
+            "year": 2015,
+            "major": "Material Science Engineering",
+            "projects": [
+                "vaccine-fridge",
+                "baby-holster"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Andria Ronne",
+            "year": 2014,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Andria Ronne",
+            "year": 2014,
+            "major": "Mechanical Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Susan Lin",
+            "year": 2014,
+            "major": "Biology & Psychology",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Julia Kelly",
+            "year": 2016,
+            "projects": [
+                "vaccine-fridge",
+                "baby-holster"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Alexander Ngai",
+            "year": 2014,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "vaccine-fridge"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Brecken Blackburn",
+            "year": 2015,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "medlife"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Kevia Qu",
+            "year": 2016,
+            "major": "Chemical Engineering",
+            "projects": [
+                "baby-holster"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Xitang Zhao",
+            "year": 2019,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Michael Solomentsev",
+            "year": 2019,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Lillyan Pan",
+            "year": 2018,
+            "major": "Computer Science",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Adarsh Jayakumar",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Samir Durvasula",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Joanna Davis",
+            "year": 2019,
+            "major": "Biomedical Engineering",
+            "projects": [
+                "jaundice"
+            ],
+            "team": [
+                "business"
+            ],
+            "isAlumni": true,
+            "isLead": false
         }
     ]
 }

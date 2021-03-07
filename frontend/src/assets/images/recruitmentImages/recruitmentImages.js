@@ -1,5 +1,5 @@
 export default {
-  timeline: require("./timeline.jpg"),
+  timeline: require("./timeline.png"),
   slide: require("./slide.jpg"),
   leftArrow: require("./downArrow.png"),
   downArrow: require("./leftArrow.png"),

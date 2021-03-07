@@ -1,6 +1,7 @@
 import React from "react";
 import headerPhotos from "../assets/images/headerImages/headerImages.js";
 import pageData from "../assets/pageData/contact.js";
+import images from "../assets/images/contactImages/contact.js";
 //COMPONENTS
 import Header from "../components/Header";
 import Modal from "react-bootstrap/Modal";
@@ -25,7 +26,7 @@ export default class Contact extends React.Component {
       message: "",
       error: "",
       showModal: false,
-      numPages: null
+      numPages: null,
     };
   }
   clear() {
@@ -36,7 +37,7 @@ export default class Contact extends React.Component {
     let template_params = {
       from_name: this.state.name,
       from_email: this.state.email,
-      message: this.state.message
+      message: this.state.message,
     };
     let service_id = "gmail";
     let template_id = "site_form";
@@ -53,7 +54,7 @@ export default class Contact extends React.Component {
     } else {
       this.setState({
         error:
-          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message."
+          "there was a problem sending your email. please email ewhcornell@gmail.com directly with your message.",
       });
     }
   }
@@ -83,7 +84,21 @@ export default class Contact extends React.Component {
         />
         <div className="contacts-container">
           <div className="contact-title">Support Our Mission</div>
-          <div className="contact-paragraph">{pageData.paragraph}</div>
+          <div className="contact-paragraph">
+            {pageData.sponsorship_paragraph}
+          </div>
+          <div className="contact-title">Join Us As a Collaborator</div>
+          <div className="contact-paragraph">
+            {pageData.collaborator_paragraph}
+          </div>
+
+          <div className="contacts-container">
+            <img
+              className={"collaborators-pic"}
+              src={images.collabs}
+              alt={"collaborators"}
+            />
+          </div>
           <div className="contact-buttons-container">
             <Modal
               classname="contact-modal"
@@ -116,7 +131,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.name}
-            onChange={e => {
+            onChange={(e) => {
               this.setState({ name: e.target.value });
             }}
             placeholder="Name"
@@ -124,7 +139,7 @@ export default class Contact extends React.Component {
           <input
             className="contact-input"
             value={this.state.email}
-            onChange={e => {
+            onChange={(e) => {
               this.setState({ email: e.target.value });
             }}
             placeholder="Your Email Address"
@@ -132,7 +147,7 @@ export default class Contact extends React.Component {
           <textarea
             className="contact-textarea"
             value={this.state.message}
-            onChange={e => {
+            onChange={(e) => {
               this.setState({ message: e.target.value });
             }}
             placeholder="Leave a Message"

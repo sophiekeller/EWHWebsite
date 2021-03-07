@@ -40,7 +40,6 @@ export default class Faq extends React.Component {
     let count = this.props.index + 1;
     if (count < 10) {
       count = "0".concat(count.toString());
-      console.log(count);
     }
     return (
       <div className="faq-container">

@@ -16,14 +16,14 @@ export default class MobileNavBar extends React.Component {
     super(props);
     this.state = {
       open: false, //if menu is open
-      pages: pageData.pages
+      pages: pageData.pages,
     };
   }
   /* renders mobile nav bar */
   render() {
     let link = window.location.href;
     let selected = null;
-    this.state.pages.forEach(page => {
+    this.state.pages.forEach((page) => {
       if (link.includes(page.url)) {
         selected = page.url;
       }
@@ -47,7 +47,7 @@ export default class MobileNavBar extends React.Component {
           <img
             className="menu-button"
             onClick={() => {
-              this.setState(function(state) {
+              this.setState(function (state) {
                 return { open: !state.open };
               });
             }}
@@ -58,9 +58,9 @@ export default class MobileNavBar extends React.Component {
         {this.state.open && ( //renders buttons only if open
           <div className="mobnav-buttons-container">
             <div className="collapse-container">
-              {this.state.pages.map(data => {
+              {this.state.pages.map((data) => {
                 return (
-                  <Link to={"/" + data.url}>
+                  <Link to={"/" + data.url} style={{ textDecoration: "none" }}>
                     <NavButton
                       mobile={true}
                       pagename={data.title}

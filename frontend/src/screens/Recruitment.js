@@ -37,15 +37,24 @@ export default class Recruitment extends React.Component {
         <div className="recruitment-container">
           <div className="contact-title">Recruitment</div>
           <div className={recruitmentParagraph}>
-            Our application is currently closed for fall of 2020. If you are
-            interested in joining our team or want more information, email us at
-            <a className="freshman-form" href="mailto:ewhcornell@gmail.com">
-              ewhcornell@gmail.com
+            We are excited to recruit new members to our team this spring. Join us
+            at our information sessions to learn more! Apply
+            <a className="freshman-form" href="https://docs.google.com/forms/d/e/1FAIpQLSfTn4WqiqHhNEmSvIoku9g33FHOoynkXBRWAy_0M0gnSwSJ2Q/viewform?usp=sf_link:ewhcornell@gmail.com">
+              here
+            </a>.
+          </div>
+          <div className={recruitmentParagraph}>
+            <a className="freshman-form" href="https://cornell.zoom.us/j/91897243616?pwd=bnRTRk5WOHFoYk5obzVNVlNkbTUrUT09">
+              Info Session #1: 2/15 5-6pm EST Password: EWH
             </a>
-            .
+          </div>
+          <div className={recruitmentParagraph}>
+            <a className="freshman-form" href="https://cornell.zoom.us/j/91897243616?pwd=bnRTRk5WOHFoYk5obzVNVlNkbTUrUT09">
+              Info Session #2: 2/18 5-6pm EST Password: EWH
+            </a>
           </div>
 
-          <img className="timeline-photo" alt="timeline" src={images.team} />
+          <img className="timeline-photo" alt="timeline" src={images.timeline} />
           <div className="faqs-container">
             <div className={recruitmentTitle}>Frequently Asked Questions</div>
             <div className="faq-dropdowns-container">

@@ -1,5 +1,6 @@
 export default {
   electrical: require("./electrical.png"),
+  employers: require("./employers.png"),
   gradient: require("./gradient.png"),
   group: require("./group.png"),
   homepic: require("./homepic.png"),

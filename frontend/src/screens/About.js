@@ -17,7 +17,7 @@ export default class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      carouselImages: Object.keys(carousel)
+      carouselImages: Object.keys(carousel),
     };
   }
   render() {
@@ -49,7 +49,7 @@ export default class About extends React.Component {
         {navbar}
         <div className="carousel-container">
           <Carousel className={carouselClass}>
-            {this.state.carouselImages.map(image => {
+            {this.state.carouselImages.map((image) => {
               return (
                 <Carousel.Item className="carousel">
                   <CarouselItem
@@ -66,7 +66,7 @@ export default class About extends React.Component {
         <div className="home-sections-container">
           <div className={homeOpener}>{aboutText.mission}</div>
           <div className={aboutNavButtons}>
-            <Link to="/join">
+            <Link to="/join" style={{ textDecoration: "none" }}>
               <div className="home-button">Apply Now</div>
             </Link>
           </div>

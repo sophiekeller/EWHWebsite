@@ -6,6 +6,12 @@
   text-align: left;
   margin-bottom: 6vh;
 }
+.employers-pic {
+  width: 90vw;
+  height: 58vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
 .team-title {
   font-size: 25px;
   font-weight: bold;
@@ -35,6 +41,7 @@
 .team-content {
   display: flex;
 }
+
 .team-content-m {
   display: flex;
   flex-direction: column;
@@ -49,9 +56,9 @@
 }
 .team-filters-container-m {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 30vw;
+  width: 70vw;
   text-align: center;
 }
 .team-blocks-container {

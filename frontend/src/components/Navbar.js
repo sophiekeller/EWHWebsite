@@ -17,7 +17,7 @@ export default class NavBar extends React.Component {
     super(props);
     this.state = {
       pages: pageData.pages,
-      selected: this.getSelected()
+      selected: this.getSelected(),
     };
   }
   componentDidMount() {
@@ -28,7 +28,7 @@ export default class NavBar extends React.Component {
   getSelected() {
     let link = window.location.href;
     let current = null;
-    pageData.pages.forEach(page => {
+    pageData.pages.forEach((page) => {
       if (link.includes(page.url)) {
         current = page.url;
       }
@@ -51,9 +51,9 @@ export default class NavBar extends React.Component {
           />
         </Link>
         <div className="nav-buttons">
-          {this.state.pages.map(page => {
+          {this.state.pages.map((page) => {
             return (
-              <Link to={"/" + page.url}>
+              <Link to={"/" + page.url} style={{ textDecoration: "none" }}>
                 <NavButton
                   mobile={false}
                   pagename={page.title}
