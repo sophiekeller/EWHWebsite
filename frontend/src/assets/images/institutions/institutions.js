@@ -6,5 +6,6 @@ export default {
   sawa: require("./sawa.jpg"),
   forefront: require("./forefront.png"),
   medlife: require("./medlife.png"),
-  cayuga: require("./cmc.jpg")
+  cayuga: require("./cmc.jpg"),
+  path: require("./path.png")
 };

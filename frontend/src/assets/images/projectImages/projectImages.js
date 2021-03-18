@@ -17,5 +17,8 @@ export default {
   medlife: require("./medlife.png"),
   "vital-signs": require("./vsm.png"),
   "baby-holster": require("./babyholster.jpg"),
-  jaundice: require("./jaundice.png")
+  jaundice: require("./jaundice.png"),
+  mycotoxins: require("./mycotoxins.png"),
+  "infusion-pump": require("./reli.png"),
+  "autologous-transfusion": require("./transfusion.png")
 };

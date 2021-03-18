@@ -35,8 +35,9 @@ export default class Projects extends React.Component {
 
   /* renders projects page */
   render() {
+    let sortFunc = function (a, b) { return b.year_completed - a.year_completed };
     let current = this.state.current_projects;
-    let past = this.state.past_projects;
+    let past = this.state.past_projects.sort(sortFunc);
     let cont = "projects-blocks-container";
     let navbar = <NavBar />;
     if (this.props.mobile) {

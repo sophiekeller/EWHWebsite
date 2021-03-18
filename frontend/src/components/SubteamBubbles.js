@@ -10,6 +10,12 @@ export default class SubteamBubbles extends React.Component {
   render() {
     return (
       <div className="project-teams">
+        {this.props.year && <div
+          className="project-subteam-bubble"
+          style={{ background: "#F5AC78" }}
+        >
+          {this.props.year}
+        </div>}
         {this.props.data.map((teamId, index) => {
           if (teamId != null) {
             let team = teams[teamId];
@@ -29,6 +35,7 @@ export default class SubteamBubbles extends React.Component {
             return null;
           }
         })}
+
       </div>
     );
   }

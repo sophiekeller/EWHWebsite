@@ -49,7 +49,8 @@
             "projects": [
                 "incinerator",
                 "kijenzi",
-                "calmer"
+                "calmer",
+                "infusion-pump"
             ],
             "team": [
                 "integrative-design"
@@ -229,7 +230,8 @@
             "major": "Mechanical Engineering",
             "projects": [
                 "incinerator",
-                "kijenzi"
+                "kijenzi",
+                "infusion-pump"
             ],
             "team": [
                 "integrative-design"
@@ -351,7 +353,8 @@
             "major": "Bioengineering",
             "projects": [
                 "incinerator",
-                "kijenzi"
+                "kijenzi",
+                "infusion-pump"
             ],
             "team": [
                 "integrative-design"
@@ -570,7 +573,8 @@
             "major": "Mechanical Engineering",
             "projects": [
                 "incinerator",
-                "heater"
+                "heater",
+                "infusion-pump"
             ],
             "team": [
                 "integrative-design"
@@ -614,7 +618,8 @@
             "year": 2020,
             "major": "Computer Science",
             "projects": [
-                "heater"
+                "heater",
+                "mycotoxins"
             ],
             "team": [
                 "software"
@@ -628,7 +633,9 @@
             "year": 2020,
             "major": "Chemical Engineering",
             "projects": [
-                "heater"
+                "heater",
+                "mycotoxins",
+                "infusion-pump"
             ],
             "team": [
                 "integrative-design"
@@ -657,7 +664,8 @@
             "projects": [
                 "indago",
                 "heater",
-                "incinerator"
+                "incinerator",
+                "infusion-pump"
             ],
             "team": [
                 "business",
@@ -768,7 +776,9 @@
             "year": 2016,
             "major": "Biological Engineering",
             "projects": [
-                "water-monitor"
+                "water-monitor",
+                "mycotoxins",
+                "autologous-transfusion"
             ],
             "team": [
                 "electrical"
@@ -821,7 +831,8 @@
             "major": "Hotel Administration",
             "projects": [
                 "vaccine-fridge",
-                "vital-signs"
+                "vital-signs",
+                "mycotoxins"
             ],
             "team": [
                 "electrical"
@@ -890,7 +901,8 @@
             "year": 2015,
             "major": "Biological Engineering",
             "projects": [
-                "vaccine-fridge"
+                "vaccine-fridge",
+                "autologous-transfusion"
             ],
             "team": [
                 "integrative-design"
@@ -1021,7 +1033,8 @@
             "year": 2016,
             "major": "Chemical Engineering",
             "projects": [
-                "baby-holster"
+                "baby-holster",
+                "autologous-transfusion"
             ],
             "team": [
                 "integrative-design"
@@ -1099,10 +1112,115 @@
             "year": 2019,
             "major": "Biomedical Engineering",
             "projects": [
-                "jaundice"
+                "jaundice",
+                "mycotoxins"
             ],
             "team": [
                 "business"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Priya Kankanhalli",
+            "year": 2019,
+            "major": "Information Science",
+            "projects": [
+                "mycotoxins"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Adam Chung",
+            "year": 2018,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "mycotoxins"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Vidya Ramesh",
+            "year": 2017,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "mycotoxins"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Jessica Chen",
+            "year": 2018,
+            "major": "Electrical & Computer Engineering",
+            "projects": [
+                "mycotoxins"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Waldo Withers",
+            "year": 2015,
+            "major": "Biological Engineering",
+            "projects": [
+                "autologous-transfusion"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Waldo Withers",
+            "year": 2015,
+            "major": "Biological Engineering",
+            "projects": [
+                "autologous-transfusion"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Erin Chen",
+            "year": 2018,
+            "major": "Computer Science",
+            "projects": [
+                "autologous-transfusion"
+            ],
+            "team": [
+                "integrative-design"
+            ],
+            "isAlumni": true,
+            "isLead": false
+        },
+        {
+            "name": "Kimberly Schonhorst",
+            "year": 2017,
+            "major": "Biological Engineering",
+            "projects": [
+                "autologous-transfusion"
+            ],
+            "team": [
+                "integrative-design"
             ],
             "isAlumni": true,
             "isLead": false

@@ -52,21 +52,40 @@
 .past-project {
   height: 300px;
 }
+.project-text-overlay {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  top: -300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+}
 .project-title {
   text-align: center;
   font-weight: bold;
   position: relative;
   color: #253263;
   font-size: 30px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  top: -300px;
-  height: 300px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0px;
+  line-height: 100%; 
+}
+.project-year {
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  color: #253263;
+  font-size: 20px;
+  display: flex;
   line-height: 100%;
+  margin-top: 7px;
 }
 .section-title {
   text-align: left;

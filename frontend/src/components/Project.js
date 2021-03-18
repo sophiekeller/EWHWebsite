@@ -90,10 +90,16 @@ export default class Project2 extends React.Component {
           {this.state.showOverlay && (
             <div className="project-description">{data.info}</div>
           )}
-          <div className="project-title">{data.title}</div>
+          <div className="project-text-overlay">
+            <div className="project-title">
+              {data.title}
+            </div>
+            <div className="project-year">{data.year_completed}</div>
+          </div>
+
         </div>
         <div className="project-text">
-          <SubteamBubbles data={data.subteams} />
+          <SubteamBubbles data={data.subteams} year={data.year_completed} />
           {bar}
         </div>
       </div>
