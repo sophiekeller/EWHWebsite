@@ -169,6 +169,19 @@
             "isLead": false
         },
         {
+            "name": "Doreen Dong",
+            "year": 2024,
+            "major": "Biologocial Sciences",
+            "projects": [
+                "invictus"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
             "name": "Elena Li",
             "year": 2022,
             "major": "Information Science and Biology & Society",
@@ -238,6 +251,18 @@
             ],
             "isAlumni": false,
             "isLead": false
+        },
+        {
+            "name": "Jay Doshi",
+            "year": 2024,
+            "major": "Biology & Society",
+            "projects": [],
+            "team": [
+                "business"
+            ],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -1px"
         },
         {
             "name": "Jennifer Lin",
@@ -395,6 +420,19 @@
             "orientation": "0 0px"
         },
         {
+            "name": "Paul Garell",
+            "year": 2024,
+            "major": "Biological Systems Engineering",
+            "projects": [
+                "invictus"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": false,
+            "isLead": false
+        },
+        {
             "name": "Rebecca Hasser",
             "year": 2022,
             "major": "Computer Science",
@@ -432,6 +470,20 @@
             ],
             "isAlumni": false,
             "isLead": false
+        },
+        {
+            "name": "Sam Reveiz",
+            "year": 2024,
+            "major": "Electrical and Computer Engineering",
+            "projects": [
+                "invictus"
+            ],
+            "team": [
+                "electrical"
+            ],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -30px"
         },
         {
             "name": "Samantha Pitts",
@@ -514,6 +566,18 @@
             "isAlumni": true,
             "isLead": false,
             "orientation": "0 -20px"
+        },
+        {
+            "name": "Sohni Uthra",
+            "year": 2023,
+            "major": "Computer Science",
+            "projects": [],
+            "team": [
+                "business"
+            ],
+            "isAlumni": false,
+            "isLead": false,
+            "orientation": "0 -80px"
         },
         {
             "name": "Sophie Keller",
